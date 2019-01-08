@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="selectNVR.css">
+
+    <script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="selectNVR.js"></script>
+</head>
+<body>
+<div style="width: 978px;height: 516px">
+    <div class="devarea">
+
+        <div class="line" style="margin-top: 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin">*</div>设备编号</div><div class="leinput"><input id="devId" type="text" readonly="readonly" class="inputback"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin">*</div>设备名称</div><div class="riinput"><input id="devName" readonly="readonly" type="text"></div>
+            </div>
+            <div class="lineleft">
+                <div class="lename" style="width: 104px"><div class="xin">*</div>设备关联编号</div><div class="leinput" style="width: 196px;margin-right: 0px"><input readonly="readonly" id="pnlActID" type="text" style="width: 196px"></div>
+            </div>
+        </div>
+
+        <div class="line">
+
+            <div class="lineright">
+                <div class="riname"><div class="xin">*</div>所属区域</div><div class="riinput"><input readonly="readonly" type="text" class="more" id="openarea"></div>
+            </div>
+            <div class="lineleft">
+                <div class="lename"><div class="xin">*</div>设备类型</div><div class="leinput"><input id="devType"  value="nvr(互联网)" type="text" readonly="readonly" class="inputback more"></div>
+            </div>
+            <div class="lineleft">
+                <div class="lename" style="width: 118px"><div class="xin">*</div>设备登录用户名</div><div class="leinput" style="width: 182px;margin-right: 0px"><input id="devLoginName" readonly="readonly" type="text" style="width: 182px"></div>
+            </div>
+        </div>
+
+        <div class="line">
+
+            <div class="lineright">
+                <div class="riname"><div class="xin">*</div>设备型号</div><div class="riinput">
+                <select disabled="disabled" id="devModelId"  class="selec more" style="width: 220px">
+                <!--<option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>-->
+            </select><!--<input id="devModelId" type="text" class="more">--></div>
+            </div>
+            <div class="lineleft">
+                <div class="lename"><div class="xin">&nbsp;</div>设备厂商</div><div class="riinput posi" style="width: 220px">
+                <select name="manufacturer" id="manufacturer" disabled="disabled"  class="selec more posiInput" style="width: 220px">
+                    <option value="海康">海康</option>
+                    <option value="大华">大华</option>
+                    <option value="其他">其他</option>
+                </select></div>
+            </div>
+            <div class="lineright">
+                <div class="riname" style="width: 104px"><div class="xin">*</div>设备登录密码</div><div class="riinput" style="width: 196px;margin-right: 0px"><input id="devLoginPwd" readonly="readonly" type="text" style="width: 196px"></div>
+            </div>
+        </div>
+
+        <!--<div class="line">
+
+
+        </div>-->
+
+        <div class="line">
+            <div class="lineleft">
+                <div class="lename"><div class="xin">&nbsp;</div>P2P ID</div><div class="leinput"><input readonly="readonly" id="devTUTKID" type="text"></div>
+            </div>
+            <div class="lineleft">
+                <div class="lename"><div class="xin">*</div>经度</div><div class="leinput"><input readonly="readonly" id="line" type="text"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin">*</div>纬度</div><div class="riinput" style="margin-right: 0px;width: 226px"><input readonly="readonly" id="column" type="text" class="latitude"><div class="place "></div><div id="choseplace" class="plname noPoint">查看位置</div></div>
+            </div>
+
+        </div>
+
+       <!-- <div class="line">
+
+        </div>-->
+
+        <div class="line">
+            <div class="lineleft">
+                <div class="lename" style="width: 90px"><div class="xin">*</div>设备通道数</div><div class="leinput" style="width: 204px"><input readonly="readonly" id="ChannelNum" type="text" class="inputback" style="width: 204px"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin">&nbsp;</div>设备位置</div><div class="riinput"><input readonly="readonly" id="pnlAddr" type="text" ></div>
+            </div>
+            <div class="lineleft">
+                <div class="lename"><div class="xin">&nbsp;</div>安装员</div><div class="leinput" style="margin-right: 0px;width: 226px"><input readonly="readonly" id="instMan" type="text" style="width: 226px"></div>
+            </div>
+        </div>
+
+        <div class="line">
+
+            <div class="lineright">
+                <div class="riname"><div class="xin">&nbsp;</div>安装单位</div><div class="riinput"><input readonly="readonly" id="instUnit" type="text" ></div>
+            </div>
+            <div class="lineleft">
+                <div class="lename" style="width: 104px"><div class="xin">*</div>流转服务器IP</div><div class="leinput" style="width: 190px"><input readonly="readonly" id="videoServer" type="text" style="width: 190px"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin">*</div>安装时间</div><div class="riinput" style="margin-right: 0px;width: 226px"><input readonly="readonly" id="installTime_input" type="text" class="time" style="width: 226px"></div>
+            </div>
+        </div>
+
+       <!-- <div class="line">
+
+        </div>
+
+        <div class="line">
+
+        </div>-->
+
+        <div class="lineend">
+            <div class="lineleft">
+                <div class="lename"><div class="xin">&nbsp;</div>备注</div><div class="divnote"><textarea readonly="readonly" id="fMemo" class="texnote"></textarea></div>
+            </div>
+        </div>
+
+        <div class="linebox">
+            <div class="lenamebox"><div class="xin">&nbsp;</div>
+                <div id="lenameCheckbox" class="lenameCheckbox isChecked"></div>
+            </div>
+            <div class="lenamename">设备编号自动关联设备</div>
+        </div>
+
+    </div>
+    <!--<div class="endbutt">
+        <div id="host" class="host">相关机主</div>
+        <div style="margin: 20px 36px 20px 0px;width: 216px;height: 25px;float: right">
+        <div id="sure" class="buttsure">保存</div><div id="cancel" class="buttcancel">取消</div>
+        </div>
+    </div>-->
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

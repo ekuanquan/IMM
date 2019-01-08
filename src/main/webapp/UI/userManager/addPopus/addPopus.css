@@ -1,0 +1,88 @@
+*{
+	color: #fff;
+	float: left;
+	font-family: 'Microsoft YaHei';
+}
+body{
+	margin: 0px;
+
+}
+.content{
+	width: 841px;
+	height: 393px;
+
+
+}
+
+.title_close{
+	float: right;
+	width: 30px;
+	height: 30px;
+
+	background-image: url(../../resource/images/index/close.png);
+	background-repeat: no-repeat;
+	background-position: 8px 8px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.title_close:hover{
+	background-color: #f75352;
+}
+.title{
+	width: 100%;
+	height: auto;
+	margin-top: 26px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+}
+.container{
+	height: 162px;
+	margin-top: 40px;
+	margin-left: 224px;
+}
+.item{
+	height: 152px;
+	width: 131px;
+    cursor: pointer;
+
+}
+.ownerUser_img{
+	
+	background-image: url(./img/white_black/ownerUser.png);
+}
+.ownerUser_img:hover{
+	background-image: url(./img/color/ownerUser.png);
+}
+.generalUser_img{
+	
+	background-image: url(./img/white_black/GeneralUser.png);
+}
+.generalUser_img:hover{
+	background-image: url(./img/color/generalUser.png);
+}
+.operator_img{
+	
+	background-image: url(./img/white_black/operator.png);
+}
+.operator_img:hover{
+	background-image: url(./img/color/operator.png);
+}
+
+.item_text{
+	width: 100%;
+	text-align: center;
+	margin-top: 16px;
+	font-size: 18px;
+    -moz-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.item_img{
+	width: 102px;
+	height: 102px;
+	margin-left: 14.5px;
+}

@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.ifarea{
+    /*width: 771px;
+    height: 676px;*/
+    width: 1000px;
+    height: 600px;
+   /* border: 1px solid #c8c8c8;*/
+}
+
+.title{
+    background-color: #2577e5;
+    width: 100%;
+    height: 30px;
+}
+
+.table{
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.close{
+    float: right;
+    color: white;
+    background-image: url("img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: #f75352;;
+}
+
+.middle{
+    /*width: 751px;
+    height: 625px;*/
+    width: 980px;
+    height: 548px;
+    border: 1px solid #c8c8c8;
+    margin: 10px 0 0 10px;
+}
+
+.char{
+    width: 100%;
+    height: 30px;
+    background-color: #deecff;
+    font-size: 14px;
+}
+
+.select{
+    width: 70px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.devarea{
+    width: 100%;
+    height: 595px;
+    /*border: 1px solid red;*/
+}
+/*.ifremecs{
+    width: 751px;
+    height: 595px;
+    border: none;
+}*/
+
+.devarea{
+    /*width: 751px;
+    height: 575px;*/
+    width: 978px;
+    height: 450px;
+    overflow-y: scroll;
+    /* border: 1px solid #c8c8c8;*/
+}
+
+.line{
+    /*width: 711px;*/
+    width: 948px;
+    height: 26px;
+    /* border: 1px solid #c8c8c8;*/
+    /*margin: 10px 0 0 20px;*/
+    margin: 10px 0 0 10px;
+}
+
+.lename{
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    /*width: 108px;*/
+    width: 76px;
+}
+.leinput{
+    /*float: left;
+    width: 222px;
+    height: 26px;
+    margin-right: 49px;*/
+    float: left;
+    /*width: 244px;*/
+    width: 220px;
+    height: 26px;
+    /*margin-right: 27px;*/
+    margin-right: 20px;
+}
+.leinput input{
+    /*width: 222px;*/
+    width: 198px;
+    height: 26px;
+    border: 1px solid #d9d9d9;
+    padding: 3px;
+    float: left;
+}
+.riname{
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    width: 76px;
+    /*width: 108px;
+    padding-left: 30px;*/
+}
+.riinput{
+    float: left;
+    /*width: 222px;*/
+    width: 220px;
+    height: 26px;
+    margin-right: 20px;
+}
+
+.riinput input{
+    /*width: 222px;*/
+    width: 198px;
+    height: 26px;
+    border: 1px solid #d9d9d9;
+    padding: 3px;
+    float: left;
+}
+
+.latitude{
+    /*width: 138px !important;*/
+    width: 98px !important;
+    float: left;
+}
+
+.inputback{
+    background-color: #e5e5e5;
+    color: #898989;
+}
+
+.xin{
+    color: red;
+    float: left;
+    line-height: 32px;
+    height: 26px;
+    margin-right: 5px;
+}
+
+.more{
+    background-image: url("img/more.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.time{
+    background-image: url("img/time.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.place{
+    float: left;
+    background-image: url("img/place.png");
+    background-repeat: no-repeat;
+    /*background-position: 80% 50%;*/
+    background-position: 69% 50%;
+    /*width: 28px;*/
+    width: 26px;
+    height: 26px;
+    margin-left:0px;
+}
+
+.plname{
+    float: left;
+    line-height: 26px;
+    font-size: 14px;
+    cursor:pointer;
+}
+
+.lineend{
+    /*width: 711px;
+    height: 122px;
+    margin: 10px 0 0 20px;*/
+    width: 948px;
+    height: 198px;
+    margin: 10px 0 0 10px;
+}
+
+.lenamebox{
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    width: 30px;
+}
+
+.linebox{
+    /*width: 711px;*/
+    width: 948px;
+    height: 20px;
+    /*margin: 10px 0 0 20px;*/
+    margin: 10px 0 10px 10px;
+}
+.lenamename{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.divnote{
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+   /* width: 601px;
+    height: 122px;*/
+    width: 856px;
+    height: 198px;
+}
+.texnote{
+    float: left;
+    /*width: 601px;*/
+    width: 834px;
+    /*height: 122px;*/
+    height: 198px;
+    resize: none;
+    padding: 3px;
+    border: 1px solid #d9d9d9;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+.endbutt{
+    /*margin-top: 7px;*/
+    width: 100%;
+    /*height: 25px;*/
+    height: 66px;
+    border-top: 1px solid #c8c8c8;
+    padding-left: 381px;
+}
+.buttsure{
+    background-color: #2577e5;
+    color: #ffffff;
+    width: 103px;
+    /*height: 100%;*/
+    height: 25px;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align:center;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    float: left;
+}
+.buttsure:hover{
+     background-color: #1b5fde;
+    color: #ffffff;
+}
+.buttcancel{
+    background-color: #ffffff;
+    color: #2577e5;
+    width: 103px;
+    /*height: 100%;*/
+    height: 25px;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    /*margin-right: 10px;*/
+    text-align:center;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.buttcancel:hover{
+    color: black;
+}
+
+.linebox{
+    /*height: 26px;*/
+    
+}
+.lenameCheckbox{
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    float: left;
+}
+.lenameCheckbox:hover{
+    cursor: pointer;
+}
+.lenamename{
+
+}
+.isChecked{
+    background-image: url(img/isChecked.png);
+}
+.noChecked{
+     background-image: url(img/noChecked.png);
+}
+
+.selec{
+    /*width: 222px;*/
+    width: 202px;
+    height: 26px;
+    border: solid 1px #d9d9d9;
+
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+
+    /*overflow: hidden;
+    background: url(img/more.png) no-repeat right;*/
+}
+
+/*.posi{
+    position:relative;
+}
+
+.posiInput{
+    position:absolute;
+    z-index:2;
+}
+
+.posiRelate{
+    position:absolute;
+    z-index:3;
+}*/
+
+.prompt{
+    background-image: url("img/prompt.png");
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    width: 12px;
+    margin-right: -1px !important;
+}
+.margin-top-2{
+    margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.editable-select.css">
+    <link rel="stylesheet" type="text/css" href="addNVR.css">
+    <link rel="stylesheet" type="text/css" href="../../../resource/demo/css/style.css">
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../resource/js/popus.js"></script>
+    <script type="text/javascript" src="../../js/jquery.editable-select.min.js"></script>
+    <script type="text/javascript" src="../../../tool/time/time.js"></script>
+    <script type="text/javascript" src="addNVR.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../../resource/demo/js/Validform_v4.0.js"></script>
+    <script type="text/javascript" src="../../../resource/gbId/gbPopup.js"></script>
+    <script type="text/javascript" src="../../../resource/config.js"></script>
+</head>
+<body>
+<div class="ifarea">
+
+    <div class="title">
+        <div class="table" >添加NVR(互联网)</div><div class="close" id="close"></div>
+    </div>
+
+    <div class="middle">
+
+        <div class="char">
+            <div class="select" id="basic">基本信息</div>
+        </div>
+
+        <form  id="signupForm" class="registerform">
+        <div class="devarea">
+
+            <div class="line" style="margin-top: 20px">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>设备编号</div><div class="leinput">
+                    <input id="devId" type="text" maxlength="9" />
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">*</div>设备名称</div><div class="riinput">
+                    <input id="devName" type="text" datatype="*" nullmsg="设备名称不能为空"  maxlength="125" />
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename" style="width: 104px"><div class="xin">&nbsp;</div>设备关联编号</div><div class="leinput" style="width: 196px;margin-right: 0px">
+                    <input id="pnlActID" type="text" style="width: 174px"  maxlength="64" />
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+            </div>
+
+            <div class="line">
+
+                <div class="lineright">
+                    <div class="riname"><div class="xin">*</div>所属区域</div><div class="riinput" id="pertainarea">
+                    <input type="text" id="areaname" readonly="readonly" class="more" datatype="*" nullmsg="所属区域不能为空" />
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>设备类型</div><div class="leinput">
+                    <input value="nvr(互联网)" type="text" readonly="readonly" class="inputback more" datatype="*" nullmsg="设备类型不能为空"/>
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename" style="width: 118px"><div class="xin">*</div>设备登录用户名</div><div class="leinput" style="width: 182px;margin-right: 0px">
+                    <input id="devLoginName" type="text" style="width: 160px" datatype="*" nullmsg="设备登录用户名不能为空"  maxlength="32"/>
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+            </div>
+
+            <div class="line">
+
+                <div class="lineright">
+                    <div class="riname"><div class="xin">*</div>设备型号</div><!--<div class="riinput"><input type="text" class="more"></div>-->
+                    <div class="riinput">
+                    <select id="devModelId"  class="selec more" style="width: 198px" datatype="*" nullmsg="设备型号不能为空">
+                    </select><div class="Validform_checktip margin-top-2"></div>
+                    </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>安装时间</div><div class="riinput posi" style="width: 220px">
+                    <input type="text" id="installTime_input" class="time" style="width: 198px" datatype="*" nullmsg="安装时间不能为空">
+                    <div class="Validform_checktip margin-top-2"></div>
+                    </div>
+                </div>
+                <!--2018年1月11日15:16:41设备密码设置不做必填项-->
+                <div class="lineright">
+                    <div class="riname" style="width: 104px"><div class="xin"></div>设备登录密码</div><div class="riinput" style="width: 196px;margin-right: 0px">
+                    <input id="devLoginPwd" type="text" style="width: 174px" maxlength="32" />
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+            </div>
+
+            <!--<div class="line">
+
+
+            </div>-->
+
+            <div class="line">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>P2P ID</div><div class="leinput">
+                    <input id="devTUTKID"  type="text" datatype="*" nullmsg="P2P ID不能为空" maxlength="255" />
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>经度</div><div class="leinput">
+                    <input id="line" type="text" datatype="longitude" maxlength="10" nullmsg="经度不能为空" errormsg="请输入经度（范围：-180.0000~180.0000）"  />
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">*</div>纬度</div><div class="riinput" style="margin-right: 0px;width: 226px">
+                    <input id="column" type="text" class="latitude" maxlength="10" datatype="latitude" nullmsg="纬度不能为空" errormsg="请输入纬度（范围：-90.0000~90.0000）"  />
+                    <div class="Validform_checktip margin-top-2"></div>
+                    <div class="place"></div><div class="plname" id="choseplace">选择位置</div></div>
+                </div>
+            </div>
+
+           <!-- <div class="line">
+
+            </div>-->
+
+            <div class="line">
+                <div class="lineleft">
+                    <div class="lename" style="width: 90px"><div class="xin">*</div>设备通道数</div><div class="leinput" style="width: 204px"><input id="ChannelNum" readonly="readonly" type="text" class="more inputback" style="width: 184px"></div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>设备位置</div><div class="riinput">
+                    <input id="pnlAddr" type="text" maxlength="72" />
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">&nbsp;</div>安装员</div><div class="leinput" style="margin-right: 0px;width: 226px">
+                    <input id="instMan" type="text" style="width: 204px"  maxlength="46">
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+            </div>
+
+            <div class="line">
+
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>安装单位</div><div class="riinput">
+                    <input id="instUnit" type="text" maxlength="40">
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename" style="width: 104px"><div class="xin">&nbsp;</div>流转服务器IP</div><div class="leinput" style="width: 190px">
+                    <input id="videoServer" type="text" style="width: 168px" datatype="ip" errormsg="请输入流转服务器IP（范围:0.0.0.0～255.255.255.255）" maxlength="15">
+                    <div class="Validform_checktip margin-top-2"></div>
+                </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>设备厂商</div><div class="riinput" style="margin-right: 0px;width: 226px">
+                    <select name="manufacturer" id="manufacturer"  class="selec more posiInput" style="width: 204px">
+                        <option value="HIK">海康</option>
+                        <option value="DH">大华</option>
+                        <option value="P2P_TUTK_CLIENT">远望</option>
+                        <option value="P2P_NPC">华科</option>
+                        <option value="OTHER">其他</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="line">
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>所属平台</div><div class="riinput"><input id="platformId" type="text" maxlength="40" readonly="readonly"></div>
+                </div>
+                <div class="lineleft">
+                    <div class="riname">
+                        <div class="xin">&nbsp;</div>
+                        国标ID
+                    </div>
+                    <div class="leinput" style="margin-right: 0px;width: 226px">
+                        <input id="gbId" type="text" style="width: 198px"/>
+                        <div class="Validform_checktip margin-top-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lineend">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">&nbsp;</div>备注</div><div class="divnote"><textarea id="fMemo" class="texnote" maxlength="255"></textarea></div>
+                </div>
+            </div>
+
+            <div class="linebox">
+                <div class="lenamebox"><!--<div class="xin">&nbsp;</div>-->
+                    <div id="lenameCheckbox" class="lenameCheckbox isChecked"></div>
+                </div>
+                <div class="lenamename">设备编号自动关联设备</div>
+            </div>
+
+        </div>
+        <div class="endbutt">
+            <div style="margin: 20px auto;width: 216px;height: 25px;float: none;">
+            <div id="sure" class="buttsure">保存</div><div id="cancel" class="buttcancel">取消</div>
+            </div>
+        </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

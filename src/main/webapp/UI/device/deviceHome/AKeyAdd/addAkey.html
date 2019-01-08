@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../css/jquery.editable-select.css">
+	<link rel="stylesheet" type="text/css" href="addAkey.css">
+	<!--<link rel="stylesheet" type="text/css" href="../../../tool/validate.css">-->
+	<link rel="stylesheet" type="text/css" href="../../../resource/demo/css/style.css">
+	<link href="../../../resource/js/jquery.searchableSelect.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+	<script src="../../../resource/js/jquery.searchableSelect.js"></script>
+	<script type="text/javascript" src="../../../resource/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="../../../resource/js/popus.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+	<!--<script type="text/javascript" src="../../../tool/jquery.validate.js"></script>-->
+	<script type="text/javascript" src="../../../tool/account_rule.js"></script>
+	<script type="text/javascript" src="../../../tool/messages_zh.js"></script>
+	<script type="text/javascript" src="../../../resource/demo/js/Validform_v4.0.js"></script>
+	<script type="text/javascript" src="../../js/jquery.editable-select.min.js"></script>
+	<script type="text/javascript" src="../../../tool/time/time.js"></script>
+	<script type="text/javascript" src="../../../resource/config.js"></script>
+	<script type="text/javascript" src="addAkey.js"></script>
+
+</head>
+<body>
+
+	<div class="ifarea">
+
+		<div class="title">
+			<div class="table" >添加一键报警</div><div class="close" id="close"></div>
+		</div>
+
+		<div class="middle">
+
+			<div class="char">
+				<div class="select" id="basic">基本信息</div>
+			</div>
+			<form id="signupForm" class="registerform">
+				<div class="devarea">
+
+					<div class="line" style="margin-top: 20px">
+						<div class="lineleft">
+							<div class="lename"><div id="devIdXin" class="xin">*</div>设备编号</div>
+							<div class="leinput posi">
+								<input class="posiInput" name="deaId" id="devId" type="text" datatype="letternember" maxlength="9"/>
+								<div class="Validform_checktip margin-top-2"></div>
+							</div>
+						</div>
+						<div class="lineright">
+							<div class="riname"><div class="xin">*</div>设备名称</div><div class="riinput">
+							<input id="devName" type="text" maxlength="255"  datatype="*" nullmsg="设备名称不能为空"/>
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+						<div class="lineleft">
+							<div class="lename" style="width: 104px"><div class="xin">&nbsp;</div>设备关联编号</div>
+							<div class="leinput" style="width: 196px;margin-right: 0px">
+							<input id="pnlActID" type="text" style="width: 174px" maxlength="64" />
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="lineleft">
+							<div class="riname"><div class="xin">*</div>所属区域</div><div class="riinput">
+							<input type="text" class="more" readonly="readonly" id="openarea" datatype="*" nullmsg="所属区域不能为空">
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+						<div class="lineright">
+							<div class="lename"><div class="xin">&nbsp;</div>设备类型</div>
+							<div class="leinput">
+								<input id="devType"  value="一键式紧急报警盒" type="text" readonly="readonly" class="inputback more">
+							</div>
+						</div>
+						<div class="lineleft">
+							<div class="lename" style="width: 118px"><div class="xin">*</div>设备登录用户名</div><div class="leinput" style="width: 182px;margin-right: 0px">
+							<input id="devLoginName" type="text" style="width: 160px" datatype="*" nullmsg="设备登录用户名不能为空"  maxlength="32">
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="lineleft">
+							<div class="lename"><div class="xin">*</div>设备ID</div>
+							<div class="leinput">
+								<input id="devSn" type="text" datatype="*" nullmsg="设备ID不能为空" maxlength="255">
+								<div class="Validform_checktip margin-top-2"></div>
+							</div>
+						</div>
+						<div class="lineright">
+							<div class="riname"><div class="xin">*</div>设备型号</div><div class="riinput">
+							<select id="devModelId"  class="selec more" style="width: 198px" datatype="*" nullmsg="设备型号不能为空" >
+							</select>
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+						<div class="lineleft">
+							<div class="riname" style="width: 104px"><div class="xin"></div>设备登录密码</div><div class="riinput" style="width: 196px;margin-right: 0px">
+							<input id="devLoginPwd" type="text" style="width: 174px" maxlength="32"/>
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="lineleft">
+							<div class="lename" style="width: 104px"><div class="xin">*</div>流转服务器IP</div><div class="leinput" style="width: 192px">
+							<input id="akeyServer" type="text" style="width: 170px" datatype="ip" nullmsg="流转服务器IP不能为空" errormsg="请输入流转服务器IP（范围:0.0.0.0～255.255.255.255）" maxlength="15">
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+						<div class="lineright">
+							<div class="lename"><div class="xin">*</div>经度</div><div class="leinput">
+							<input id="line" type="text" datatype="longitude" maxlength="10" nullmsg="经度不能为空" errormsg="请输入经度（范围：-180.0000~180.0000;）"  />
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+						<div class="lineleft">
+							<div class="riname"><div class="xin">*</div>纬度</div><div class="riinput" style="margin-right: 0px;width: 226px">
+							<input id="column" type="text" class="latitude" datatype="latitude" maxlength="10" nullmsg="纬度不能为空" errormsg="请输入纬度（范围：-90.0000~90.0000）"  />
+							<div class="Validform_checktip margin-top-2"></div>
+							<div class="place"></div><div id="choseplace" class="plname">选择位置</div></div>
+						</div>
+
+					</div>
+					<div class="line">
+						<div class="lineleft">
+
+							<div class="riname" style="width: 120px;">
+								<div class="xin">*</div>
+								流媒体服务端口
+							</div>
+							<div class="riinput" style="width: 176px;">
+								<input id="devPort" type="text" value="9000" datatype="port" nullmsg="流媒体服务端口不能为空" style="width: 154px;"
+									   errormsg="请输入流媒体服务端口（0-65535）" maxlength="11"/>
+
+								<div class="Validform_checktip margin-top-2"></div>
+							</div>
+						</div>
+						<div class="lineright">
+							<div class="lename">
+								<div class="xin">*</div>
+								设备厂商
+							</div>
+							<div class="riinput posi" style="width: 220px">
+								<select name="manufacturer" id="manufacturer" class="selec more posiInput" datatype="*" nullmsg="设备厂商不能为空" style="width: 198px">
+									<option value="HIK">海康</option>
+									<option value="DH">大华</option>
+									<option value="P2P_NPC">华科</option>
+									<option value="OTHER">其他</option>
+								</select>
+								<div class="Validform_checktip margin-top-2"></div>
+							</div>
+						</div>
+						<div class="lineleft">
+							<div class="lename"><div class="xin">&nbsp;</div>安装员</div>
+							<div class="leinput">
+							<input id="instMan" type="text" style="width: 198px"  maxlength="46">
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="lineleft">
+							<div class="riname"><div class="xin">&nbsp;</div>通信线路</div><div class="riinput">
+							<select id="communicateLine"  class="selec more" style="width: 198px" >
+								<option value="">默认线路</option>
+								<option value="0">线路1</option>
+								<option value="1">线路2</option>
+								<option value="2">线路3</option>
+							</select>
+						</div>
+						</div>
+						<div class="lineright">
+							<div class="riname"><div class="xin"></div>通信协议</div><div class="riinput">
+							<select id="communicateProtocol"  class="selec more" style="width: 198px">
+								<option value=""></option>
+								<option value="-1">Ehome协议</option>
+							</select>
+						</div>
+						</div>
+						<div class="lineleft">
+							<div class="riname"><div class="xin">&nbsp;</div>所属平台</div>
+							<div class="riinput">
+								<input id="platformId" type="text" maxlength="40" readonly="readonly">
+							</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="lineleft">
+							<div class="riname"><div class="xin">&nbsp;</div>设备位置</div><div class="riinput">
+							<input id="pnlAddr" type="text"  maxlength="72" />
+							<div class="Validform_checktip margin-top-2"></div>
+						</div>
+						</div>
+
+						<div class="lineright">
+							<div class="riname"><div class="xin">&nbsp;</div>安装时间</div>
+							<div class="riinput">
+								<input id="installTime_input" type="text" class="time" style="width: 198px">
+								<div class="Validform_checktip margin-top-2"></div>
+							</div>
+						</div>
+						<div class="lineleft">
+							<div class="riname"><div class="xin">&nbsp;</div>安装单位</div>
+							<div class="riinput">
+								<input id="instUnit" type="text"  maxlength="40" >
+								<div class="Validform_checktip margin-top-2"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="lineend">
+						<div class="lineleft">
+							<div class="lename"><div class="xin">&nbsp;</div>备注</div><div class="divnote"><textarea id="fMemo" class="texnote" maxlength="255"></textarea></div>
+						</div>
+					</div>
+
+					<div class="linebox">
+						<div class="lenamebox"><!--<div class="xin">&nbsp;</div>-->
+							<div id="lenameCheckbox" class="lenameCheckbox isChecked"></div>
+						</div>
+						<div class="lenamename">设备编号自动关联设备</div>
+					</div>
+				</div>
+			<div class="endbutt">
+				<div style="margin: 20px auto;width: 216px;height: 25px;">
+				<div id="sure" class="buttsure">保存</div><div id="cancel" class="buttcancel">取消</div>
+				</div>
+			</div>
+			</form>
+	</div>
+</div>
+
+</body>
+</html>

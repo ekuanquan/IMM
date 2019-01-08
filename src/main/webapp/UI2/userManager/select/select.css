@@ -1,0 +1,32 @@
+.ddBox.show{
+    display: block;
+}
+.ddBox.hide{
+    display: none;
+}
+.ddBox span {
+
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+	padding-left: 10px;
+    padding-right: 10px;
+	font-size: 14px;
+	display: block;
+    clear: both;
+
+}
+.ddBox span:hover{
+	background-color: #e4f1f9;
+}
+
+.ddBox.Box{
+	position: absolute;
+    z-index: 49;
+    top: -200%;
+    left: -200%;
+    width: 222px;
+    /*height: 52px;*/
+    background-color: #ffffff;
+    border: 1px solid #c9c9c9;
+}

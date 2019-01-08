@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>配置计划</title>
+    <link rel="stylesheet" href="configurationplan.css">
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="./configurationplan.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="title">
+        <span id="title_1" class="title_1">
+            配置计划
+        </span>
+        <div class="close" id="close"></div>
+    </div>
+    <div class="main">
+        <div class="top">
+            <div class="top_title">模板名称</div>
+            <select name="template" id="template" class="template" onchange="selectaction();">
+                <option value="0">全天模板</option>
+                <option value="1">工作日模板</option>
+                <option value="2">周末模板</option>
+            </select>
+        </div>
+        <div class="mid">
+            <div class="mid_1">
+                <div class="mid_img"></div>
+                <div class="mid_word">移测录像</div>
+            </div>
+            <div class="mid_2">
+                <div class="mid_img"></div>
+                <div class="mid_word">计划录像</div>
+            </div>
+        </div>
+        <div class="belly">
+            <table class="table" id="table">
+                <tr>
+                    <th></th><th>00:00</th><th>03:00</th><th>06:00</th>
+                    <th>09:00</th><th>12:00</th><th>15:00</th><th>18:00</th>
+                    <th>21:00</th><th>24:00</th>
+                </tr>
+                <tr>
+                    <th>星期一</th><td></td>
+                </tr>
+                <tr>
+                    <th>星期二</th><td></td>
+                </tr>
+                <tr>
+                    <th>星期三</th><td></td>
+                </tr>
+                <tr>
+                    <th>星期四</th><td></td>
+                </tr>
+                <tr>
+                    <th>星期五</th><td></td>
+                </tr>
+                <tr>
+                    <th>星期六</th><td></td>
+                </tr>
+                <tr>
+                    <th>星期日</th><td></td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="fooder">
+            <div class="sure">确定</div><div id="down" class="down">取消</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

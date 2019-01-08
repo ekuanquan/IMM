@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>owner</title>
+    <link rel="stylesheet" type="text/css" href="operator.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../select/select.css"/>
+    <link rel="stylesheet" type="text/css" href="../owner/js/validate.css"/>
+</head>
+<body>
+<div id="box" class="box">
+   <form id="form">
+    <div id="accountInfo_container" class="info_container">
+        <div id="accountInfo_title" class="info_title">账户信息</div>
+        <div id="accountInfo_content" class="info_content">
+           <!-- <div class="content_left">-->
+                <div class="account_text text_lab_7">
+                    <span class="star">*</span>操作员账户
+                    <span></span>
+                </div>
+                <input type="text" id="userAccount" maxlength="18" class="text_input" name="userAccount" onblur="isEmpty('userAccount','1');"/>
+            <div class=" text_lab_6">
+                <span class="star">*</span>操作员密码
+                <span></span>
+            </div>
+            <input type="text" id="userPwd" class="text_input" name="userPwd" onblur="validatePwd();"/>
+            <span id="userAccount_repeat"></span>
+                <div class="account_text text_mid_4">
+                    <span class="emptyStar"></span>创建日期
+                </div>
+                <input type="text" id="createDate" class="input_mid_4 time_input" name="createDate"/>
+            <!--</div>-->
+            <!--<div class="content_rigth">-->
+
+            <!--</div>-->
+        </div>
+    </div>
+    <div id="baseInfo_container" class="info_container">
+        <div id="baseInfo_title" class="info_title">基本信息</div>
+        <div id="baseInfo_content" class="info_content">
+            <!--<div class="content_left">-->
+                <div class=" text_lab_7">
+                    <span class="star">*</span>操作员编号
+                    <span></span>
+                </div>
+                <input type="text" id="userId" maxlength="9" class="text_input" name="userId" onblur="isEmpty('userId','2');"/>
+            <div id="operatorId_text" class=" text_lab_6">
+                <span class="star">*</span>操作员名称
+                <span></span>
+            </div>
+            <input type="text" id="userName" class="text_input" name="userName"/>
+                <div class=" text_lab_6 ">
+                    <span class="star">*</span>操作员类型
+                </div>
+                <select id="userType" class="iput_right_5 ">
+                    <option value="2">系统操作员</option>
+                    <option value="3">业务操作员</option>
+                </select>
+            <div class=" text_lab_7 marginTop12">
+                <span class="star">*</span>所属区域
+            </div>
+            <input type="text" id="areaName" class="text_input marginTop12" name="areaName"/>
+                <div class=" text_lab_6 marginTop12">
+                    <span class="star">*</span>过期时间
+                    <span></span>
+                </div>
+                <input type="text" id="overDateTime" class="text_input time_input marginTop12" name="overDateTime"/>
+                <!-- <select id="overDateTime" class="text_select marginTop12">
+                    <option value="0">三个月</option>
+                    <option value="1">半年</option>
+                </select> -->
+            <div class=" text_lab_6 marginTop12">
+                <span class="emptyStar"></span>操作员IP
+            </div>
+            <input type="text" id="acctIP" class="iput_right_5 marginTop12" name="acctIP"/>
+                <div class=" text_lab_7 marginTop12">
+                    <span class="emptyStar"></span>操作员性别
+                </div>
+                <select id="sex" class="text_input marginTop12">
+                    <option value="0">男</option>
+                    <option value="1">女</option>
+                </select>
+            <div class=" text_lab_6 marginTop12">
+                <span class="emptyStar"></span>操作员电话
+            </div>
+            <input type="text" id="cMobile" class="text_input marginTop12" name="cMobile" onblur="validatePhone('cMobile');"/>
+                <div class=" text_lab_6 marginTop12">
+                    <span class="emptyStar"></span>邮箱
+                </div>
+                <input type="text" id="email" class="iput_right_5 marginTop12" name="email"/>
+                <div class=" text_lab_7 marginTop12">
+                    <span class="emptyStar"></span>操作员职务
+                </div>
+                <select id="office" class="text_input marginTop12">
+                    <option value="0">组员</option>
+                    <option value="1">组长</option>
+                </select>
+            <div class=" text_lab_6 marginTop12">
+                <span class="emptyStar"></span>密码提示
+            </div>
+            <input type="text" id="pwdNote" class="text_input marginTop12" name="pwdNote"/>
+                <div class=" text_lab_6 marginTop12">
+                    <span class="emptyStar"></span>所属分中心
+                </div>
+                <select id="centerName" class="iput_right_5 marginTop12">
+                
+                </select>
+            <div class=" text_lab_7 marginTop12">
+                <span class="emptyStar"></span>订阅
+            </div>
+            <select id="acctDY" class="text_input marginTop12">
+                <option value="0">不启用</option>
+                <option value="1">启用并回发消息</option>
+                <option value="2">启用不回发消息</option>
+            </select>
+            <div class=" text_lab_6 marginTop12">
+                <span class="star">*</span>录入人
+                <span></span>
+            </div>
+            <input type="text" id=" " class="text_input marginTop12" name="overDateTime"/>
+            <div class=" text_lab_6 marginTop12">
+                <span class="star">*</span>录入时间
+                <span></span>
+            </div>
+            <input type="text" id="  " class="iput_right_5 time_input marginTop12" name="overDateTime"/>
+                <div class=" text_lab_7 marginTop12">
+                    <span class="emptyStar"></span>备注
+                </div>
+                <input type="text" id="fMemo" class="text_input marginTop12" name="fMemo"/>
+            <!--</div>-->
+            <!--<div class="content_rigth">-->
+                <!--<div class=" text_lab_6 marginTop12">
+                    <span class="emptyStar"></span>操作员学历
+                </div>
+                <select id="education" class="text_select marginTop12">
+                    <option value="0">本科</option>
+                    <option value="1">硕士</option>
+                    <option value="2">博士</option>
+                    <option value="3">其他</option>
+                </select>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div id="role_container" class="info_container">
+        <div id="role_title" class="info_title">角色</div>
+        <div id="role_content" class="info_content">
+            <div id="title" class="title">
+                <div id="title_add" class="title_add">
+                    <div id="title_add_img" class="title_add_img"></div>
+                    <div id="title_add_text" class="title_add_text">添加角色</div>
+                </div>
+                <div id="title_select" class="title_select">
+                    <div id="title_select_img" class="title_select_img"></div>
+                    <div id="title_select_text" class="title_select_text">选择角色</div>
+                </div>
+            </div>
+            <div id="table" class="table">
+                <div id="table_title" class="table_title">
+                    <div id="zoneNum" class="table_title_item">角色编号</div>
+                    <div id="" class="table_title_item">角色类型</div>
+                    <div class="table_title_item">角色名称</div>
+                    <div class="table_title_item">角色描述</div>
+
+                </div>
+                <div id="table_content" class="table_content">
+                    <!--<div class="row">
+                        <div class="row_noChecked"></div>
+                        <div class="table_item_4">0001</div>
+                        <div class="table_item_4">MX-40</div>
+                        <div class="table_item_4">营业厅北门健康发生的很快就</div>
+                        <div class="table_item_4">2002-8-23</div>
+
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+   </form>
+</div>
+<!--<div id="bottom_buttons" class="bottom_buttons">
+    <div id="confirmButton" class="confirmButton">确定</div>
+    <div id="cancelButton" class="cancelButton">取消</div>
+</div>-->
+</body>
+<script type="text/javascript" src="../../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../../select/select.js"></script>
+<script type="text/javascript" src="../../../../resource/js/popus.js"></script>
+<script type="text/javascript" src="../owner/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../owner/js/account_rule.js"></script>
+<script type="text/javascript" src="../owner/js/validate.js"></script>
+<script type="text/javascript" src="operator.js"></script>
+</html>

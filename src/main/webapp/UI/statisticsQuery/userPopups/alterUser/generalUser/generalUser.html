@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>generalUser</title>
+    <link rel="stylesheet" type="text/css" href="generalUser.css"/>
+</head>
+<body>
+<div id="box" class="box">
+   <form id="form">
+    <div id="accountInfo_container" class="info_container">
+        <div id="accountInfo_title" class="info_title">设置</div>
+        <div id="accountInfo_content" class="info_content">
+            <div class="content_left">
+                <div class="account_text text_lab_4">
+                    <span class="emptyStar"></span>用户帐号
+                    <span></span>
+                </div>
+                <input type="text" id="userAccount" readonly="readonly" maxlength="18" class="text_input_4" name="userAccount"/>
+            </div>
+            <div class="content_mid">
+                <div class=" text_lab_4">
+                    <span class="emptyStar"></span>用户密码
+                    <span></span>
+                </div>
+                <input type="text" id="userPwd" readonly="readonly" class="text_input_4" name="userPwd" />
+            </div>
+            <!--<div class="content_rigth">
+                <div class="account_text text_lab_4">
+                    <span class="emptyStar"></span>创建日期
+                </div>
+                <input type="text" id="createDate" readonly="readonly" class="text_input_4" name=""/>
+            </div>-->
+        </div>
+    </div>
+    <div id="baseInfo_container" class="info_container">
+        <div id="baseInfo_title" class="info_title">基本信息</div>
+        <div id="baseInfo_content" class="info_content">
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop8">
+                    <span class="emptyStar"></span>用户编号
+                </div>
+                <input type="text" id="userId" readonly="readonly" maxlength="9" class="text_input_4 marginTop8" name="userId" />
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    <span class="emptyStar"></span>用户行业
+                </div>
+                <input type="text" id="businessName" readonly="readonly" class="text_input_4 marginTop8 " name=""/>
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    <span class="emptyStar"></span>用户类型
+                </div>
+                <input type="text" id="userType" readonly="readonly" value="一般客户" class="text_input_4 marginTop8" name="userType" />
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop8">
+                    <span class="emptyStar"></span>用户地址
+                </div>
+                <input type="text" id="userAddr" readonly="readonly" class="text_input_4 marginTop8" name=""/>
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    <span class="emptyStar"></span>用户属性
+                </div>
+                <input type="text" id="userProperty" readonly="readonly" class="text_input_4 marginTop8" name="userProperty" />
+                <div id="operatorId_text" class=" text_lab_4 marginTop8 marginLeft30">
+                    <span class="emptyStar"></span>用户名称
+                </div>
+                <input type="text" id="userName" readonly="readonly" class="text_input_4 marginTop8" name="userName"/>
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_5 marginTop8">
+                    <span class="emptyStar"></span>所属平台
+                </div>
+                <input type="text" id="platform_name" readonly="readonly" class="text_input_5 marginTop8" name="centerName" />
+                <div class="text_lab_4 marginTop8 marginLeft30">
+                    <span class="emptyStar"></span>口令
+                </div>
+                <input type="text" id="payNO" readonly="readonly" class="text_input_4 marginTop8" name=""/>
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    <span class="emptyStar"></span>服务类型
+                </div>
+                <input type="text" id="userServerType" readonly="readonly" class="text_input_4 marginTop8" name="centerName" />
+            </div>
+        </div>
+    </div>
+    <div id="responsible_container" class="info_container">
+        <div id="responsible_title" class="info_title">负责人信息</div>
+        <div id="responsible_content" class="info_content">
+            <div class="content_left">
+                <div class="account_text text_lab_5">
+                    <span class="emptyStar"></span>单位负责人
+                </div>
+                <input type="text" id="contact" readonly="readonly" class="text_input_5" name=""/>
+                <div class=" text_lab_5 marginTop8">
+                    <span class="emptyStar"></span>负责人电话
+                </div>
+                <input type="text" id="cPhone" readonly="readonly" class="text_input_5 marginTop8" name="cPhone"/>
+            </div>
+            <div class="content_mid">
+                <!--<div class=" text_lab_5">
+                    <span class="emptyStar"></span>负责人口令
+                </div>
+                <input type="text" id="contactPayNO" readonly="readonly" class="text_input_5" name=""/>
+-->
+                <div class="account_text text_lab_5 ">
+                    <span class="emptyStar"></span>负责人手机
+                </div>
+                <input type="text" id="cMobile" readonly="readonly" class="text_input_5" name="cMobile" >
+            </div>
+            <div class="content_rigth">
+                <div class="account_text text_lab_7">
+                    <span class="emptyStar"></span>负责人家庭电话
+                </div>
+                <input type="text" id="cHmPhone" readonly="readonly" class="text_input_7" name="cHmPhone"/>
+
+            </div>
+        </div>
+    </div>
+    <div id="integrated_container" class="info_container">
+        <div id="integrated_title" class="info_title">综合</div>
+        <div id="integrated_content" class="info_content">
+            <div style="width: 100%">
+                <div class="account_text text_lab_4 marginTop8">
+                    所属区域
+                    <span></span>
+                </div>
+                <input type="text" id="areaName" class="text_input_4 marginTop8 marginLeft0" name="areaName"/>
+                <div class="account_text text_lab_4 marginTop8 marginLeft40">
+                    短信转发
+                </div>
+                <input type="text" id="isVideoCheck" class="text_input_4 marginTop8 marginLeft0"/>
+                <div class=" text_lab_4 marginTop8 marginLeft40">
+                    缴费状态
+                </div>
+                <input type="text" id="isPay" class="text_input_4 marginTop8 marginLeft0"/>
+            </div>
+            <div style="width: 100%">
+                <div class="account_text text_lab_4 marginTop8">
+                    录入人
+                </div>
+                <input type="text" id="operName" class="text_input_4 marginTop8 marginLeft0" name="areaName"/>
+                <div class="account_text text_lab_4 marginTop8 marginLeft40">
+                    录入时间
+                </div>
+                <input type="text" id="operTime" class="text_input_4 marginTop8 marginLeft0"/>
+            </div>
+        </div>
+    </div>
+    <div id="role_container" class="info_container">
+        <div id="role_title" class="info_title">角色</div>
+        <div id="role_content" class="info_content">
+            <div id="table" class="table">
+                <div id="table_title" class="table_title">
+                    <div id="zoneNum" class="table_title_item">角色编号</div>
+                    <div id="" class="table_title_item">角色类型</div>
+                    <div class="table_title_item">角色名称</div>
+                    <div class="table_title_item">角色描述</div>
+                </div>
+                <div id="table_content" class="table_content">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+   </form>
+</div>
+<div id="bottom_buttons" class="bottom_buttons">
+    <div id="confirmButton" class="confirmButton">确定</div>
+    <div id="cancelButton" class="cancelButton">取消</div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../../select/select.js"></script>
+<script type="text/javascript" src="../../../../resource/js/popus.js"></script>
+<script type="text/javascript" src="../owner/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../owner/js/account_rule.js"></script>
+<script type="text/javascript" src="../owner/js/validate.js"></script>
+<script type="text/javascript" src="generalUser.js"></script>
+</html>

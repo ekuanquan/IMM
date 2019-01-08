@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>存储服务</title>
+    <link type="text/css" href="storeService.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../resource/demo/css/style.css">
+    <script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../resource/demo/js/Validform_v4.0.js"></script>
+    <script src="storeService.js" type="text/javascript"></script>
+</head>
+<body style="width:100%;height: 100%;">
+<div class="main">
+    <div class="title">存储服务</div>
+    <div class="content">
+        <div class="content_nav">截图设置</div>
+        <div class="item" style="margin-bottom: 0px">
+            <div class="item_content1">文件类型：</div>
+            <select class="pic" id="fileType"><!--<option>JPG</option>--></select>
+        </div>
+        <div class="content_nav">存储服务器</div>
+        <form id="signupForm" class="registerform">
+        <div class="item">
+            <div class="item_content1">服务器IP</div>
+            <input id="recordShootIP" datatype="ip" nullmsg="服务器IP不能为空" errormsg="请输入服务器IP（范围:0.0.0.0～255.255.255.255）" maxlength="15">
+            <div class="Validform_checktip margin-top-2"></div>
+        </div>
+        <div class="item">
+            <div class="item_content1">端口</div>
+            <input id="recordShootPort" datatype="port" nullmsg="端口不能为空" style="width: 154px;"
+                   errormsg="请输入服务端口（0-65535）" maxlength="11">
+            <div class="Validform_checktip margin-top-2"></div>
+        </div>
+        <div class="content_bottom">
+            <div class="buttom1" id="sure">保存</div>
+            <div class="buttom2" id="cancel">取消</div>
+        </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

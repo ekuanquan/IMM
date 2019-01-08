@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addsystemCode</title>
+    <link rel="stylesheet" type="text/css" href="../../../resource/demo/css/style.css">
+    <link rel="stylesheet" href="./alterdetectorType.css">
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../../resource/demo/js/Validform_v4.0.js"></script>
+    <script type="text/javascript" src="./alterdetectorType.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="add_top">
+        <!--头-->
+        <div id="addcode_title">
+            <div class="title_top">修改探头型号</div>
+            <div id="close" class="close"></div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="riname"><div class="xin">*</div>编号</div>
+        <div class="riinput">
+            <input id="snModelId" name="devModelId" type="text" class="posiInput" datatype="16number" nullmsg="设备型号编号不能为空" errormsg="请输入设备型号编号（16位进制数）" />
+        </div>
+        <div class="Validform_checktip margin-top-2"></div>
+    </div>
+    <div class="line">
+        <div class="riname"><div class="xin">*</div>名称</div>
+        <div class="riinput">
+            <input id="snModelName" name="devModelName" type="text" class="posiInput" datatype="*" nullmsg="设备型号名称不能为空" errormsg="请输入设备型号名称" maxlength="32"/>
+        </div>
+        <div class="Validform_checktip margin-top-2"></div>
+    </div>
+    <div class="line">
+        <div class="riname"><div class="xin"></div>探头类型</div>
+        <div class="riinput">
+            <select id="snKind" name="devType" type="text" class="selec posiInput" datatype="*" nullmsg="设备类型不能为空">
+            </select>
+        </div>
+        <div class="Validform_checktip margin-top-2"></div>
+    </div>
+    <div class="line">
+        <div class="riname"><div class="xin">*</div>探头价格</div>
+        <div class="riinput">
+            <input id="buyPrice" name="prog_type" type="text" class="posiInput" datatype="*" nullmsg="编程类型不能为空"/>
+        </div>
+        <div class="Validform_checktip margin-top-2"></div>
+    </div>
+    <div class="line">
+        <div class="riname"><div class="xin">*</div>服务费用</div>
+        <div class="riinput">
+            <input id="servicePrice" name="CodeWayId_42" type="text" class="posiInput"/>
+        </div>
+        <div class="Validform_checktip margin-top-2"></div>
+    </div>
+    <div class="line">
+        <div class="riname"><div class="xin"></div>反应类型</div>
+        <div class="riinput">
+            <select id="wantDo" name="CodeWayId_FSK" type="text" class="posiInput selec"></select>
+        </div>
+        <div class="Validform_checktip margin-top-2"></div>
+    </div>
+    <div class="line">
+        <div class="riname"><div class="xin"></div>警情类型</div>
+        <div class="riinput">
+            <select id="almType" name="zoneNum" type="text" class="posiInput selec" datatype="positiveinteger" errormsg="请输入基础防区数"></select>
+        </div>
+        <div class="Validform_checktip margin-top-2"></div>
+    </div>
+    <div class="line2">
+        <div class="riname"><div class="xin"></div>探头用途</div>
+        <div class="riinput">
+            <textarea id="snMemo" name="ZoneNumEx" type="text" class="posiInput2" datatype="positiveinteger" errormsg="请输入扩展防区数"></textarea>
+        </div>
+        <div class="Validform_checktip margin-top-2"></div>
+    </div>
+    <div class="food_choose">
+        <div id="sure" class="sure">保存</div>
+        <div id="remove" class="remove">取消</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-1.8.0.min.js"></script>
+ <script src="ajax.js"></script> 
+<script>
+	$(document).ready(function(){
+		
+			$("#getUserData").click(
+				function(){
+					 $.post("getUserData.do", "{\"UserId\":\"100001052\"}",function(data,status){
+						$("#show").text(data); 
+					 });
+				});
+		
+		
+		$("#getCorrelationData").click(
+				function(){
+				 var obj = {"devTutkID":"35M3TD6FVHPKTDF4111A","channelNum":"2"}; 
+					$.ajax({
+			            url:"getCorrelationData.do",
+			            data:JSON.stringify(obj),
+			            type:"POST",
+			            dataType:"json",
+			            async:false,
+			            contentType:"application/json",
+			            traditional:true,
+			            success: function(data){
+			            },
+			            error:function(){}
+			        });
+			});
+		$("#getEquipmentData").click(
+				function(){ alert("click");
+				 var obj = {"accountNum":"100001052"}; 
+					$.ajax({
+			            url:"getEquipmentData.do",
+			            data:JSON.stringify(obj),
+			            type:"POST",
+			            dataType:"json",
+			            async:false,
+			            contentType:"application/json",
+			            traditional:true,
+			            success: function(data){
+			            	alert(data);
+			            },
+			            error:function(){}
+			        });
+			});
+		$("#getRelevantContact").click(
+				function(){
+				 var obj = {"accountNum":"100001052"}; 
+					$.ajax({
+			            url:"getRelevantContact.do",
+			            data:JSON.stringify(obj),
+			            type:"POST",
+			            dataType:"json",
+			            async:false,
+			            contentType:"application/json",
+			            traditional:true,
+			            success: function(data){
+			            	alert(data);
+			            },
+			            error:function(){}
+			        });
+			});
+		var jsona = {
+				queryTond:{
+					accountNum:100001988,
+					instDate:2017-05-03 22:04:52;2017-05-05 22:04:52
+					},
+					pageInfoPojo: {pageSize: 10,currentPage: 1}
+				};
+		
+		$("#getCphUserData").click(
+				
+				function(){ alert('x');
+				var jsona = {
+						queryTond:{
+							accountNum:100001988,
+							instDate:2017-05-03 22:04:52;2017-05-05 22:04:52
+							},
+							pageInfoPojo: {pageSize:10,currentPage:1}
+						};
+				
+				 var obj = {"queryTond":""}; //{\"queryTond\"：{\"accountNum\": \"100001988\",\"instDate\": \"2017-05-03 22:04:52;2017-05-05 22:04:52\"},\"pageInfoPojo\": {\"pageSize\": 10,\"currentPage\": 1}
+					$.ajax({
+			            url:"getCphUserData.do",
+			            data:JSON.stringify(jsona),
+			            type:"POST",	
+			            dataType:"json",
+			            async:false,
+			            contentType:"application/json",
+			            traditional:true,
+			            success: function(data){
+			            	alert(data);
+			            },
+			            error:function(){}
+			        });
+			});
+	});
+</script>
+</head>
+<body>
+	<a href="test.do" >test</a>
+	<hr>
+	<a id="getUserData" >getUserData</a>
+	<hr>
+	<a id="getCorrelationData">getCorrelationData</a>
+	<hr>
+	<a id="getEquipmentData">getEquipmentData</a>
+	<hr>
+	<a id="getRelevantContact">getRelevantContact</a>
+	<hr>
+	<a id="getCphUserData">getCphUserData</a>
+</body>
+</html>

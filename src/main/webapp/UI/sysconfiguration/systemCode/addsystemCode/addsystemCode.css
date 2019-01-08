@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+body{
+    width: 1000px;
+    height: 600px;
+    margin:auto
+}
+.add_code{
+    height: 100%;
+    width: 100%;
+}
+.add_top{
+    float: left;
+    background-color: #2577E5;
+    width: 100%;
+    height: 30px;
+}
+.title_top{
+    float: left;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.close {
+    float: right;
+    color: white;
+    background-image: url("../../hmdrectoryimg/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+   /* margin-right: 15px;
+    margin-top: 8px;*/
+}
+.close:hover {
+    background-color: #f75352;
+}
+.main{
+    float: left;
+    margin: 15px;
+    border: 1px solid #D5D5D5;
+    width: calc(100% - 34px);
+    /*height: 540px;*/
+    height: 348px;
+}
+.main_title{
+    background-color: #E8E8E8;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.main_titleall{
+    float: left;
+    background-color: #E8E8E8;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.main_title1{
+    float: left;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.main_title2{
+    /*padding-left: 310px;*/
+    padding-left: calc(50% + 20px);
+    height: 30px;
+    line-height: 30px;
+}
+.null_span{
+    float: left;
+    height: 30px;
+    width: 300px;
+}
+.notEmpty{
+    color: #e60012;
+    float: left;
+    margin: 2px 4px 0px -10px;
+}
+.input_line{
+    float: left;
+    margin-left: 25px;
+    height: 30px;
+    width: 70px;
+    line-height: 30px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.input_int{
+    float: left;
+    width: 382px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid #D5D5D5;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.fooder_left{
+    float: left;
+    margin-left: 25px;
+    height: 26px;
+    width: 70px;
+    line-height: 26px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    /*margin-bottom: 10px;*/
+}
+.colorbox_word1{
+    width: 13px;
+    height: 13px;
+    background-color: #434343;
+    float: left;
+    margin: 8px;
+}
+.colorbox_word2{
+    width: 13px;
+    height: 13px;
+    background-color: #434343;
+    float: left;
+    margin: 8px;
+}
+.colorbox_back1{
+    width: 13px;
+    height: 13px;
+    background-color: #c8c8c8;
+    float: left;
+    margin: 8px;
+}
+.colorbox_back2{
+    width: 13px;
+    height: 13px;
+    background-color: #c8c8c8;
+    float: left;
+    margin: 8px;
+}
+.wordcolor{
+    text-decoration: underline;
+    color: #2577E5;
+    cursor: pointer;
+    -moz-user-select: none;
+}
+.backcolor{
+    text-decoration: underline;
+    color: #2577E5;
+    cursor: pointer;
+    -moz-user-select: none;
+}
+.fooder_right{
+    float: left;
+    margin-left: 10px;
+    height: 26px;
+    width: 70px;
+    line-height: 26px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.input_inttwo{
+    float: left;
+    width: 859px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    resize: none;
+    border: 1px solid #D5D5D5;
+}
+.main_top{
+    margin-top: 20px;
+}
+.line{
+    width: 100%;
+    height: 30px;
+    float: left;
+    margin-bottom: 10px;
+}
+.ul_choose li{
+    float: left;
+    margin-left: 20px;
+    list-style-type: none;
+    margin-top: 6px;
+}
+/*.ul_choose li:first-child{
+    margin-left: 0px;
+}*/
+.ul_imgnull{
+    float: left;
+    background-image: url(../../hmdrectoryimg/radionull.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 15px;
+    margin-right: 5px;
+    padding-left: 22px;
+    width: 50px;
+    line-height: 15px;
+}
+.ul_imgfull{
+    float: left;
+    background-image: url(../../hmdrectoryimg/radiofull.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 15px;
+    margin-right: 5px;
+    padding-left: 22px;
+    width: 50px;
+    line-height: 15px;
+}
+/*.line .checked {
+    background-image: url("../../hmdrectoryimg/radiofull.png");
+}*/
+.fooder_side{
+    float: left;
+    margin-top: 10px;
+}
+.left_aside{
+    float: left;
+    padding-right: 15px;
+    border-right: 1px dashed #D5D5D5;
+    width: 493px;
+}
+.left_line{
+    width: 100%;
+    height: 26px;
+    float: left;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.left_line2{
+    width: 493px;
+    height: 26px;
+    float: left;
+    line-height: 26px;
+    margin-bottom: 10px;
+    -moz-user-select: none;
+    cursor:default;
+}
+.right_aside{
+    float: left;
+    width: 471px;
+}
+.right_line{
+    width: 100%;
+    height: 26px;
+    float: left;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.right_line2{
+    width: 471px;
+    height: 26px;
+    float: left;
+    line-height: 26px;
+    margin-bottom: 10px;
+    -moz-user-select: none;
+    cursor:default;
+}
+.fooder_box{
+    width: 382px;
+    height: 63px;
+    padding-left: 10px;
+    padding-top: 5px;
+    resize: none;
+    border: 1px solid #D5D5D5;
+}
+.food_choose{
+    float: left;
+    height: 30px;
+    width: 100%;
+    /*margin-top: 10px;*/
+}
+.sure{
+     float: left;
+     border-radius: 5px;
+     width: 105px;
+     height: 26px;
+    margin-left: calc(50% - 100px);
+    line-height: 26px;
+    text-align: center;
+    background-color: #2577E5;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+ }
+.sure:hover{
+    background-color: #1b5fde;
+    color: #ffffff;
+}
+
+.remove{
+    float: left;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    width: 105px;
+    height: 25px;
+    margin-left: 10px;
+    text-align: center;
+    color: #2577E5;
+    cursor: pointer;
+    line-height: 25px;
+}
+.remove:hover{
+    color: black;
+}
+.more{
+    background-image: url("../../hmdrectoryimg/more.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+.margin-top-6{
+    margin-top:6px;
+    float:left;
+}
+.noChecked{
+    width: 13px;
+    height: 13px;
+    background: url(../../../resource/images/index/noChecked.png);
+    background-repeat: no-repeat;
+    margin-top: 7px;
+    margin-right: 5px;
+    float: left;
+}
+.isChecked{
+    width: 13px;
+    height: 13px;
+    background: url(../../../resource/images/index/isChecked.png);
+    background-repeat: no-repeat;
+    margin-top: 7px;
+    margin-right: 5px;
+    float: left;
+}

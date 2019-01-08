@@ -1,0 +1,172 @@
+*{
+	/*float: left;*/
+	box-sizing: border-box;
+	font-family: 'Microsoft YaHei';
+}
+body{
+	width: 100%;
+	margin: 0px;
+	font-size: 14px;
+	height: 518px;
+}
+.title{
+	width: 100%;
+	height: 30px;
+	padding-left: 24px;
+	
+}
+/*.table{
+	width: calc(100%);
+	overflow-x: scroll;
+	height: 594px;
+	overflow-y: auto;
+}*/
+.table_title{
+	width: 1078px;
+	height: 30px;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	line-height: 28px;
+
+}
+.table_title_item{
+	width: 108px;
+	text-align: center;
+	border-right: 1px solid #d9d9d9;
+}
+.table_title_item_last{
+	/*width: 108px;
+	text-align: center;*/
+	width: 0px;
+}
+.table_content{
+	width: 100%;
+	overflow-y:scroll;
+	/*height:488px;*/
+}
+.row{
+	width: 1078px;
+	height: 30px;
+	border-bottom: 1px solid #d9d9d9;
+	line-height: 30px;
+}
+.table_item_4{
+	width: 108px;
+	height:30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table_item_5{
+	width: 81px;
+	height:30px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table_item_2{
+	width: 92px;
+	height:30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table_title_item2{
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #d9d9d9;
+	width: 200px;
+	text-align: center;
+}
+.table_item_4_2{
+	height:30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 200px;
+}
+#right_div{
+	height: calc(100%);
+	width: 100%;
+	float: left;
+}
+#right_div1{
+	/*background: #edeeee;*/
+	width: 100%;
+	overflow: hidden;
+	height :34px;
+}
+#right_divx{
+	width: 2000px;
+}
+#right_div2{
+	margin-top:-2px;
+	width:100%;
+	height:calc(100% - 2px);
+	overflow: auto;
+}
+#listBox1{
+	width: 972px;
+	white-space:nowrap;
+}
+#listBox2{
+	/**width和max-width一起写，手机浏览器打开也能固定长度**/
+	width: 100px;
+	max-width: 2800px;
+	white-space:nowrap;
+	min-width: 180px;
+	table-layout: fixed;
+}
+#listBox1 tr{
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	height: 28px;
+}
+#listBox1 td{
+	text-align:left;
+	text-indent: 10px;
+}
+#listBox2 tr{
+	border-bottom: 1px solid #cccccc;
+	height: 30px;
+}
+#listBox2 td{
+	width:20px;
+	text-align:left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-indent: 10px;
+	font-weight: normal;
+}
+.contentRight_bottom{
+	width: 100%;
+	height: calc(100% - 2px);
+	border: 1px solid #d9d9d9;
+}
+.content{
+	width: 100%;
+	height: calc(100% - 31px);
+	/*overflow:auto;*/
+	font-size: 14px;
+	color: #323232;
+	/*overflow-x: auto;*/
+	background-color: #fff;
+}
+.table{
+	border-collapse: collapse;
+	border-spacing: 1px;
+	width: 100%;
+	font-size: 14px;
+	color: #323232;
+	background-color: #fff;
+}

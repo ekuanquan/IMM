@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+    <meta charset="utf-8"/>
+    <title>核警查询</title>
+    <link rel="stylesheet" type="text/css" href="inspection.css"/>
+
+</head>
+<body>
+<div id="title" class="title">
+    <div id="title_left" class="title_left">
+        <div id="title_left_text" class="title_left_text">巡检查询</div>
+    </div>
+</div>
+<div id="searchTitle" class="searchTitle">
+    <div id="searchFirstDiv">
+        <select id="fuzzy" class="selet pic">
+            <option value="all">全部</option>
+            <option value="inspectionFormId">单据编号</option>
+            <option value="userId">用户编号</option>
+            <option value="userName">用户名称</option>
+            <option value="cMobile">联系电话</option>
+        </select>
+        <div id="searchInput" class="searchInput ">
+            <input id="search_text" class="search_text" type="text" placeholder="" name="" value=""/>
+        </div>
+        <div class="textime" style="margin-left: 10px">出单时间</div>
+        <input id="startTime" class="inpt" type="text">
+        <div class="textime">至</div>
+        <input id="endTime" class="inpt" type="text">
+        <div id="policeCheck" class="btns btn1">搜索</div>
+    </div>
+    <div id="searchSecDiv">
+        <div id="timeorder" class="timeorder">时间升降<div id="timePng" class="timePng"></div></div>
+    </div>
+</div>
+<!--<div id="content" class="content">
+    <table id="table" class="table">
+        <tr id="" class="table_title">-->
+<div id="content" class="content">
+    <div id="right_div">
+        <div id="right_div1">
+            <div id="right_divx">
+                <table id="listBox1" class="table table-bordered">
+                    <tr class=d"table_title">
+                        <td id="inspectionFormId_title" class="inspectionFormId_title borderRight">巡检单编号</td>
+                        <td id="inspectionResult_title" class="inspectionResult_title borderRight ">巡检结果</td>
+                        <td id="usrAlmType_title" class="usrAlmType_title  borderRight">用户级别</td>
+                        <td id="payNO_title" class="payNO_title borderRight ">口令</td>
+                        <td id="userId_title" class="userId_title borderRight ">用户编号</td>
+                        <td id="contact_title" class="contact_title borderRight ">单位负责人</td>
+                        <td id="cMobile_title" class="cMobile_title borderRight">负责人手机</td>
+                        <td id="userName_title" class="userName_title borderRight">用户名称</td>
+                        <td id="userAddr_title" class="userAddr_title borderRight ">用户地址</td>
+                        <td id="acceptAlarmer_title" class="acceptAlarmer_title borderRight ">接警员</td>
+                        <td id="createTime_title" class="createTime_title borderRight ">出单时间</td>
+                        <td id="inspectionType_title" class="inspectionType_title borderRight ">巡检类型</td>
+                        <td id="inspectionUnit_title" class="inspectionUnit_title borderRight">巡检单位</td>
+                        <td id="inspectioner_title" class="inspectioner_title borderRight ">巡检员</td>
+                        <td id="inspectionDate_title" class="inspectionDate_title borderRight ">巡检日期</td>
+                        <td id="pnlTel_title" class="notes_title borderRight ">联网电话</td>
+                        <td id="notes_title" class="inspectionResult_title  ">备注</td>
+                        <td class="inspectionResult_title_last"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="right_div2">
+            <table id="listBox2" class="table table-bordered">
+                <tbody id="table_content" class="table_content">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+       <!-- </tr>
+        <tbody id="table_content" class="table_content">
+        </tbody>
+    </table>
+</div>-->
+<div id="contentBottom" class="contentBottom">
+    <div id="pageBox" class="pageBox"></div>
+</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../resource/js/load.js"></script>
+<script type="text/javascript" src="../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+<script type="text/javascript" src="../../resource/colResizable/colResizable-1.5.min.js"></script>
+<script type="text/javascript" src="../../resource/colResizable/colResizableNot-1.5.min.js"></script>
+<script type="text/javascript" src="../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../tool/exchange.js"></script>
+<script type="text/javascript" src="inspection.js"></script>
+<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+</html>

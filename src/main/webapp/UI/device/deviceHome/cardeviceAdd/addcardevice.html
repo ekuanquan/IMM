@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加车载设备管理</title>
+    <link rel="stylesheet" type="text/css" href="addcardevice.css">
+    <link rel="stylesheet" type="text/css" href="../../../resource/demo/css/style.css">
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../resource/js/popus.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../../resource/demo/js/Validform_v4.0.js"></script>
+    <script type="text/javascript" src="../../../tool/time/time.js"></script>
+    <script type="text/javascript" src="addcardevice.js"></script>
+</head>
+<body>
+<div class="ifarea">
+    <div class="title">
+        <!--<div class="table" >添加车载设备管理</div><div class="close" id="close"></div>-->
+        <div class="table" >添加车载设备</div><div class="close" id="close"></div>
+    </div>
+    <form id="signupForm" class="registerform">
+    <div class="middle">
+        <div class="char">
+            <div class="select" id="basic">基本信息</div>
+        </div>
+        <div style="overflow-y: scroll;width: 100%;height: 452px;border-bottom: 1px solid #c8c8c8;">
+            <div class="content_title">设备信息</div>
+            <div class="line" style="margin-top: 20px">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>设备编号</div>
+                    <div class="leinput">
+                        <input class="posiInput" type="text" id="devId" datatype="letternember" nullmsg="设备编号不能为空" errormsg="请输入设备编号（英文字母和数字组合）" maxlength="12">
+                        <div class="Validform_checktip margin-top-2"></div>
+                    </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">*</div>设备名称</div>
+                    <div class="riinput">
+                        <input class="posiInput" type="text" id="devName" datatype="*" nullmsg="设备名称不能为空" errormsg="" maxlength="255">
+                        <div class="Validform_checktip margin-top-2"></div>
+                    </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>终端类型</div>
+                    <div class="leinput" style="width: 224px;margin-right: 0px">
+                        <select class="posiInput more select2" id="ter_id" style="width: 224px"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="line" style="margin: 10px 20px 0px 10px">
+                <div class="lineright">
+                    <div class="riname"><div class="xin">*</div>SIM卡号</div>
+                    <div class="riinput">
+                        <input class="posiInput" type="text" id="sim" datatype="mobile" nullmsg="SIM卡号不能为空" errormsg="请输入SIM卡号（11位手机号）" maxlength="16">
+                        <div class="Validform_checktip margin-top-2"></div>
+                    </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>所属区域</div>
+                    <div class="leinput">
+                        <input class="posiInput more" type="text" readonly="readonly" id="areaId" datatype="*" nullmsg="所属区域不能为空" errormsg="">
+                        <div class="Validform_checktip margin-top-2"></div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="line" style="margin: 10px 20px 0px 10px"></div>-->
+            <div class="line" style="margin: 10px 20px 0px 10px">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin" style="margin-right: 10px"></div>通道参数</div>
+                    <div class="leinput1">
+                        <select class="posiInput more1 select1" id="channelNum" onchange=" chooseChannelNum()">
+                            <option value="4">4</option>
+                            <option value="8">8</option>
+                            <option value="16">16</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="leinput1"><input class="posiInput CH isChecked" id="CH1" value="CH1"></div>
+                <div class="leinput1"><input class="posiInput CH isChecked" id="CH2" value="CH2"></div>
+                <div class="leinput1"><input class="posiInput CH isChecked" id="CH3" value="CH3"></div>
+                <div class="leinput1"><input class="posiInput CH isChecked" id="CH4" value="CH4"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH5" value="CH5"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH6" value="CH6"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH7" value="CH7"></div>
+                <div class="leinput2"><input class="posiInput CH noChecked" id="CH8" value="CH8"></div>
+            </div>
+            <!--<div class="line" style="margin: 10px 20px 0px 10px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin" style="margin-right: 10px"></div></div><div class="leinput1" style="width: 87px"></div>
+            </div>
+            </div>-->
+            <div class="line" style="margin: 10px 20px 20px 10px">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin1"></div></div><div class="leinput1"></div>
+                </div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH9" value="CH9"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH10" value="CH10"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH11" value="CH11"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH12" value="CH12"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH13" value="CH13"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH14" value="CH14"></div>
+                <div class="leinput1"><input class="posiInput CH noChecked" id="CH15" value="CH15"></div>
+                <div class="leinput2"><input class="posiInput CH noChecked" id="CH16" value="CH16"></div>
+            </div>
+            <div class="content_title">车辆信息</div>
+            <div class="line" style="margin-top: 20px">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>车牌颜色</div>
+                    <div class="leinput">
+                        <select class="posiInput more select2" id="plateColorId"></select>
+                    </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">*</div>车牌号码</div>
+                    <div class="riinput">
+                        <input class="posiInput" type="text" id="carno" datatype="licensePlate" nullmsg="车牌号码不能为空" errormsg="请输入正确的车牌号码" maxlength="100">
+                        <div class="Validform_checktip margin-top-2"></div>
+                    </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin1"></div>车辆颜色</div><div class="leinput" style="width: 224px;margin-right: 0px"><input class="posiInput" type="text" id="color" style="width: 224px" maxlength="10"></div>
+                </div>
+            </div>
+            <div class="line" style="margin: 10px 20px 0px 10px">
+                <div class="lineright">
+                    <div class="riname"><div class="xin1"></div>车辆品牌</div><div class="riinput"><input class="posiInput" type="text" id="pinpai" maxlength="64"></div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin1"></div>安装日期</div><div class="leinput"><input class="posiInput time" type="text" id="devInstDate"></div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin1"></div>车辆类型</div><div class="riinput" style="width: 224px;margin-right: 0px"><input class="posiInput" type="text" id="carType" style="width: 224px" maxlength="64"></div>
+                </div>
+            </div>
+        <!--<div class="line" style="margin: 10px 20px 0px 10px">
+
+        </div>-->
+            <div class="line" style="margin: 10px 20px 0px 10px">
+                <div class="lineleft">
+                    <div class="lename" style="width: 90px"><div class="xin1"></div>服务开始日</div><div class="leinput" style="width: 206px"><input class="posiInput time" type="text" id="stime" style="width: 184px"></div>
+                </div>
+                <div class="lineright">
+                    <div class="riname" style="width: 90px"><div class="xin1"></div>服务结束日</div><div class="riinput" style="width: 206px"><input class="posiInput time" type="text" id="etime" style="width: 184px"></div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename" style="width: 90px"><div class="xin1"></div>核定载人数</div><div class="leinput" style="width: 210px;margin-right: 0px"><input class="posiInput" type="text" id="loadNum" style="width: 210px" maxlength="11"></div>
+                </div>
+            </div>
+            <div class="line" style="margin: 10px 20px 0px 10px">
+                <div class="lineright">
+                    <div class="riname"><div class="xin1"></div>司机名称</div><div class="riinput"><input class="posiInput" type="text" id="czxm" maxlength="32"></div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">*</div>车辆分组</div>
+                    <div class="leinput">
+                        <select class="posiInput more select2" id="terGroupId"></select>
+                    </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin1"></div>司机电话</div><div class="riinput" style="width: 224px;margin-right: 0px"><input class="posiInput" type="text" id="tel" style="width: 224px" maxlength="32"></div>
+                </div>
+            </div>
+            <!--<div class="line" style="margin: 10px 20px 20px 10px">
+
+            </div>-->
+        </div>
+        <div class="endbutt">
+            <div style="margin: 20px auto;width: 216px;height: 25px;">
+                <div id="sure" class="buttsure">保存</div><div id="cancel" class="buttcancel">取消</div>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>

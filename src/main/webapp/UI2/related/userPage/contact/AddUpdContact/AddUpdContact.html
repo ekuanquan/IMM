@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>AddUpdContact</title>
+    <link rel="stylesheet" type="text/css" href="AddUpdContact.css"/>
+
+</head>
+<body>
+<div id="title" class="title">
+    <div id="title_left" class="title_left">添加联系人</div>
+    <div id="title_close" class="title_close"></div>
+</div>
+<div id="content" class="content">
+    <div id="contId" class="contId singleLine">
+        <div id="contId_text" class="contId_text content_text"><span class="star">*</span>联系人编号</div>
+        <input type="text" id="contId_input" class="contId_input singleLineInput" name=""/>
+    </div>
+    <div id="cName" class="cName singleLine">
+        <div id="cName_text" class="cName_text content_text"><span class="star">*</span>联系人名字</div>
+        <input type="text" id="cName_input" class="cName_input singleLineInput" name=""/>
+    </div>
+    <div id="contPwd" class="contPwd singleLine">
+        <div id="contPwd_text" class="contPwd_text content_text"><span class="emptyStar"></span>联系人口令</div>
+        <input type="text" id="contPwd_input" class="contPwd_input singleLineInput" name=""/>
+    </div>
+    <div id="cphone1" class="cphone1 singleLine">
+        <div id="cphone1_text" class="cphone1_text content_text"><span class="star">*</span>联系人电话1</div>
+        <input type="text" id="cphone1_input" class="cphone1_input singleLineInput" name=""/>
+    </div>
+    <div id="cphone2" class="cphone2 singleLine">
+        <div id="cphone2_text" class="cphone2_text content_text"><span class="emptyStar"></span>联系人电话2</div>
+        <input type="text" id="cphone2_input" class="cphone2_input singleLineInput" name=""/>
+    </div>
+    <div id="hmPhone" class="hmPhone singleLine">
+        <div id="hmPhone_text" class="hmPhone_text content_text"><span class="emptyStar"></span>家庭电话</div>
+        <input type="text" id="hmPhone_input" class="hmPhone_input singleLineInput" name=""/>
+    </div>
+    <div id="hdPhone" class="hdPhone singleLine ">
+        <div id="hdPhone_text" class="hdPhone_text content_text"><span class="emptyStar"></span>手机电话</div>
+        <input type="text" id="hdPhone_input" class="hdPhone_input singleLineInput" name=""/>
+    </div>
+    <div id="fMemo" class="fMemo multiLine">
+        <div id="fMemo_text" class="fMemo_text content_text"><span class="emptyStar"></span>备注</div>
+        <textarea id="fMemo_input" class="fMemo_input multiLineInput" name=""></textarea>
+    </div>
+
+</div>
+<div id="bottom_buttons" class="bottom_buttons">
+    <div id="confirmButton" class="confirmButton">保存</div>
+    <div id="cancelButton" class="cancelButton">取消</div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="AddUpdContact.js"></script>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="editRole.css">
+	<link rel="stylesheet" type="text/css" href="../../resource/demo/css/style.css">
+	<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="../../resource/js/popus.js"></script>
+	<script type="text/javascript" src="../../resource/demo/js/Validform_v4.0.js"></script>
+
+</head>
+
+<body>
+
+<div class="ifarea">
+
+	<div class="title">
+		<div class="table">修改角色信息</div>
+		<div class="close" id="close"></div>
+	</div>
+
+	<div class="middle">
+		<form id="form" class="registerform" >
+			<div class="line" style="margin-top: 20px">
+				<div class="lineleft">
+					<div class="lename">
+						<div class="xin">*</div>角色编号</div>
+					<div class="leinput"><input id="roleId" type="text" class="shower" readonly="readonly"
+												maxlength="32" datatype="16number" nullmsg="角色编号不能为空"  errormsg="请输入角色编号（16进制数组成）！"><div class="Validform_checktip toptwo"></div></div>
+
+				</div>
+				<div class="lineright">
+					<div class="riname">
+						<div class="xin">*</div>角色类型</div>
+					<div class="riinput" style="width: 230px;margin-right: 0px">
+						<select id="roleType" class="select">
+							<option value="1">系统管理员</option>
+							<option value="2">中心管理员</option>
+							<option value="3">客户</option>
+						</select>
+					</div>
+				</div>
+				<div class="lineright">
+					<div class="riname">
+						<div class="xin">*</div>角色名称</div>
+					<div class="riinput"><input id="roleName" type="text" class="" maxlength="32" datatype="*" nullmsg="角色名称不能为空"  errormsg="请输入角色名称（汉字英文字母和数字组合）！"><div class="Validform_checktip toptwo"></div></div>
+
+				</div>
+			</div>
+			<div class="line">
+				<div class="linechang">
+					<div class="riname">
+						<div class="xin">&nbsp;</div>角色描述</div>
+					<div  style="width: 546px;"><input id="fMemo" type="text" style="width: 514px;"></div>
+				</div>
+				<div class="lineright">
+					<div class="riname">
+						<span class="xin">&nbsp;</span>所属平台</div>
+					<div class="riinput">
+						<input class="shower" id ="platform_name" type="text" readonly="readonly"/>
+					</div>
+				</div>
+			</div>
+			<div class="line" style="margin-bottom: 20px;border-top:1px dashed #cccccc">
+				<div class="lineright" style="margin-top:10px">
+					<div class="riname">
+						<div class="xin">&nbsp;</div>角色权限</div>
+					<div class="riinput">
+						<input id="roleArea" type="text" class="">
+						<div class="Validform_checktip toptwo"></div>
+					</div>
+				</div>
+				<div class="lineright" style="margin-top:10px">
+					<div id="selectSysCode" class="buttsure">事件订阅配置</div>
+				</div>
+			</div>
+		</form>
+
+		<div id="contentRight_bottom" class="contentRight_bottom">
+			<div id="contentRight_Iframe_container" class="contentRight_Iframe_container">
+				<div id="contentRight" class="contentRight">
+					<div id="contentRight_title" class="contentRight_title">
+						<div id="RDAcenter" class="top noChecked row_isChecked" href="#RDAcenter_div" style="padding-left: 10px">
+							<label></label>
+							<div class="contentRight_title_text">联网报警</div>
+						</div>
+						<div id="IntegratedMM" class="top noChecked" href="#IntegratedMM_div" style="padding-left: 17px">
+							<label></label>
+							<div class="contentRight_title_text">综合管理平台</div>
+						</div>
+					</div>
+					<div id="contentRight_bottom1" class="contentRight_bottom">
+						<div id="RDAcenter_div" class="div_center" style="display: block;">
+							<table id="RDAcenterTable" >
+								<tr style="height: 30px;line-height: 30px">
+									<td width="130px" style="text-align: center;"><div id="RDAall" name="moduleids" class="noCheckedm" style="margin: 9px 10px 0 20px;"></div><div>功能模块</div></td>
+									<!--<td width="130px" style="text-align: center;">功能模块</td>-->
+									<td width="320px" style="text-align: center;">处置区域</td>
+									<td width="500px" style="text-align: center;border-right: 0px;">其它</td>
+								</tr>
+								<tr class="tr1">
+									<td width="130px"><div id="7" name="moduleids" class="noCheckedm"></div>处警</td>
+									<td width="320px"><input type="text" id="handle_areaIds" style="width:300px;border: 1px solid #d9d9d9;"/></td>
+									<td width="500px" style="border-right: 0px;"><div>事件信息推送：</div>
+										<div><input type="radio" id="all" name="msg" class="msgSend" checked="checked"/>权限范围内</div>
+										<div><input type="radio" id="handle_areas_only" name="msg" class="msgSend"/>处置区域内</div>
+									</td>
+								</tr>
+								<tr  class="tr2">
+									<td width="130px"><div id="8" name="moduleids" class="noCheckedm"></div>实时/录像视频</td>
+									<td width="320px"></td>
+									<td width="500px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr1">
+									<td width="130px"><div id="9" name="moduleids" class="noCheckedm"></div>状态监控</td>
+									<td width="320px"></td>
+									<td width="500px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr2">
+									<td width="130px"><div id="10" name="moduleids" class="noCheckedm"></div>远程控制</td>
+									<td width="320px"></td>
+									<td width="500px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr1">
+									<td width="130px"><div id="11" name="moduleids" class="noCheckedm"></div>综合查询</td>
+									<td width="320px"></td>
+									<td width="500px" style="border-right: 0px;"></td>
+								</tr>
+							</table>
+						</div>
+						<div id="IntegratedMM_div" class="div_center" style="display: none;">
+							<table id="IntegratedMMTable">
+								<tr style="height: 30px;line-height: 30px">
+									<td width="130px" style="text-align: center;"><div name="moduleids" id="Immall" class="noCheckedm" style="margin: 9px 10px 0 20px;"></div><div>功能模块</div></td>
+									<!--<td width="130px" style="text-align: center;">功能模块</td>-->
+									<td width="820px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr1">
+									<td width="130px">
+										<div id="1" name="moduleids" class="noCheckedm"></div>用户管理
+									</td>
+									<td width="820px" style="border-right: 0px;"></td>
+									</td>
+								</tr>
+								<tr  class="tr2">
+									<td width="130px">
+										<div id="2" name="moduleids" class="noCheckedm"></div>机主管理
+									</td>
+									<td width="820px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr1">
+									<td width="130px">
+										<div id="3" name="moduleids" class="noCheckedm"></div>设备管理
+									</td>
+									<td width="820px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr2">
+									<td width="130px">
+										<div id="4" name="moduleids" class="noCheckedm"></div>权限管理
+									</td>
+									<td width="820px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr1">
+									<td width="130px">
+										<div id="5" name="moduleids" class="noCheckedm"></div>系统配置
+									</td>
+									<td width="820px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr2">
+									<td width="130px">
+										<div id="6" name="moduleids" class="noCheckedm"></div>
+										统计查询
+									</td>
+									<td width="820px" style="border-right: 0px;"></td>
+								</tr>
+								<tr  class="tr1">
+									<td width="130px">
+										<div id="12" name="moduleids" class="noCheckedm"></div>
+										录像管理
+									</td>
+									<td width="820px" style="border-right: 0px;"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="endbutt">
+				<div id="sure" class="buttsure">保存</div>
+				<div id="cancel" class="buttcancel">取消</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="editRole.js"></script>
+
+</html>

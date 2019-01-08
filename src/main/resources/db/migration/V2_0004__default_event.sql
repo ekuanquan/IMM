@@ -1,0 +1,7 @@
+DELIMITER $$
+
+DROP EVENT IF EXISTS Time_To_ResetCustomerAlarmStatus$$
+
+CREATE DEFINER=`root`@`%` EVENT `Time_To_ResetCustomerAlarmStatus` ON SCHEDULE EVERY 1 DAY STARTS '2017-08-08 00:00:00' ON COMPLETION NOT PRESERVE ENABLE DO CALL `resetCustomerAlarmStatus`$$
+
+DELIMITER ;

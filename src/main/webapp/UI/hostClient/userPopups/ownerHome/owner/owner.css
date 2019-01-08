@@ -1,0 +1,528 @@
+
+*{
+	float: left;
+	font-family: 'Microsoft YaHei';
+	font-size: 14px;
+	box-sizing: border-box;
+
+}
+body{
+	/*width: 768px;*/
+	width: 980px;
+	/*height: 840px;*/
+	height: 450px;
+	overflow: hidden;
+	margin: 0px;
+}
+.box{
+	/*width: 768px;*/
+	width: 980px;
+	/*height: 774px;*/
+	height: 460px;
+	overflow-y: scroll;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.info_container{
+	width: 100%;
+	color: #323232;
+}
+
+.info_title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	background-color: #E5E5E5;
+}
+.info_content{
+	width: 100%;
+	padding: 20px;
+}
+.star{
+	margin-top: 3px;
+	padding-right: 2px;
+	color: red;
+    width: 9px;
+}
+.emptyStar{
+	width: 9px;
+	height: 9px;
+}
+.text_lab{
+	height: 24px;
+	/*width: 79px;*/
+	width: 84px;
+	line-height: 24px;
+}
+.text_lab_6{
+	/*height: 26px;
+	width: 93px;
+	line-height: 26px;*/
+	height: 24px;
+	/*width: 93px;*/
+	width: 65px;
+	line-height: 24px;
+	margin-left: 20px;
+}.text_lab_7{
+	  /*height: 26px;*/
+	  /*width: 107px;*/
+	  height: 24px;
+	  width: 65px;
+	  line-height: 24px;
+  }
+ .input_3{
+	 margin-left: 20px;
+	 height: 24px;
+	 width: 56px;
+	 line-height: 24px;
+ }
+.input_xin{
+	margin-left: 11px;
+	height: 24px;
+	width: 65px;
+	line-height: 24px;
+}
+.text_5{
+	height: 24px;
+	width: 75px;
+	line-height: 24px;
+	margin-left: 9px;
+}
+.text_xin_7{
+	height: 24px;
+	width: 107px;
+	line-height: 24px;
+}
+.text_xin_6{
+	margin-left: 20px;
+	width: 93px;
+	height: 24px;
+	line-height: 24px;
+}
+.input_5{
+	width: 184px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 7px;
+	padding-left: 5px;
+	padding-right: 16px;
+	outline: none;
+}
+.text_mid_5{
+	height: 24px;
+	width: 85px;
+	line-height: 24px;
+	margin-left: 20px;
+}
+.text_7{
+	height: 24px;
+	line-height: 24px;
+	margin-left: 20px;
+	width: 98px;
+}
+.input_7{
+	width: 158px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.input_8{
+	width: 826px;
+	height: 110px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+	resize: none;
+}
+.long_input{
+	width: 518px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.text_input{
+	width: 200px!important;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.text_input_6{
+	width: 236px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.text_input_7{
+	width: 222px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.content_left{
+ 	width: 339px;
+}
+.content_rigth{
+	width: 325px;
+	margin-left: 47px;
+}
+
+.createDate_input{
+
+}
+
+
+.marginTop10{
+	margin-top: 10px;
+}
+.marginTop12{
+	margin-top: 12px;
+}
+
+
+#role_container{
+	height: auto;
+}
+
+.title{
+	width: 100%;
+	height: 30px;
+	padding-left: 15px;
+
+}
+.title_add{
+	height: 30px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.title_add:hover{
+	color: #2777E2;
+}
+.title_add:active{
+	padding-top: 1px;
+}
+.title_add_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 10px;
+	background-image: url(../../../../resource/images/index/add.png);
+	background-position: -12px;
+}
+.title_add_text{
+	margin-left: 5px;
+	line-height: 30px;
+
+}
+.title_del{
+
+	margin-left: 20px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.title_del:hover{
+	color: #F65351;
+
+}
+.title_del:active{
+	padding-top: 1px;
+}
+.title_del_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 10px;
+	background-image: url(../../../../resource/images/index/del_close.png);
+	background-position: -12px;
+}
+.title_del_text{
+	margin-left: 5px;
+	line-height: 30px;
+}
+.table{
+	width: calc(100%);
+}
+.table_title{
+	width: calc(100%);
+	height: 30px;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	line-height: 28px;
+
+}
+.table_title_item{
+	padding-left: 30px;
+	padding-right: 30px;
+	border-right: 1px solid #d9d9d9;
+}
+.table_title_item_last{
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+.table_content{
+	width: 100%;
+}
+.row{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #d9d9d9;
+	line-height: 30px;
+}
+.row_noChecked{
+    background-image: url("../../../../resource/images/index/noChecked.png");
+}
+.row_isChecked{
+    background-image: url("../../../../resource/images/index/isChecked.png");
+}
+.table_item_4{
+	width: 117px;
+	height:30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#role_content{
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.multiLineInput{
+	margin-left: 48px;
+	height: 102px;
+	width: 262px;
+	margin-top: 6px;
+	border: 1px solid #d9d9d9;
+}
+.bottom_buttons{
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+	padding-left: calc((100% - 216px)/2);
+}
+.confirmButton{
+	width: 103px;
+	height: 25px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #2577e5;
+	color: #FFF;
+	line-height: 25px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.confirmButton:hover{
+	background-color: #1b5fde;
+}
+.confirmButton:active{
+	padding-top: 1px;
+
+}
+.cancelButton{
+	width: 103px;
+	height: 25px;
+	margin-left: 10px;
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #2577e5;
+	color: #2577e5;
+	line-height: 23px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.cancelButton:hover{
+	border: 1px solid #1b5fde;
+	color: #323232;
+}
+.cancelButton:active{
+	padding-top: 1px;
+	color: #323232;
+
+}
+
+.notes_input{
+	resize : none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.time_input{
+	background-image: url("../../../../resource/images/index/calendar.png");
+	background-position: 98%;
+	background-repeat: no-repeat;
+
+}
+
+select {
+	/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+	border: solid 1px #d9d9d9;
+
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url("../../../../resource/images/index/more.png") no-repeat scroll 98% center transparent;
+
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+	padding-right: 14px;
+}
+/*select:focus{
+
+}*/
+
+.text_select{
+	width: 200px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 0px;
+	padding-right: 16px;
+	outline: none;
+}
+.input_xin_6{
+	width: 164px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 5px;
+	padding-right: 16px;
+	outline: none;
+}
+.input_mid_xin_6{
+	width: 171px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 5px;
+	padding-right: 16px;
+	outline: none;
+}
+.text_select:focus{
+	outline: none;
+}
+.text_xin_4{
+	margin-left: 20px;
+	height: 24px;
+	width: 65px;
+	line-height: 24px;
+}
+.input_xin_4{
+	width: 213px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 0px;
+	padding-right: 16px;
+	outline: none;
+}
+.text_select_7{
+    width: 222px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #d9d9d9;
+    margin-left: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.input_xin_3{
+	width: 214px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.margintop2{
+	margin-top: 2px;
+}
+.margintop14{
+	margin-top: 14px;
+}
+.Validform_checktip{
+	margin-left: 2px;
+	line-height:20px;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+	color:#999;
+	font-size:12px;
+}
+#userId_editable-select-options ul li:hover{
+	background-color: #2577E5;
+	color:white;
+}
+.Edit{
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url("../../../../resource/images/index/edit.png") no-repeat scroll 98% center transparent;
+}
+.Edit:hover{
+	cursor: pointer;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url("../../../../resource/images/index/editon.png") no-repeat scroll 98% center transparent;
+}
+
+.textarea{
+	width: 826px;
+	border: 1px solid #d9d9d9;
+	min-height: 110px;
+	/*max-height: 300px;
+	_height: 120px;*/
+	margin-right: auto;
+	margin-left: 10px;
+	padding: 3px;
+	outline: 0;
+	font-size: 14px;
+	line-height: 24px;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	/*border-color: rgba(82, 168, 236, 0.8);*/
+	/*box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);*/
+}

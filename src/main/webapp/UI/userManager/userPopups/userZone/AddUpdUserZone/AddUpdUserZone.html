@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>AddUpdUserZone</title>
+    <link rel="stylesheet" type="text/css" href="AddUpdUserZone.css"/>
+    <link  rel="stylesheet" type="text/css" href="../../../../resource/demo/css/style.css"/>
+</head>
+<body>
+<div id="title" class="title">
+    <div id="title_left" class="title_left">添加用户防区</div>
+    <div id="title_close" class="title_close"></div>
+</div>
+<div id="content" class="content">
+    <form id="form">
+    <div id="roleZoneName" class="roleZoneName singleLine">
+        <div id="ownerZoneName_text" class="roleZoneName_text content_text"><span class="star">*</span>用户防区编号</div>
+        <input type="text" id="ownerZoneName_input" class="roleZoneName_input singleLineInput" name="" datatype="positiveinteger" nullmsg="用户防区编号不能为空"  errormsg="请输入用户防区编号（数字）!" maxlength="15"/>
+        <div class="Validform_checktip marginTop7"></div>
+    </div>
+    <div id="devId" class="devId singleLine">
+        <div id="devId_text" class="devId_text content_text"><span class="star">*</span>设备编号</div>
+        <!-- <input type="text" id="devId_input" class="devId_input singleLineInput" name=""/> -->
+        <select id="devId_input" class="selectInput" >
+        
+        </select>
+    </div>
+    <div id="devZoneId" class="devZoneId singleLine">
+        <div id="devZoneId_text" class="devZoneId_text content_text"><span class="emptyStar"></span>设备防区编号</div>
+        <!-- <input type="text" id="devZoneId_input" class="devZoneId_input singleLineInput" name=""/> -->
+        <select id="devZoneId_input" class="selectInput">
+              
+        </select>
+    </div>
+    <div id="snModeId" class=" singleLine">
+        <div id="snModeId_text" class=" content_text"><span class="emptyStar"></span>探头型号</div>
+        <div id="snModeId_input" class=" singleLineInput" name=""></div>
+    </div>
+    <div id="atPos" class=" singleLine">
+        <div id="atPos_text" class=" content_text"><span class="emptyStar"></span>防区位置</div>
+        <div id="atPos_input" class=" singleLineInput" name=""></div>
+    </div>
+    <div id="instDate" class=" singleLine">
+        <div id="instDate_text" class=" content_text"><span class="star">*</span>安装时间</div>
+        <div id="instDate_input" class=" singleLineInput" name=""></div>
+    </div>
+    <div id="wantDo" class=" singleLine">
+        <div id="wantDo_text" class=" content_text"><span class="emptyStar"></span>反应类型</div>
+        <div id="wantDo_input" class=" singleLineInput" name=""></div>
+    </div>
+    <div id="almType" class=" singleLine">
+        <div id="almType_text" class=" content_text"><span class="emptyStar"></span>警情类型</div>
+        <div id="almType_input" class=" singleLineInput" name=""></div>
+    </div>
+    <div id="snNum" class=" singleLine">
+        <div id="snNum_text" class=" content_text"><span class="emptyStar"></span>探头数量</div>
+        <div id="snNum_input" class=" singleLineInput" name=""></div>
+    </div>
+    <div id="snType" class=" singleLine">
+        <div id="snType_text" class=" content_text"><span class="emptyStar"></span>探头类型</div>
+        <div id="snType_input" class=" singleLineInput" name=""></div>
+    </div>
+    <div id="fMemo" class="multiLine">
+        <div id="fMemo_text" class="content_text"><span class="emptyStar"></span>备注</div>
+        <div id="fMemo_input" class="multiLineInput" name=""></div>
+    </div>
+    </form>
+</div>
+<div id="bottom_buttons" class="bottom_buttons">
+    <div id="confirmButton" class="confirmButton">保存</div>
+    <div id="cancelButton" class="cancelButton">取消</div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../../../resource/demo/js/Validform_v4.0.js"></script>
+<script type="text/javascript" src="AddUpdUserZone.js"></script>
+</html>

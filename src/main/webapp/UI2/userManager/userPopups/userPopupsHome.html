@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>userHome</title>
+	<link rel="stylesheet" type="text/css" href="./userPopupsHome.css"/>
+	<link rel="stylesheet" type="text/css" href="../../resource/demo/css/style.css"/>
+</head>
+<body>
+<div id="title" class="title">
+	<div id="title_left" class="title_left"></div>
+	<div id="title_close" class="title_close"></div>
+</div>
+<div id="content" class="content">
+	<div id="content_title" class="content_title">
+		<div id="owner_tab" class="tab_item">机主客户</div>
+		<div id="general_tab" class="tab_item">一般客户</div>
+		<div id="operator_tab" class="tab_item">操作员</div>
+		<div id="associatedDevice_tab" class="tab_item" style="display: none;">关联的设备</div>
+		<div id="contact_tab" class="tab_item" style="display: none;">联系人</div>
+		<div id="userZone_tab" class="tab_item" style="display: none;">用户防区</div>
+		<div id="monitoringSite_tab" class="tab_item" style="display: none;">监控点</div>
+		<div id="zoneMap_tab" class="tab_item" style="display: none;">防区图</div>
+		<div id="eventSetting_tab" class="tab_item" style="display: none;">事件配置</div>
+		<div id="rdPrePlan_tab" class="tab_item" style="display: none;">处警预案</div>
+		<div id="historyRecord_tab" class="tab_item" style="display: none;">历史记录</div>
+	</div>
+	<div id="iframeContainer" class="iframeContainer">
+		<iframe src="" id="firstIframe"></iframe>
+		<iframe id="alterUserIframe" name="alterUserIframe" class="alterUserIframe" src=""></iframe>
+		<iframe id="associatedDeviceIframe" name="associatedDeviceIframe"  class="associatedDeviceIframe" src="associatedDevice/associatedDevice.html"></iframe>
+		<iframe id="contactIframe" name="contactIframe"  class="contactIframe" src="contact/contact.html"></iframe>
+		<iframe id="userZoneIframe" name="userZoneIframe"  class="userZoneIframe" src="userZone/userZone.html"></iframe>
+		<iframe id="monitoringSiteIframe" name="monitoringSiteIframe"  class="monitoringSiteIframe" src="monitoringSite/monitoringSite.html"></iframe>
+		<iframe id="zoneMapIframe" name="zoneMapIframe"  class="zoneMapIframe" src=""></iframe>
+		<iframe id="eventSettingIframe" name="eventSettingIframe"  class="eventSettingIframe" src="eventSetting/eventSetting.html"></iframe>
+		<iframe id="rdPrePlanIframe" name="rdPrePlanIframe"  class="rdPrePlanIframe" src="rdPrePlan/rdPrePlan.html"></iframe>
+		<iframe id="historyRecordIframe" name="historyRecordIframe"  class="historyRecordIframe" src="historyRecord/historyRecord.html"></iframe>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/popus.js"></script>
+<script type="text/javascript" src="../../resource/demo/js/Validform_v4.0.js"></script>
+<script type="text/javascript" src="./userPopupsHome.js"></script>
+</html>

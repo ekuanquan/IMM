@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="editRole.css">
+		<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+	</head>
+
+	<body>
+		<div class="ifarea">
+
+			<div class="title">
+				<div class="table">角色信息</div>
+				<div class="close" id="close"></div>
+			</div>
+
+			<div class="middle">
+				<div class="line" style="margin-top: 20px">
+					<div class="lineleft">
+						<div class="lename">
+							<div class="xin">*</div>角色编号</div>
+						<div class="leinput"><input id="roleId" type="text" class="" disabled="true"></div>
+					</div>
+					<div class="lineright">
+						<div class="riname">
+							<div class="xin">*</div>角色名称</div>
+						<div class="riinput"><input readonly="readonly" id="roleName" type="text" class=""></div>
+					</div>
+					<div class="lineright">
+						<div class="riname">
+							<div class="xin">*</div>角色类型</div>
+						<div class="riinput" style="width: 230px;margin-right: 0px"><input id="roleType" type="text" class="more" disabled="true" style="width: 230px"></div>
+					</div>
+				</div>
+				<div class="line" style="margin-bottom: 20px">
+					<div class="lineright">
+						<div class="rinamems">
+							<div class="xin">&nbsp;</div>角色描述</div>
+						<div class="riinput"><input readonly="readonly" id="fMemo" type="text" class=""></div>
+					</div>
+				</div>
+
+				<div id="contentRight_bottom" class="contentRight_bottom">
+					<div id="contentRight_tab_container" class="contentRight_tab_container">
+						<div id="permissionAssignment_tab" class="permissionAssignment_tab tab_item">权限分配</div>
+						<div id="associatedApparatus_tab" class="associatedApparatus_tab tab_item">关联设备</div>
+
+					</div>
+					<div id="contentRight_Iframe_container" class="contentRight_Iframe_container">
+						<iframe id="firstIframe" src=""></iframe>
+						<iframe id="permissionAssignmentIframe" name="permissionAssignmentIframe" class="permissionAssignment" src="permissionAssignment.html"></iframe>
+						<iframe id="associatedApparatusIframe"  name="associatedApparatusIframe" class="associatedApparatusIframe" src="associatedApparatusEdit.html"></iframe>
+					
+						
+					</div>
+					<!--<div class="endbutt">
+							<div id="sure" class="buttsure">保存</div>
+							<div id="cancel" class="buttcancel">取消</div>
+					</div>-->
+					
+				</div>
+
+				
+
+			</div>
+
+		</div>
+	</body>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../resource/js/popus.js"></script>
+<script type="text/javascript" src="editRole.js"></script>
+</html>

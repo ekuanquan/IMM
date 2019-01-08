@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>zoneMap</title>
+	<link rel="stylesheet" type="text/css" href="zoneMap.css"/>
+	<link rel="stylesheet" href="src/jquery-ui.min.css">
+	<link rel="stylesheet" href="src/style.css">
+	<script src="src/jquery.min.js"></script>
+	<script src="src/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="src/Image-View-1.0.js"></script>
+	<script src="js/uploadPreview.js"></script>
+    <script src="../../../resource/js/plupload.full.min.js"></script>
+
+	<script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+	<script type="text/javascript" src="zoneMap.js"></script>
+</head>
+<body>
+	<div id="leftDiv" class="leftDiv">
+		<div id="lieb" class="lieb">
+			<div id="liebImg" class="liebImg"></div>
+			<div id="liebText" class="liebText">防区图列表</div>
+		</div>
+		<div id="btnDiv" class="btnDiv">
+			<div id="contentRight_add" class="contentRight_add">
+				<div id="contentRight_add_img" class="contentRight_add_img"></div>
+				<div id="contentRight_add_text" class="contentRight_add_text">添加</div>
+			</div>
+			<div class="fenge">|</div>
+			<div id="contentRight_del" class="contentRight_del">
+				<div id="contentRight_del_img" class="contentRight_del_img"></div>
+				<div id="contentRight_del_text" class="contentRight_del_text">删除</div>
+			</div>
+		</div>
+		<div id="selectMapPic" class="selectMapPic"></div>
+	</div>
+	<div id="rightDiv" class="rightDiv">
+		<div class="title_upload_container">
+			<div class="title_upload_input">
+				<div id="upload_input_text" class="upload_input_text">请从电脑上传图片</div>
+				<div id="upload_input_button" class="upload_input_button">浏览</div>
+				<input type="file" value="上传" class=""  id="Upload" style="display: none;"/>
+			</div>
+			<div id="uploadButton" class="uploadButton buttom_save">上传</div>
+			<div class="title_bottom_text">*文件大小不超过5M，支持jpg、png格式</div>
+		</div>
+	</div>
+</body> 
+</html>

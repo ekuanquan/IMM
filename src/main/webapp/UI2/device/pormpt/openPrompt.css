@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.body{
+
+    width: 360px;
+    height: 222px;
+}
+
+.title{
+    width: 100%;
+    height: 30px;
+    background-color: #2577e5;
+}
+
+.titletext{
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.titleclose{
+    float: right;
+    color: white;
+    background-image: url("../shebeihtml/img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.titleclose:hover{
+    background-color: #f75352;
+}
+
+.center{
+    width: 100%;
+    height: 94px;
+}
+
+.error{
+    margin: 50px 10px 0px 82px ;
+    width: 21px;
+    height: 21px;
+    background-image: url("error.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.centertext{
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.endbutt {
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    height: 25px;
+    padding-left: 60px;
+}
+
+.buttsure {
+    float: left;
+    background-color: #2577e5;
+    color: #ffffff;
+    width: 103px;
+    height: 100%;
+ /*   padding-left: 39px;*/
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.buttcancel {
+    float: left;
+    background-color: #ffffff;
+    color: #2577e5;
+    width: 103px;
+    height: 100%;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.buttsure:hover {
+    background-color: #1b5fde;
+}
+
+.buttcancel:hover {
+    color: #000000;
+}

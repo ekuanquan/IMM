@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>owner</title>
+    <link rel="stylesheet" type="text/css" href="./owner.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../select/select.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../../../../resource/demo/css/demo.css"/>-->
+    <link rel="stylesheet" type="text/css" href="../../../../resource/demo/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="js/validate.css"/>
+</head>
+<body>
+<form id="form" class="registerform">
+<div id="box" class="box">
+    <div id="baseInfo_container" class="info_container">
+        <div id="baseInfo_title" class="info_title">基本信息</div>
+        <div id="baseInfo_content" class="info_content">
+            <!--<div class="content_left">-->
+                <div class=" text_lab_7">
+                    <span class="star">*</span>用户编号
+                    <span></span>
+                </div>
+                <input readonly="readonly" type="text" id="userId" maxlength="9" class="text_input" name="userId" />
+                <div class="Validform_checktip marginTop2"></div>
+                <div id="operatorId_text" class=" text_lab_6">
+                    <span class="star"></span>用户名称
+                    <span></span>
+                </div>
+            <input readonly="readonly" type="text" id="userName" maxlength="255" class="text_input" name="userName"  />
+            <div class="Validform_checktip marginTop2"></div>
+            <div class="text_lab_7 input_xin marginTop2">
+                <span class="star">*</span>所属区域
+                <span></span>
+            </div>
+            <input readonly="readonly" type="text" id="areaName" class="text_input marginTop2" name="areaName"/>
+            <div class="Validform_checktip margintop2"></div>
+            <!--<div class="Validform_checktip marginTop2"></div>
+                <div class=" text_lab_7 input_xin">
+                    <span class="star">*</span>用户类型
+                </div>
+                <select id="userType" class="text_select " disabled="disabled">
+                    <option value="0">一般客户</option>
+                    <option value="1" selected="selected">机主</option>
+                </select><div class="Validform_checktip marginTop2"></div>-->
+            <div class=" text_lab_7 marginTop12">
+                <span class="emptyStar"></span>用户级别
+            </div>
+            <!--<input type="text" id="usrAlmType" class="text_input_7 " name=""/>-->
+            <select disabled="disabled" id="usrAlmType" class="text_select marginTop12">
+                <option value=""></option>
+                <option value="0">一级</option>
+                <option value="1">二级</option>
+                <option value="2">三级</option>
+                <option value="3">四级</option>
+                <option value="4">五级</option>
+            </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" text_lab_6 marginTop12">
+                    <span class="emptyStar"></span>用户属性
+                </div>
+               <!-- <input type="text" id="userProperty" class="text_input " name=""/>-->
+                <select disabled="disabled" id="userProperty" class="text_select marginTop12">
+                    <option value="0">未注册</option>
+                    <option value="1">已注册</option>
+                </select><div class="Validform_checktip margintop14"></div>
+            <div class=" text_lab_7 input_xin marginTop12">
+                <span class="emptyStar"></span>用户行业
+            </div>
+            <select disabled="disabled" id="businessName" class="text_select marginTop12">
+            </select><div class="Validform_checktip margintop14"></div>
+                <div class=" text_lab_7 marginTop12">
+                    <span class="emptyStar"></span>所属平台
+                </div>
+                <input readonly="readonly" id="centerName" class="input_5 marginTop12"/>
+                <div class="Validform_checktip margintop14"></div>
+            <div class=" text_lab_6 marginTop12">
+                <span class="star"></span>口令
+            </div>
+            <input readonly="readonly" type="text" id="payNO" class="text_input marginTop12" name="" maxlength="64"  />
+            <div class="Validform_checktip margintop14"></div>
+            <div class=" text_lab_7 input_xin marginTop12">
+                <span class="emptyStar"></span>联网电话
+            </div>
+            <input readonly="readonly" id="pnlTel" class="text_input marginTop12" maxlength="100" />
+            <div class="Validform_checktip margintop14"></div>
+            <div class=" text_lab_7 marginTop12">
+                <span class="emptyStar"></span>用户地址
+            </div>
+            <input readonly="readonly" type="text" id="userAddr" class="long_input marginTop12" name="" maxlength="255"/>
+            <div class="Validform_checktip margintop14"></div>
+            <div class="text_lab_7 input_xin marginTop12">
+                <span class="star"></span>服务类型
+            </div>
+            <select disabled="disabled" id="userServerType" class="text_select marginTop12">
+
+            </select><div class="Validform_checktip margintop14"></div>
+            <div class="text_lab_7 marginTop12">
+                <span class="emptyStar"></span>备注
+            </div>
+            <textarea readonly="readonly" id="fMemo" row="3" col="4"maxlength="1000" class="input_8 marginTop12"></textarea>
+        </div>
+
+
+            <!--</div>-->
+            <!--<div class=" input_3 marginTop12">
+                &lt;!&ndash;<span class="emptyStar"></span>&ndash;&gt;联网电话
+            </div>
+            <input id="pnlTel" class="text_input marginTop12" maxlength="100" datatype="*"  errormsg="请输入正确的联网电话"/>
+            <div class="Validform_checktip margintop14"></div>-->
+
+        </div>
+
+    <div id="responsible_container" class="info_container">
+        <div id="responsible_title" class="info_title">负责人信息</div>
+        <div id="responsible_content" class="info_content">
+                <div class="account_text text_lab">
+                    <span class="star"></span>单位负责人
+                </div>
+                <input readonly="readonly" type="text" id="contact" class="input_5" name="" maxlength="100" />
+            <div class="Validform_checktip marginTop2"></div>
+                <div class="account_text text_mid_5">
+                    <span class="star"></span>负责人手机
+                </div>
+                <input readonly="readonly" type="text" id="cMobile" class="input_5 " maxlength="100" name="cMobile" />
+            <div class="Validform_checktip marginTop2"></div>
+                <div class="account_text text_7">
+                    <!--<span class="emptyStar"></span>-->负责人家庭电话
+                </div>
+                <input readonly="readonly" type="text" id="cHmPhone" class="input_7 " maxlength="32" name="cHmPhone" />
+            <div class="Validform_checktip marginTop2"></div>
+                <div class=" text_5 marginTop12">
+                    <!--<span class="emptyStar"></span>-->负责人电话
+                </div>
+                <input readonly="readonly" type="text" id="cPhone" class="input_5 marginTop12" maxlength="100" name="cPhone" />
+            <div class="Validform_checktip margintop14"></div>
+            <!--</div>-->
+        </div>
+    </div>
+    <div id="integrated_container" class="info_container">
+        <div id="integrated_title" class="info_title">综合</div>
+        <div id="integrated_content" class="info_content">
+            <!--<div id="content_left" class="content_left">-->
+                <div class="account_text text_xin_7">
+                    <span class="star"></span>定期撤布防用户
+                </div>
+               <!-- <input type="text" id="nomRpt " class="text_input_7" name=""/>-->
+                <select disabled="disabled" id="nomRpt" class="input_7 ">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip marginTop2"></div>
+                <div class=" text_xin_6">
+                    <span class="star"></span>定期测试用户
+                </div>
+                <!--   <input type="text" id="engageTest" class="text_input_7 " name=""/>-->
+                <select disabled="disabled" id="engageTest" class="input_mid_xin_6">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip marginTop2"></div>
+                <div class="account_text text_xin_6 ">
+                    <span class="star"></span>紧急按钮用户
+                </div>
+              <!--  <input type="text" id="nomTest" class="text_input_7 " name=""/>-->
+                <select disabled="disabled" id="nomTest" class="input_xin_6 ">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip marginTop2"></div>
+                <div class=" account_text text_xin_7 marginTop12">
+                    <span class="star"></span>短信转发
+                </div>
+                <!-- <input type="text" id="isVideoCheck" class="text_input_7 " name=""/>-->
+                <select disabled="disabled" id="isVideoCheck" class="input_7 marginTop12">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+            <div class=" text_xin_6 marginTop12">
+                <span class="emptyStar"></span>无线卡号
+            </div>
+            <input readonly="readonly" id="pnlHdTel" class="input_mid_xin_6 marginTop12" maxlength="26"  />
+            <div class="Validform_checktip margintop14"></div>
+                <!--<div class="account_text text_xin_6 marginTop12">
+                    <span class="star">*</span>所属区域
+                    <span></span>
+                </div>
+                <input type="text" id="areaName" class="input_mid_xin_6 marginTop12" name="areaName" datatype="*" nullmsg="所属区域不能为空"  errormsg="请选择所属区域！" />
+                <div class="Validform_checktip margintop14"></div>-->
+                <div class=" text_xin_6 marginTop12">
+                    <span class="star"></span>投保
+                    <span></span>
+                </div>
+                <!-- <input type="text" id="isInsurance" class="text_input_7 " name="isInsurance"/> -->
+                <select disabled="disabled" id="isInsurance" class="input_xin_6 marginTop12">
+                    <option value="0">未投保</option>
+                    <option value="1">已投保</option>
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" account_text text_xin_7 marginTop12">
+                    <span class="star"></span>是否来电正常
+                </div>
+               <!-- <input type="text" id="hasBak" class="text_input_7 " name=""/>-->
+                <select disabled="disabled" id="hasBak" class="input_7 marginTop12">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" account_text text_xin_6 marginTop12">
+                    <span class="star"></span>缴费状态
+                </div>
+                <!--<input type="text" id="isPay" class="text_input_7 " name=""/>-->
+                <select disabled="disabled" id="isPay" class="input_mid_xin_6 marginTop12">
+                    <option value="0">未缴费</option>
+                    <option value="1">已缴费</option>
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" text_xin_6 marginTop12">
+                    <span class="star"></span>录入人
+                </div>
+                <input readonly="readonly" type="text" id="operName" class="input_xin_6 marginTop12" name="" maxlength="100" />
+            <div class="Validform_checktip margintop14"></div>
+                <div class="account_text text_xin_7 marginTop12">
+                    <span class="star "></span>安装时间
+                </div>
+                <!--<input type="text" id="inputtime" class="input_7 time_input marginTop12" name="" maxlength="10" datatype="date" nullmsg="录入时间不能为空"  errormsg="请选择录入时间！" />-->
+            <input type="text" readonly="readonly" id="instDate" class="input_7 time_input marginTop12" name="" maxlength="10" />
+
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" text_xin_6 marginTop12">
+                    <span class="emptyStar"></span>道路标志
+                </div>
+                <input readonly="readonly" type="text" id="road" class="input_mid_xin_6 marginTop12" name="" maxlength="100"/>
+            <div class="Validform_checktip margintop14"></div>
+                <div class="account_text text_xin_6 marginTop12">
+                    <span class="emptyStar"></span>子行业
+                </div>
+                <input readonly="readonly" id="define1" class="input_7 marginTop12" maxlength="255" style="width: 164px;"/>
+
+            <div class="Validform_checktip margintop14"></div>
+
+                <div class=" account_text text_xin_7 marginTop12">
+                    <span class="emptyStar"></span>故障提示
+                </div>
+                <!--<input type="text" id="badMem" class="text_input_7 " name=""/>-->
+                <input readonly="readonly" id="badMem" class="input_7 marginTop12"/>
+                    <!--<option value="0">否</option>
+                    <option value="1">是</option>-->
+
+            <div class="Validform_checktip margintop14"></div>
+            <div class="account_text text_xin_6 marginTop12">
+                <span class="star "></span>服务到期时间
+            </div>
+            <!--<input type="text" id="inputtime" class="input_7 time_input marginTop12" name="" maxlength="10" datatype="date" nullmsg="录入时间不能为空"  errormsg="请选择录入时间！" />-->
+            <input type="text" readonly="readonly" id="serveEndTime" class="input_mid_xin_6 time_input marginTop12" name="" maxlength="10" datatype="date"  errormsg="请选择录入时间！" />
+            <div class="Validform_checktip margintop14"></div>
+            <div class=" account_text text_xin_6 marginTop12">
+                <span class="star"></span>是否启用
+            </div>
+            <!--<input type="text" id="isPay" class="text_input_7 " name=""/>-->
+            <select disabled="disabled" id="switchUser" class="input_xin_6 marginTop12">
+                <option value="true">是</option>
+                <option value="false">否</option>
+            </select>
+            <div class="Validform_checktip margintop14"></div>
+
+            <!--<div class=" text_xin_6 marginTop12">
+                &lt;!&ndash;<span class="emptyStar"></span>&ndash;&gt;无线卡号
+            </div>
+            <input id="pnlHdTel" class="input_mid_xin_6 marginTop12" maxlength="26"  />-->
+            </div>
+        </div>
+    </div>
+<!--<div id="bottom_buttons" class="bottom_buttons">
+    <div id="confirmButton" class="confirmButton">确定</div>
+    <div id="cancelButton" class="cancelButton">取消</div>
+</div>-->
+</form>
+</body>
+<script type="text/javascript" src="../../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../../select/select.js"></script>
+<script type="text/javascript" src="../../../../resource/js/popus.js"></script>
+<script type="text/javascript" src="../../../../resource/demo/js/Validform_v4.0.js"></script>
+<script type="text/javascript" src="./owner.js"></script>
+</html>

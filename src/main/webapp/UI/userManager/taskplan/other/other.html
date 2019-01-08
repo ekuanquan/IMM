@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link type="text/css" rel="stylesheet" href="other.css">
+<script type="text/javascript"
+	src="../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript"
+	src="../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript"
+	src="../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript"
+	src="../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="other.js"></script>
+</head>
+<body>
+	<!--<div class="Supertested">
+        <div id="Supertested">
+            <div id="choose_img"  class="choose_no"></div>
+            <div  class="checkup">超测提醒启用</div>
+        </div>
+        <div>
+            <div class="checkup_hour">超测提醒天数</div>
+            <input type="text" class="hours"/>
+        </div>
+    </div>-->
+	<div class="Supertested">
+		<div id="choose">
+			<div id="choose_no" class="choose_no"></div>
+			<div class="checkup">无报告检查启用</div>
+		</div>
+
+		<div>
+			<div class="checkup_hour">检查小时数</div>
+			<input id="noRptCheckHour" type="number" class="hours" 
+				onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else if(this.value.length<=9&&this.value.length>1){this.value=this.value.replace(/\D/g,'')}else{this.value=this.value.slice(0,9)}"
+				placeholder="最长9位数" />
+		</div>
+		<div>
+			<div class="old_time">上次执行时间</div>
+			<input id="old_input" type="text" disabled="disabled"
+				class="old_input" />
+		</div>
+	</div>
+	<div style="width: 100%">
+		<!--<div class="fM">备注</div>
+        <textarea class="text"></textarea>-->
+	</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="dataUpSet.css"/>
+</head>
+<body style="width:100%;height: 100%;">
+<div id="title" class="title">
+    <div id="title_left" class="title_left">
+        <div id="title_left_text" class="title_left_text">平台数据上传配置</div>
+    </div>
+</div>
+<div id="searchTitle" class="searchTitle">
+    <div class="line" style="margin-top: 20px">
+        <div class="lineleft">
+            <div class="lename">
+                上级中心IP</div>
+            <div class="leinput">
+                <input id="upId" type="text" readonly="readonly">
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="lineleft">
+            <div class="lename">
+                本平台ID</div>
+            <div class="leinput">
+                <input id="benId" type="text" readonly="readonly">
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="title" style="margin-top:20px;">
+    <div class="title_left">
+        <div class="title_left_text">平台数据汇聚配置</div>
+    </div>
+</div>
+<div id="content" class="content">
+    <div id="contentRight_title" class="contentRight_title">
+        <div id="contentRight_add" class="contentRight_add">
+            <div id="contentRight_add_img" class="contentRight_add_img"></div>
+            <div id="contentRight_add_text" class="contentRight_add_text">添加</div>
+        </div>
+        <div id="contentRight_del" class="contentRight_del">
+            <div id="contentRight_del_img" class="contentRight_del_img"></div>
+            <div id="contentRight_del_text" class="contentRight_del_text">删除</div>
+        </div>
+    </div>
+    <div class="content_data">
+        <table id="userInfoTab" class="table">
+            <tr>
+                <th id="check_title" class="check_title borderRight">
+                    <div id="all" name="checkname" class="noCheckedm" style="margin: 3px 10px 0 15px;"></div>
+                </th>
+                <th id="name_title" class="name_title borderRight">子平台名称</th>
+                <th id="ID_title" class="ID_title borderRight">子平台ID</th>
+                <th id="host_title" class="host_title borderRight">子平台ip</th>
+                <th id="memo_title" class="memo_title">备注</th>
+            </tr>
+            <tbody id="table_content" class="table_content"></tbody>
+        </table>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="./dataUpSet.js"></script>
+</html>

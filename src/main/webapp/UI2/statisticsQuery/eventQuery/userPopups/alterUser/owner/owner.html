@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>
+        相关信息
+    </title>
+    <link type="text/css" rel="stylesheet" href="owner.css">
+    <script type="text/javascript" src="../../../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../../../resource/js/colResizable-1.5.min.js"></script>
+    <script type="text/javascript" src="../../../../../resource/js/Image-View-1.0.js"></script>
+    <script type="text/javascript" src="../../../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../../../../resource/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="owner.js"></script>
+</head>
+<body style="margin:0px">
+<div class="main">
+    <div class="middle">
+        <div style="width:100%;margin-top: 0px; margin-bottom: 15px;" id="basicInfo">
+            <div id="AlertInfo_title" class="AlertInfo_title">
+                <div id="AlertInfo_text" class="AlertInfo_text">报警信息</div>
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    事件类型
+                    <span></span>
+                </div>
+                <input type="text" id="eventType" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_4 marginTop12 marginLeft30">
+                    报警时间
+                    <span></span>
+                </div>
+                <input type="text" id="eventTime" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_4 marginTop12 marginLeft30">
+                    报警位置
+                    <span></span>
+                </div>
+                <input type="text" id="alarmAddr" readonly="readonly" class="text_input_4 marginTop12 " />
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    事件描述
+                    <span></span>
+                </div>
+                <input type="text" id="eventDesc" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div id="linkageVideo1" class="button_style pointerNone marginTop12"></div>
+                <div id="electronicMap" class="button_style marginTop12"></div>
+            </div>
+            <div id="baseUserInfo_title" class="baseUserInfo_title" style="width:100%;margin-top: 15px;background-color: #E5E5E5; height: 26px;line-height: 26px;">
+                <div id="baseUserInfo_text" class="baseUserInfo_text">用户基本信息</div>
+            </div>
+
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    用户编号
+                    <span></span>
+                </div>
+                <input type="text" id="userId" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    单位负责人
+                    <span></span>
+                </div>
+                <input type="text" id="contact" readonly="readonly" class="text_input_5 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    负责人手机
+                    <span></span>
+                </div>
+                <input type="text" id="cMobile" readonly="readonly" class="text_input_5 marginTop12 " />
+
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    用户名称
+                    <span></span>
+                </div>
+                <input type="text" id="accountName" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    口令
+                    <span></span>
+                </div>
+                <input type="text" id="cPayNO" readonly="readonly" class="text_input_5 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    用户级别
+                    <span></span>
+                </div>
+                <input type="text" id="rdClass" readonly="readonly" class="text_input_5 marginTop12 " />
+
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12 marginLeft12">
+                    用户地址
+                </div>
+                <input type="text" id="accountAddr" readonly="readonly" class="text_input_8 marginTop12 "  name=""/>
+                <div class=" text_lab_5 marginTop12">
+                    用户类型
+                    <span></span>
+                </div>
+                <input type="text" id="userType" readonly="readonly" class="text_input_5 marginTop12 " />
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    所属区域
+                    <span></span>
+                </div>
+                <input type="text" id="areaName" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    用户行业
+                    <span></span>
+                </div>
+                <input type="text" id="businessName" readonly="readonly" class="text_input_5 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    子行业
+                    <span></span>
+                </div>
+                <input type="text" id="business_subName" readonly="readonly" class="text_input_5 marginTop12 " />
+
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    服务类型
+                    <span></span>
+                </div>
+                <input type="text" id="serverType" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    缴费状态
+                    <span></span>
+                </div>
+                <input type="text" id="isPay" readonly="readonly" class="text_input_5 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    所属分中心
+                    <span></span>
+                </div>
+                <input type="text" id="centerName" readonly="readonly" class="text_input_5 marginTop12 " />
+
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    短信转发
+                    <span></span>
+                </div>
+                <input type="text" id="isVideoCheck" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    负责人电话
+                    <span></span>
+                </div>
+                <input type="text" id="cPhone" readonly="readonly" class="text_input_5 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    录入时间
+                    <span></span>
+                </div>
+                <input type="text" id="createDate" readonly="readonly" class="text_input_5 marginTop12 " />
+
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    录入人
+                    <span></span>
+                </div>
+                <input type="text" id="operName" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    安装日期
+                    <span></span>
+                </div>
+                <input type="text" id="instDate" readonly="readonly" class="text_input_5 marginTop12 " />
+                <div class=" text_lab_7 marginTop12">
+                    定期测试用户
+                    
+                </div>
+                <input type="text" id="engageTest" readonly="readonly" class="text_input_7 marginTop12 " />
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    联网电话
+
+                </div>
+                <input type="text" id="pnlTel" readonly="readonly" class="text_input_4 marginTop12 " />
+                <div class=" text_lab_5 marginTop12">
+                    无线卡号
+                </div>
+                <input type="text" id="pnlHdTel" readonly="readonly" class="text_input_5 marginTop12 " />
+                <div class=" text_lab_7 marginTop12">
+                    定期撤布防用户
+                    
+                </div>
+                <input type="text" id="nomRpt" readonly="readonly" class="text_input_7 marginTop12 " />
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop12">
+                    备注
+                </div>
+                <input type="text" id="fMemo" readonly="readonly" class="text_input_4 marginTop12 " />
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

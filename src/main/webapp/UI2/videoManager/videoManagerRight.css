@@ -1,0 +1,212 @@
+*{
+	box-sizing: border-box;
+}
+.contentRight{
+	width: calc(100% - 210px);
+	height: 100%;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	
+}
+.contentRight *{
+	float: left;
+	font-family: 'Microsoft YaHei';
+}
+.contentRight_title{
+	width: 100%;
+	height: 40px;
+	font-family: 'MicrosoftYaHei';
+	font-size: 14px;
+	color: #898989;
+
+}
+.contentRight_bottom{
+	font-size: 14px;
+	width: 100%;
+	height: calc(100% - 50px);
+	border: 1px solid #d9d9d9;
+}
+.contentRight_tab_container{
+    width: 100%;
+    height: 30px;
+    
+    font-size: 14px;
+ 	color: #323232;
+ 	background-color: #e5f1f9;
+}
+.contentRight_add{
+	height: 40px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+
+}
+.contentRight_add:hover{
+	color: #2777E2;
+}
+.contentRight_add:active{
+	padding-top: 1px;
+}
+.contentRight_add_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 15px;
+	background-image: url(../resource/images/index/add.png);
+	background-position: -12px;
+}
+.contentRight_add_text{
+	margin-left: 5px;
+	line-height: 40px;
+
+}
+.contentRight_del{
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+}
+.contentRight_del:hover{
+	color: #F65351;
+
+}
+.contentRight_del:active{
+	padding-top: 1px;
+}
+.contentRight_del_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 15px;
+	background-image: url(../resource/images/index/del_close.png);
+	background-position: -12px;
+}
+.contentRight_del_text{
+	margin-left: 5px;
+	line-height: 40px;
+}
+
+.contentRight_search{
+	float: right;
+	width: 202px;
+	height: 26px;
+	margin-top: 7px;
+	border-radius: 6px;
+	border: 1px solid #d9d9d9;
+}
+.contentRight_search_img{
+	float: right;
+	width: 38px;
+	height: 24px;
+	background-color: #2577e5;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	background-image: url(../resource/images/index/search.png);
+	background-repeat: no-repeat;
+	background-position: 10px 3px;
+
+}
+.contentRight_search_input{
+	width: 162px;
+	height: 24px;
+	border-width: 0px;
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	padding-left: 5px;
+	
+}
+
+
+.tab_item{
+	padding-right: 15px;
+	padding-left: 15px;
+	height: 30px;
+	line-height: 30px;
+	cursor: default;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.tab_item:hover{
+	background-color: #fff;
+}
+
+.tab_isChecked{
+	background-color: #fff;
+}
+.tab_noChecked{
+
+}
+.centen_title{
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #D9D9D9;
+}
+.monitoringPoint{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 95px;
+}
+.videoState{
+	width: 105px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.userId{
+	width: 105px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.userName{
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.storagePlan{
+	width: 175px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.configurationPlan_Title{
+	width: 105px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.centen_row{
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #D9D9D9;
+}
+.centen_row:hover{
+	background-color: #e4f1f9;
+}
+.row_check{
+	background-color: #e4f1f9;
+}
+.configurationPlan{
+	width: 105px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.configurationPlan:hover{
+	color: #1E98DA;
+}
+.centen_centen{
+	width: 100%;
+	height: calc(100% - 62px);
+
+}
+.contentBottom{
+	width: 100%;
+	height: 32px;
+	background-color: #e4f1f9;
+}

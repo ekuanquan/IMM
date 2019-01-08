@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei";
+    float: left;
+}
+
+.ifarea{
+    /*width: 1280px;
+    height: 720px;*/
+    width: 1000px;
+    height: 600px;
+    /*border: 1px solid #c8c8c8;*/
+}
+
+.title{
+    background-color: #2577e5;
+    width: 100%;
+    height: 30px;
+}
+
+.table{
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.close{
+    float: right;
+    color: white;
+    background-image: url("img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: #f75352;;
+}
+
+.middle{
+    /*width: 1261px;
+    height: 670px;*/
+    width: 980px;
+    height: 550px;
+    border: 1px solid #c8c8c8;
+    margin: 10px 0 0 10px;
+}
+
+.line{
+    /*width: 1241px;*/
+    width: 938px;
+    height: 26px;
+    /* border: 1px solid #c8c8c8;*/
+    /*margin: 25px 0 25px 20px;*/
+    margin: 10px 0 0 20px;
+}
+
+.lename{
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    /*width: 75px;*/
+    width: 76px;
+}
+.leinput{
+    float: left;
+    /*width: 175px;*/
+    width: 220px;
+    height: 26px;
+    /*margin-right: 50px;*/
+    margin-right: 20px;
+}
+.leinput input{
+    /*width: 175px;*/
+    width: 198px;
+    height: 26px;
+    border: 1px solid #d9d9d9;
+    padding: 3px;
+}
+.riname{
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    /*width: 75px;*/
+    width: 76px;
+    padding-left: 0px;
+}
+.rinamems{
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    /*width: 47px;*/
+    width: 76px;
+    padding-left: 0px;
+}
+.riinput{
+    float: left;
+    /*width: 175px;*/
+    width: 220px;
+    height: 26px;
+    /*margin-right: 50px;*/
+    margin-right: 20px;
+}
+
+.riinput input{
+    /*width: 175px;*/
+    width: 198px;
+    height: 26px;
+    border: 1px solid #d9d9d9;
+    padding: 3px;
+}
+
+
+.xin{
+    color: red;
+    float: left;
+    line-height: 32px;
+    height: 26px;
+    margin-right: 5px;
+}
+
+.more{
+    background-image: url("img/more.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+}
+
+.ddBox.show{
+    display: block;
+}
+.ddBox.hide{
+    display: none;
+}
+
+.ddBox span {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 14px;
+    display: block;
+    clear: both;
+}
+.ddBox span:hover{
+    background-color: #e4f1f9;
+}
+
+.ddBox.Box{
+    position: absolute;
+    top: -200%;
+    left: -200%;
+    /*width: 175px;*/
+    width: 230px;
+    max-height: 85px;
+    overflow: auto;
+    /*height: 52px;*/
+    background-color: #ffffff;
+    border: 1px solid #c8c8c8;
+    z-index: 3333333333;
+}
+
+.contentRight_tab_container{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    color: #323232;
+    background-color: #e5f1f9;
+}
+
+.tab_item{
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 87px;
+    height: 30px;
+    line-height: 30px;
+    cursor: default;
+    -moz-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.tab_item:hover{
+    background-color: #bed4f3;
+}
+
+.tab_isChecked{
+    background-color: #bed4f3;
+}
+.tab_noChecked{
+
+}
+
+.contentRight_Iframe_container{
+    overflow: hidden;
+    width: 100%;
+    height:calc(100% - 95px);
+}
+
+#firstIframe{
+    width: 0px;
+    height: 100%;
+
+}
+iframe{
+    height: 100%;
+    border: 0px inset;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.endbutt{
+    width: 100%;
+    height: 25px;
+    padding-left: 381px;
+}
+
+.buttsure{
+    background-color: #2577e5;
+    color: #ffffff;
+    width: 103px;
+    height: 100%;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align:center;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    float: left;
+}
+.buttsure:hover{
+    background-color: #1b5fde;
+    color: #ffffff;
+}
+.buttcancel{
+    background-color: #ffffff;
+    color: #2577e5;
+    width: 103px;
+    height: 100%;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align:center;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.buttcancel:hover{
+    color: black;
+}
+.text_lab_7{
+    height: 24px;
+    width: 65px;
+    line-height: 24px;
+}
+.toptwo{
+    margin-top: 2px;
+}
+.contentRight{
+    width: 976px;
+    height: 100%;
+    float: left;
+    padding-top: 9px;
+}
+.contentRight *{
+    float: left;
+    font-family: 'Microsoft YaHei';
+}
+.contentRight_title{
+    width: 100%;
+    height: 30px;
+    font-family: 'MicrosoftYaHei';
+    font-size: 14px;
+    color: #080808;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.contentRight_title_text{
+    line-height: 29px;
+}
+.top{
+    margin: 1px 4px 0 0px;
+    border: 1px #d9d9d9 solid;
+    height: 29px;
+    cursor: pointer;
+    width: auto;
+    border-bottom: none;
+    padding-right: 5px;
+}
+.noChecked label{
+    width: 13px;
+    height: 13px;
+    /*margin: 3px 5px 0 5px;*/
+    margin: 7px 5px 0 5px;
+    background-image: url(img/noChecked.png) ;
+    cursor: pointer;
+}
+.isChecked label{
+    width: 13px;
+    height: 13px;
+    /*margin: 3px 5px 0 5px;*/
+    margin: 7px 5px 0 5px;
+    background-image: url(img/isChecked.png) ;
+    cursor: pointer;
+}
+
+.contentRight_bottom{
+    width: 100%;
+    height: calc(100% - 102px);
+}
+.div_center{
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+}
+.bottom_row{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.bottom_title{
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.bottom_title_left{
+    line-height: 25px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    width: 13%;
+}
+.bottom_row_left{
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    width: 13%;
+}
+.bottom_title_right{
+    line-height: 25px;
+    text-align: center;
+    width: 80%;
+}
+.bottom_row_right{
+    line-height: 40px;
+    margin-top: 8px;
+    width: 80%;
+}
+
+.row_isChecked{
+    background-color: #bed4f3;
+    color:#2577e5;
+}
+.RDAcenter,.IntegratedMM,.msgSend{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#handle_areaIds{
+    margin-top: 11px;
+    margin-left: 10px;
+}
+.tr1{
+    height: 40px;line-height: 40px;text-indent: 10px;background-color: #F5F5F5
+}
+.tr2{
+    height: 40px;line-height: 40px;text-indent: 10px;
+}
+#RDAcenterTable td,#IntegratedMMTable td,#PublicSafetyManagementTable td,#commandPlatform_sharedTable td,
+#compositeOperationTable td,#faceBayonetTable td,#scityvehiclegateTable td,#snowBrightWJTable td,#Sys_GPSMonitorTable td{
+    border-right: 1px solid #d9d9d9;
+    height: 40px;
+}
+#RDAcenterTable,#IntegratedMMTable,#PublicSafetyManagementTable,#commandPlatform_sharedTable,
+#compositeOperationTable,#faceBayonetTable,#scityvehiclegateTable,#snowBrightWJTable,#Sys_GPSMonitorTable{
+    width: calc(100% - 20px);height: 30px;border: 1px solid #d9d9d9;margin-left: 10px;
+}
+
+
+.noCheckedm{
+    width: 13px;
+    height: 13px;
+    /*margin: 3px 5px 0 5px;*/
+    margin: 12px 0px 0 20px;
+    background-image: url(img/noChecked.png) ;
+    cursor: pointer;
+}
+.isCheckedm{
+    width: 13px;
+    height: 13px;
+    /*margin: 3px 5px 0 5px;*/
+    margin: 12px 0px 0 20px;
+    background-image: url(img/isChecked.png) ;
+    cursor: pointer;
+}
+
+.select{
+    /*width: 175px;*/
+    width: 198px;
+    height: 26px;
+    line-height: 22px;
+    border: 1px solid #d9d9d9;
+    padding: 3px;
+}
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #d9d9d9;
+
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("../../resource/images/index/more.png") no-repeat scroll 98% center transparent;
+
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 14px;
+}
+
+.shower{
+    color:#898989 ;
+    background-color: #e5e5e5 ;
+}
+
+#XLWJforwarding{
+    width: 230px;
+    height: 26px;
+    border: 1px solid #d9d9d9;
+    padding: 3px;
+    margin: 0 0 0 12px;
+}
+
+

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>zoneMap</title>
+	<link rel="stylesheet" type="text/css" href="zoneMap.css"/>
+	<link rel="stylesheet" href="src/jquery-ui.min.css">
+	<link rel="stylesheet" href="src/style.css">
+	<script src="src/jquery.min.js"></script>
+	<script src="src/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="src/Image-View-1.0.js"></script>
+	<script src="js/mousemove.js"></script>
+	<script src="js/mouseMoveDown.js"></script>
+	<script src="js/popus.js"></script>
+	<script src="js/addIcon.js"></script>
+	<script src="js/uploadPreview.js"></script>
+	<script src="js/icon-min.js"></script>
+    <script src="../../../resource/js/plupload.full.min.js"></script>
+
+	<!--<script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>-->
+	<script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+	<script type="text/javascript" src="zoneMap.js"></script>
+</head>
+<body>
+	<div class="title_label">上传图片</div>
+	<div class="title_upload_container">
+		<div class="title_upload_input">
+			<div id="upload_input_text" class="upload_input_text">请从电脑上传图片</div>
+
+			<div id="upload_input_button" class="upload_input_button">浏览</div>-
+			<input type="file" value="上传" class=""  id="Upload" style="display: none;"/>
+		</div>
+		<div id="uploadButton" class="uploadButton buttom_save">上传</div>
+	</div>
+	<div class="title_tips"></div>
+	
+	<div class="zoneMapContainer">
+		<div class="zoneMapBorder">
+			<div class="wrapper"></div>
+		</div>
+	</div>
+	<div class="title_bottom_text">*文件大小不超过5M，格式仅限于jpg、png、bmp</div>
+
+	<div id="addZone" class="addZone">
+		<div class="addZone_img"></div>
+		<div class="addZone_text">添加防区</div>
+	</div>
+	<div id="mapContainer" class="mapContainer">
+		<div id="mapBorder" class="mapBorder">
+			<div id="mapImage" class="mapImage"></div>
+		</div>
+
+	</div>
+	<div class="bottomContainer">
+		<div id="buttom_save" class="buttom_save">保存</div>
+		<div id="buttom_cancel" class="buttom_cancel">取消</div>
+	</div>
+</body> 
+</html>

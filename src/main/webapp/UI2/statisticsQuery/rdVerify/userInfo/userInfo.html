@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户基本信息</title>
+    <link href="userInfo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="userInfo.js"></script>
+</head>
+<body>
+<div id="main" class="main">
+    <!--<div id="title" class="title">
+        <div id="table" class="table">用户基本信息</div>
+        <div id="close" class="close"></div>
+    </div>-->
+    <div class="middle">
+        <div id="content_title" class="content_title">
+            <div id="owner_tab" class="tab_item" data-show="#specific_content">基本信息</div>
+            <div id="associatedDevice_tab" class="tab_item" style="display: none;" data-show="#contact_content">相关联系人</div>
+        </div>
+        <div class="content">
+            <div id="specific_content"  style="display: none;">
+                <div class="baseUserInfo_titletest">
+                    用户基本信息
+                </div>
+                <div style="width: 100%" class="a1">
+                    <div class=" text_lab_4 marginTop12">
+                        用户编号
+                        <span></span>
+                    </div>
+                    <input type="text" id="userId" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        单位负责人
+                        <span></span>
+                    </div>
+                    <input type="text" id="contact" readonly="readonly" class="text_input_5 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        负责人手机
+                        <span></span>
+                    </div>
+                    <input type="text" id="cMobile" readonly="readonly" class="text_input_5 marginTop12 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop12">
+                        用户名称
+                        <span></span>
+                    </div>
+                    <input type="text" id="userName" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        口令
+                        <span></span>
+                    </div>
+                    <input type="text" id="PayNO" readonly="readonly" class="text_input_5 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        用户级别
+                        <span></span>
+                    </div>
+                    <input type="text" id="rdClass" readonly="readonly" class="text_input_5 marginTop12 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop12 marginLeft12">
+                        用户地址
+                    </div>
+                    <input type="text" id="userAddr" readonly="readonly" class="text_input_8 marginTop12 "  name=""/>
+                    <div class=" text_lab_5 marginTop12">
+                        用户类型
+                        <span></span>
+                    </div>
+                    <input type="text" id="userType" readonly="readonly" class="text_input_5 marginTop12 " />
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop12">
+                        所属区域
+                        <span></span>
+                    </div>
+                    <input type="text" id="areaName" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        用户行业
+                        <span></span>
+                    </div>
+                    <input type="text" id="businessName" readonly="readonly" class="text_input_5 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        子行业
+                        <span></span>
+                    </div>
+                    <input type="text" id="business_subName" readonly="readonly" class="text_input_5 marginTop12 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop12">
+                        服务类型
+                        <span></span>
+                    </div>
+                    <input type="text" id="serverType" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        缴费状态
+                        <span></span>
+                    </div>
+                    <input type="text" id="isPay" readonly="readonly" class="text_input_5 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        所属分中心
+                        <span></span>
+                    </div>
+                    <input type="text" id="centerName" readonly="readonly" class="text_input_5 marginTop12 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop12">
+                        短信转发
+                        <span></span>
+                    </div>
+                    <input type="text" id="isVideoCheck" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        负责人电话
+                        <span></span>
+                    </div>
+                    <input type="text" id="cPhone" readonly="readonly" class="text_input_5 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        录入时间
+                        <span></span>
+                    </div>
+                    <input type="text" id="createDate" readonly="readonly" class="text_input_5 marginTop12 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop12">
+                        录入人
+                        <span></span>
+                    </div>
+                    <input type="text" id="operName" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        安装日期
+                        <span></span>
+                    </div>
+                    <input type="text" id="instDate" readonly="readonly" class="text_input_5 marginTop12 " />
+                    <div class=" text_lab_7 marginTop12">
+                        定期测试用户
+
+                    </div>
+                    <input type="text" id="engageTest" readonly="readonly" class="text_input_7 marginTop12 " />
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop12">
+                        联网电话
+                    </div>
+                    <input type="text" id="pnlTel" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        无线卡号
+                    </div>
+                    <input type="text" id="pnlHdTel" readonly="readonly" class="text_input_5 marginTop12 " />
+                    <div class=" text_lab_7 marginTop12">
+                        定期撤布防用户
+                    </div>
+                    <input type="text" id="nomRpt" readonly="readonly" class="text_input_7 marginTop12 " />
+                </div>
+                <div style="width: 100%" class="a3">
+                    <div class=" text_lab_4 marginTop12">
+                        道路标志
+                    </div>
+                    <input type="text" id="road" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_5 marginTop12">
+                        备注
+                    </div>
+                    <input type="text" id="fMemo" readonly="readonly" class="text_input_5 marginTop12 " />
+                </div>
+                <div class="baseUserInfo_titletest">
+                    报警信息
+                </div>
+                <div style="width: 100%" class="a1">
+                    <div class=" text_lab_4 marginTop12">
+                        事件类型
+                    </div>
+                    <input type="text" id="eventType" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_4 marginTop12 marginLeft30">
+                        事件描述
+                    </div>
+                    <input type="text" id="eventDesc" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_4 marginTop12 marginLeft30">
+                        报警时间
+                    </div>
+                    <input type="text" id="alarmTime" readonly="readonly" class="text_input_4 marginTop12 " />
+
+                </div>
+                <div style="width: 100%"  class="a3">
+                    <div class=" text_lab_4 marginTop12">
+                        报警位置
+                    </div>
+                    <input type="text" id="alarmAddr" readonly="readonly" class="text_input_4 marginTop12 " />
+                </div>
+                <div class="baseUserInfo_titletest">
+                    接警信息
+                </div>
+                <div style="width: 100%"  class="a3">
+                    <div class=" text_lab_4 marginTop12">
+                        接警时间
+                    </div>
+                    <input type="text" id="reAlarmTime" readonly="readonly" class="text_input_4 marginTop12 " />
+                    <div class=" text_lab_4 marginTop12 marginLeft30">
+                        接警员
+                    </div>
+                    <input type="text" id="alarmOfficer" readonly="readonly" class="text_input_4 marginTop12 " />
+                </div>
+                <div class="baseUserInfo_titletest">
+                    处警信息
+                </div>
+                <div style="width: 100%"  class="a1">
+                    <div class=" text_lab_4 marginTop12">
+                        报警原因
+                    </div>
+                    <input type="text" id="reason" readonly="readonly" class="text_input_10 marginTop12 " />
+                </div>
+                <div style="width: 100%"  class="a2">
+                    <div class=" text_lab_4 marginTop12">
+                        处警结果
+                    </div>
+                    <input type="text" id="policeResults" readonly="readonly" class="text_input_10 marginTop12 " />
+                </div>
+                <div style="width: 100%"  class="a3">
+                    <div class=" text_lab_4 marginTop12">
+                        备注
+                    </div>
+                    <input type="text" id="remarks" readonly="readonly" class="text_input_10 marginTop12 " />
+                </div>
+            </div>
+            <div id="contact_content" style="display: none; ">
+                <div class="Row" style="background-color: #edeeee">
+                    <div class="peoId split">联系人编号</div>
+                    <div class="peoName split">联系人名称</div>
+                    <div class="telephone1 split">联系人电话1</div>
+                    <div class="telephone2 split">联系人电话2</div>
+                    <div class="familyPhone split">家庭电话</div>
+                    <div class="mobilePhone split">手机电话</div>
+                    <div class="remarks">备注</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

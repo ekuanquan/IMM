@@ -1,0 +1,91 @@
+<html lang="zh-CN">
+
+<head>
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PoiPicker/examples/index.html -->
+    <base href="//webapi.amap.com/ui/1.0/ui/misc/PoiPicker/examples/" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>输入框选择POI点</title>
+    <script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.5&key=de0d54a361c736b318916c6743e9f982'></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <style>
+
+        html,
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            font-size: 13px;
+        }
+        #container {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            font-size: 13px;
+        }
+
+        .amap_lib_placeSearch .poibox.highlight {
+            background-color: #CAE1FF;
+        }
+
+        .amap_lib_placeSearch .poi-more {
+            display: none!important;
+        }
+
+        .amap_lib_placeSearch .poibox.highlight {
+            background-color: #CAE1FF;
+        }
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <div id="container" class="map" tabindex="0"></div>
+</div>
+<script type="text/javascript">
+    var G_marker = null ;
+    var map = new AMap.Map('container', {
+        zoom: 16
+    });
+    AMapUI.loadUI(['control/BasicControl'], function(BasicControl) {
+        var zoomCtrl1 = new BasicControl.Zoom({
+            position: 'br',
+            showZoomNum: true
+        });
+        map.addControl(zoomCtrl1);
+    });
+    map.on('complete', function() {
+        parent._setTitle2("电子地图");
+        var paramSignResult = parent.getLatLong();
+        xSign = paramSignResult.LatLng.devLng;
+        ySign = paramSignResult.LatLng.devlat;
+        console.log("xSign:"+xSign+"   ySign:"+ySign);
+        if(xSign != "" && ySign!=""){
+            setMarker(xSign,ySign);
+        }
+    });
+    function setMarker(lng,lat){
+        // 设置缩放级别和中心点
+        map.setZoomAndCenter(map.getZoom(), [lng, lat]);
+        // 在新中心点添加 marker
+        var marker = getGMarker();
+        marker.setPosition(new AMap.LngLat(lng, lat));
+        //regeocoder(marker);
+
+    }
+    function getGMarker(){
+        if(G_marker == null){
+            G_marker = new AMap.Marker({
+                map: map,
+                zoom:map.getZoom(),
+            });
+            /*G_marker.on('click', function() {
+                regeocoder(G_marker);
+            });*/
+        }
+        return G_marker;
+    }
+</script>
+</body>
+</html>

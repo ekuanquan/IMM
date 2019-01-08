@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* 翻页css*/
+.page-Box{
+	margin-top: 4px;
+	float: left;
+	width: 440px;
+	height: 24px;
+}
+.pageJump {
+	float: right;
+	height: 24px;
+	line-height: 22px;
+	margin-left: 5px;
+	text-align: center;
+	width: 24px;
+	background-color: #f9f9fa;
+	border: 1px solid #c8c8c8;
+	border-radius: 3px;
+	color: #323232;
+	font-size: 12px;
+	cursor: default;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.pageJump:hover {
+	border-color: #0463f1;
+	color: #0463f1;
+}
+.pageJump:active {
+	padding-top: 1px;
+	border-color: #000B8C;
+	color: #000B8C;
+}
+.pageJump-disable {
+	float: right;
+	height: 24px;
+	line-height: 22px;
+	margin-left: 8px;
+	text-align: center;
+	width: 24px;
+	background-color: #f9f9fa;
+	border: 1px solid #c8c8c8;
+	border-radius: 3px;
+	color: #323232;
+	font-size: 12px;
+	cursor: pointer;
+	pointer-events: none;
+	
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.pageYeClass {
+	color: #666;
+	float: right;
+	font-size: 14px;
+	line-height: 24px;
+	margin-left: 3px;
+}
+.inputClass {
+	border: 1px solid #c8c8c8;
+	float: right;
+	height: 20px;
+	margin-left: 5px;
+	text-align: center;
+	width: 40px;
+	font-size: 14px;
+}
+.inputClass.beyond {
+	box-shadow: 0px 0px 2px #B93145;
+	border-color: #D77375;
+	color: #BC0E28;
+}
+.inputClass:hover, .inputClass:focus {
+	border-color: #0463f1;
+}
+.inputClass.wrong {
+	animation: wrong 1s;
+}
+@keyframes wrong {
+ 0% {
+box-shadow:0px 0px 2px #B93145;
+border-color:#D77375;
+}
+ 10% {
+box-shadow:0px 0px 2px white;
+border-color:white;
+}
+ 20% {
+box-shadow:0px 0px 2px #B93145;
+border-color:#D77375;
+}
+ 30% {
+box-shadow:0px 0px 2px white;
+border-color:white;
+}
+ 40% {
+box-shadow:0px 0px 2px #B93145;
+border-color:#D77375;
+}
+ 70% {
+box-shadow:0px 0px 2px white;
+border-color:#c8c8c8;
+}
+ 100% {
+box-shadow: none;
+border-color:#c8c8c8;
+}
+}
+/*分页CSS */
+.pageDiv {
+	height: 24px;
+	float: right;
+}
+.pageDiv span {
+	background-color: #f9f9fa;
+	border: 1px solid #c8c8c8;
+	border-radius: 3px;
+	color: #323232;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 3px 0 0;
+	position: relative;
+	text-align: center;
+	min-width: 22px;
+	box-sizing: content-box;
+	cursor: default;
+}
+.pageDiv span:hover {
+	border-color: #0463f1 !important;
+}
+.pageDiv span:active {
+	border-color: #0463f1;
+	color: #0463f1;
+}
+.pageDiv span.on {
+	border-color: #c8c8c8;
+	color: #0463f1;
+}
+.pageDiv em {
+	height: 24px;
+	width: 24px;
+	border: 0 none;
+	float: left;
+	margin-right: 3px;
+}
+.pageDiv em.unclick1, .pageDiv em.unclick2 {
+	cursor: default;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.pageDiv em.unclick1 {
+	background-image: url(image/PageUp_normal.png);
+}
+.pageDiv em.unclick2 {
+	background-image: url(image/PageDown_normal.png);
+}
+.pageDiv em.prev {
+	background-image: url(image/PageUp_normal.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.pageDiv em.prev:hover, .pageDiv em.next:hover {
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.pageDiv em.prev:hover {
+	background-image: url(image/PageUp_active.png);
+}
+.pageDiv em.next:hover {
+	background-image: url(image/PageDown_active.png);
+}
+.pageDiv em.prev:active {
+	background-image: url(image/PageUp_pushed.png);
+}
+.pageDiv em.next:active {
+	background-image: url(image/PageDown_pushed.png);
+}
+.pageDiv em.next {
+	background-image: url(image/PageDown_normal.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.point {
+	width: 15px;
+	height: 16px;
+	line-height: 16px;
+	float: left;
+	color: #009;
+	margin-right: 3px;
+	text-align: center;
+	font-size: 14px;
+	cursor: default;
+}
+/*页码*/
+.Record-page-left {
+	float: left;
+	height: 100%;
+	line-height: 24px;
+	font-size: 14px;
+	color: #323232;
+	cursor: default;
+	margin-left:10px;
+}
+.Record-page-right{
+	float: right;
+	/*margin-right:20px;*/
+}
+
+.Record-page-right ,.Record-page-left{
+	margin-top:3px;
+}

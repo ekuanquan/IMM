@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>systemCode</title>
+    <link rel="stylesheet" type="text/css" href="./EquipmentType.css">
+    <script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../resource/js/colResizable-1.5.min.js"></script>
+    <script type="text/javascript" src="../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+    <script type="text/javascript" src="../../resource/js/popus.js"></script>
+    <script type="text/javascript" src="./EquipmentType.js"></script>
+
+</head>
+<body>
+<div class="body">
+    <div id="title_top" class="title_top">
+        <div class="title_topleft">设备型号</div>
+        <div id="title_topright" class="title_topright">
+            <div id="contentRight_search_img" class="contentRight_search_img"></div>
+            <input id="contentRight_search_input" class="contentRight_search_input" type="text" title="搜索" />
+        </div>
+    </div>
+    <div id="main" class="main">
+        <div id="main_header" class="main_header">
+            <div id="add" class="add">
+                <!--<div id="add_img" class="add_img"></div>-->
+                <div id="add_word" class="add_word">添加</div>
+            </div>
+            <div id="update" class="updata">
+                <!--<div id="update_img" class="update_img"></div>-->
+                <div id="update_word" class="update_word">修改</div>
+            </div>
+            <div id="close" class="close">
+                <!--<div id="close_img" class="close_img"></div>-->
+                <div id="close_word" class="close_word">删除</div>
+            </div>
+        </div>
+            <div id="content" class="content">
+                <table id="table" class="table">
+                    <thead>
+                    <tr class="table_title">
+                        <th align="left"  class="eventNum_title">设备型号编号</th>
+                        <th align="left" class="eventNum_title">设备型号名称</th>
+                        <th align="left" class="eventNum_title ">设备型号类型</th>
+                        <th align="left" class="eventNum_title6">基础防区数</th>
+                        <th align="left" class="eventNum_title">扩展防区数</th>
+                        <th align="left" class=" eventNum_title">2位编程方案</th>
+                        <th align="left" class="eventNum_title ">4位编程方案</th>
+                        <th align="left" class="eventNum_title ">编程类型</th>
+                    </tr>
+                    </thead>
+                        <tbody id="table_content" class="tbody">
+                        </tbody>
+                </table>
+            </div>
+        <div id="contentBottom" class="contentBottom">
+            <div id="pageBox" class="pageBox"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

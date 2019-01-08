@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* float: left; */
+}
+
+.area{
+    float: left;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #c8c8c8;*/
+}
+
+.title{
+    background-color: #2577e5;
+    float: left;
+    width: 100%;;
+    height: 30px;
+}
+
+.table{
+    float: left;
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.close{
+    float: right;
+    color: white;
+    background-image: url("img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: red;
+}
+
+.middle{
+    float:left;
+    width: calc(100% - 20px);
+    height: 140px;
+    margin: 10px 0 0 10px;
+}
+
+.endbutt{
+    float:left;
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    padding-left: 80px;
+}
+.buttsure{
+    float:left;
+    background-color: #2577e5;
+    color: #ffffff;
+    width: 103px;
+    height: 100%;
+    /* padding-left: 39px; */
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 30px;
+    text-align:center;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 24px;
+}
+.buttsure:hover{
+    background-color: #1b5fde;
+}
+
+.buttcancel{
+    float:left;
+    background-color: #ffffff;
+    color: #335281;
+    width: 103px;
+    height: 100%;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align:center;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 24px;
+}
+.buttcancel:hover{
+    background-color: #2577e5;
+    color: #ffffff;
+}
+
+.textime {
+    margin: 12px 10px 0 10px;
+    float: left;
+}
+.inpt {
+    margin-top: 10px;
+    width: 278px;
+    border: 1px solid #d9d9d9;
+    height: 26px;
+    padding-left: 5px;
+    float: left;
+}
+.inputDiv{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+.inputDiv1{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#newUserId_editable-select-options ul li:hover{
+    background-color: #2577E5;
+    color:white;
+}

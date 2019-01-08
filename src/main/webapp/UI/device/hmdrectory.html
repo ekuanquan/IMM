@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%; width: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="hmdrectory.css">
+    
+    <link rel="stylesheet" href="zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="hmdrectoryRight.css" type="text/css">
+    <script type="text/javascript" src="../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="jquery.ztree.core.js"></script>
+    <script type="text/javascript" src="../resource/js/jquery-ajax-expand.js"></script>
+</head>
+<body >
+    <div id="left">
+        <aside  class="left-side">
+            <div id="area">
+                <label class="areatex">区域结构</label>
+                <div class="ateabutt" id="add"></div>
+                <div class="ateabutt" id="update"></div>
+                <div class="ateabutt" id="close"></div>
+                <div class="flash-btn" id="flash" title="刷新"></div>
+            </div>
+
+            <!--<div id="refrelany">
+              <div class="search-div"> <input id="test" class="" type="text" />
+                  <i title="搜索"></i>
+              </div>
+              <div class="flash-btn" id="flash" title="刷新"></div>
+          </div>-->
+          <div class="streediv">
+            <div id="tree">
+              <!-- <div id="title">主目录</div>-->
+               <!--树结构-->
+               <ul id="treeDemo" class="ztree"></ul>
+           </div>
+       </div>
+   </aside>
+</div>
+
+<div id="contentRight" class="contentRight">
+    <div id="contentRight_title" class="contentRight_title">
+        <div id="contentRight_add" class="contentRight_add">
+            <div id="contentRight_add_img" class="contentRight_add_img"></div>
+            <div id="contentRight_add_text" class="contentRight_add_text">添加</div>
+        </div>
+        <div id="contentRight_del" class="contentRight_del">
+            <div id="contentRight_del_img" class="contentRight_del_img"></div>
+            <div id="contentRight_del_text" class="contentRight_del_text">删除</div>
+        </div>
+        <div id="contentRight_search" class="contentRight_search">
+            <div id="contentRight_search_img" class="contentRight_search_img"></div>
+            <input type="text" id="contentRight_search_input" class="contentRight_search_input" name=""/>
+            
+        </div>
+    </div>
+    <div id="contentRight_bottom" class="contentRight_bottom">
+        <div id="contentRight_tab_container" class="contentRight_tab_container">
+            <div id="alarmMainframe_tab" class="alarmMainframe_tab tab_item">报警主机</div>
+            <div id="NVRWired_tab" class="NVR_tab tab_item">有线NVR</div>
+            <div id="NVR_tab" class="NVR_tab tab_item">互联网NVR</div>
+            <div id="AKey_tab" class="AKey_tab tab_item">一键报警</div>
+            <!--<div id="face_tab" class="NVR_tab tab_item">人脸卡口设备</div>
+            <div id="car_tab" class="NVR_tab tab_item">车辆卡口设备</div>
+            <div id="wifi_tab" class="NVR_tab tab_item">WIFI探测</div>
+            &lt;!&ndash;<div id="cardevice_tab" class="NVR_tab tab_item">车载设备管理</div>&ndash;&gt;
+            <div id="cardevice_tab" class="NVR_tab tab_item">车载设备</div>-->
+        </div>
+        <div id="contentRight_Iframe_container" class="contentRight_Iframe_container">
+            <iframe id="firstIframe" src=""></iframe>
+            <iframe id="alarmMainframeIframe" name="alarmMainframeIframe" class="alarmMainframeIframe" src="alarmMainframeIframe/alarmMainframeIframe.html"></iframe>
+            <iframe id="NVRWiredIframe" name="NVRWiredIframe" class="NVRWiredIframe" src="NVRWireIframe/NVRWireIframe.html"></iframe>
+            <iframe id="NVRIframe" name="NVRIframe" class="NVRIframe" src="NVRIframe/NVRIframe.html"></iframe>
+            <iframe id="AKeyIframe" name="AKeyIframe" class="AKeyIframe" src="AKeyIframe/AKeyIframe.html"></iframe>
+            <!--<iframe id="alarmMainframeIframe" name="alarmMainframeIframe" class="alarmMainframeIframe" src="alarmMainframeIframe/alarmMainframeIframe.html"></iframe>-->
+            <iframe id="faceIframe" class="faceIframe" src="faceIframe/faceIframe.html"></iframe>
+            <iframe id="carIframe"  class="carIframe" src="carIframe/carIframe.html"></iframe>
+            <iframe id="WIFIIframe"  class="WIFIIframe" src="WIFIIframe/WIFIIframe.html"></iframe>
+            <iframe id="cardeviceIframe" name="cardeviceIframe" class="cardeviceIframe" src="cardeviceIframe/cardeviceIframe.html"></iframe>
+        </div>
+    </div>
+    
+</div>
+</body>
+<script type="text/javascript" src="hmdrectoryRight.js"></script>
+<script type="text/javascript" src="hmdrectory.js"></script>
+<script type="text/javascript" src="../resource/js/jquery-ajax-expand.js"></script>
+</html>

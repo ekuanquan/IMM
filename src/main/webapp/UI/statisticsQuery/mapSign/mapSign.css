@@ -1,0 +1,28 @@
+.main{
+    width: 1000px;
+    height: 550px;
+    /* border: solid 1px #dddddd; */
+}
+
+body{
+    margin: 0px;
+}
+.title{
+    height: 30px;
+    background: #335281;
+}
+.title_1{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #ffffff;
+    line-height:30px;
+    margin-left: 11px;
+}
+#close:hover,#close:active{
+    background-color: #d44027;
+}
+.mapContainer{
+    margin: 10px;
+    height: 548px;
+    border: solid 1px #dddddd;
+}

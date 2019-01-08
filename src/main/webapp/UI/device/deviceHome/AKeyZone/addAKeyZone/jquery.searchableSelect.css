@@ -1,0 +1,149 @@
+/*
+Author: David Qin
+E-mail: david@hereapp.cn
+Date: 2014-11-05
+*/
+
+.searchable-select-hide {
+  display: none;
+}
+
+.searchable-select {
+  display: inline-block;
+  min-width: 224px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  position: relative;
+  outline: none;
+  float: left;
+  margin-top: 5px;
+  margin-left: 11px;
+}
+
+.searchable-select-holder{
+  padding: 4px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 26px;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  text-align: left;
+  width: 224px;
+  height: 26px;
+  line-height: 16px;
+}
+
+.searchable-select-caret {
+  position: absolute;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border-color: black transparent transparent transparent;
+  top: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 5px;
+  margin: auto;
+  right: 10px;
+  top: 6px;
+}
+
+.searchable-select-dropdown {
+  height: 200px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 4px;
+  border-top: none;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.searchable-select-input {
+  width: 224px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 4px;
+  /*width: 100%;*/
+  box-sizing: border-box;
+}
+
+.searchable-scroll {
+  margin-top: 4px;
+  position: relative;
+}
+
+.searchable-scroll.has-privious {
+  padding-top: 16px;
+}
+
+.searchable-scroll.has-next {
+  padding-bottom: 16px;
+}
+
+.searchable-has-privious {
+  top: 0;
+}
+
+.searchable-has-next {
+  bottom: 0;
+}
+
+.searchable-has-privious, .searchable-has-next {
+  height: 16px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+  background-color: white;
+  line-height: 8px;
+  cursor: pointer;
+}
+
+.searchable-select-items {
+  max-height: 154px;
+  overflow-y: scroll;
+  position: relative;
+  width: 218px;
+
+}
+
+.searchable-select-items::-webkit-scrollbar {
+  display: none;
+}
+
+.searchable-select-item {
+  cursor: pointer;
+  min-height: 26px;
+  box-sizing: border-box;
+    transition: all 1s ease 0s;
+  text-align: left;
+  width: 224px;
+  height: 26px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.searchable-select-item.hover {
+
+  background: #9bb7ff;
+  color: white;
+}
+
+.searchable-select-item.selected {
+  background: #9bb7ff;
+  color: white;
+}

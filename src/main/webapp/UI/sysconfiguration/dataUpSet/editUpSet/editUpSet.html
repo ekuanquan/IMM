@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="editUpSet.css">
+    <link rel="stylesheet" type="text/css" href="../../../resource/demo/css/style.css"/>
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../../resource/demo/js/Validform_v4.0.js"></script>
+    <script type="text/javascript" src="../../../resource/gbId/gbPopup.js"></script>
+    <script type="text/javascript" src="editUpSet.js"></script>
+</head>
+<body>
+<form id="form" class="registerform">
+<div class="area">
+    <div class="middle">
+        <div class="line" style="margin-top: 20px">
+            <div class="name"><span class="xin" >*</span>子平台ID</div>
+            <input class="tex" id = "ID" type="text" maxlength="4" datatype="p4" nullmsg="子平台ID不能为空"  errormsg="请输入子平台ID（4位数字组合）！"/>
+            <div class="Validform_checktip margintop14"></div>
+        </div>
+
+        <div class="line">
+            <div class="name"><span class="xin">*</span>子平台名称</div>
+            <input class="tex" id ="name" type="text" maxlength="19"  datatype="nce" nullmsg="子平台名称不能为空"  errormsg="请输入子平台名称！"/>
+            <div class="Validform_checktip margintop14"></div>
+        </div>
+
+        <div class="line">
+            <div class="name"><span class="xin">*</span>子平台ip</div>
+            <input class="tex" id="host" type="text"   datatype="ip" nullmsg="子平台ip不能为空"  errormsg="请输入子平台ip！"/>
+            <div class="Validform_checktip margintop14"></div>
+        </div>
+        <div class="line">
+            <div class="name"><span class="xin">&nbsp;</span>国标ID</div>
+            <input class="tex" id="gbId" type="text" maxlength="20" datatype="nce" />
+            <div class="Validform_checktip margintop14"></div>
+        </div>
+
+        <div class="line">
+            <div class="name"><span style="color: red ;line-height: 26px">&nbsp;</span>备注</div>
+            <textarea  class="texarea" id ="memo" maxlength="50"></textarea>
+        </div>
+
+        <div class="endbutt">
+            <div class="buttsure" id ="save">保存</div><div class="buttcancel" id="cancel">取消</div>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

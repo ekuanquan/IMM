@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>owner</title>
+    <link rel="stylesheet" type="text/css" href="./owner.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../select/select.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../../../../resource/demo/css/demo.css"/>-->
+    <link rel="stylesheet" type="text/css" href="../../../../resource/demo/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="js/validate.css"/>
+</head>
+<body>
+<form id="form" class="registerform">
+<div id="box" class="box">
+    <div id="accountInfo_container" class="info_container">
+        <div id="accountInfo_title" class="info_title">帐号信息</div>
+        <div id="accountInfo_content" class="info_content">
+            <!--<div class="content_left">-->
+                <div class="account_text text_lab_7">
+                    <span class="star">*</span>用户帐号
+                    <span></span>
+                </div>
+                <input type="text" id="userAccount" maxlength="18" class="text_input" name="userAccount" datatype="letternember" nullmsg="用户账号不能为空"  errormsg="请输入用户账号（英文字母和数字组合）！" onblur="isEmpty('userAccount','1'); "/>
+                <div class="Validform_checktip marginTop2"></div>
+                <span id="userAccount_repeat"></span>
+                <div class="account_text text_lab_7 " style="display: none;">
+                    <span class="emptyStar"></span>创建日期
+                </div>
+                <input type="text" id="createDate" class="text_input time_input " name="" style="display: none;"/>
+            <!--</div>-->
+           <!-- <div class="content_rigth">-->
+                <div class=" text_lab_6">
+                    <span class="star">*</span>用户密码
+                    <span></span>
+                </div>
+                <input type="text" id="userPwd" class="text_input" maxlength="16" name="userPwd"  datatype="pwd" nullmsg="用户密码不能为空"  errormsg="请输入用户密码（6-16位）！" />
+                <div class="Validform_checktip marginTop2"></div>
+                <!--<div class="account_text  input_3">
+                    &lt;!&ndash;<span class="emptyStar"></span>&ndash;&gt;创建日期
+                </div>
+                <input type="text" id="createDate" maxlength="10" class="text_input time_input" name=""/>
+            <div class="Validform_checktip marginTop2"></div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div id="baseInfo_container" class="info_container">
+        <div id="baseInfo_title" class="info_title">基本信息</div>
+        <div id="baseInfo_content" class="info_content">
+            <!--<div class="content_left">-->
+                <div class=" text_lab_7">
+                    <span class="star">*</span>用户编号
+                    <span></span>
+                </div>
+                <input type="text" id="userId" maxlength="9" class="text_input" name="userId" datatype="16number" nullmsg="用户编号不能为空"  errormsg="请输入用户编号（16进制数如：0000DDDD）！" onblur="isEmpty('userId','2'); "/>
+                <div class="Validform_checktip marginTop2"></div>
+                <div id="operatorId_text" class=" text_lab_6">
+                    <span class="star">*</span>用户名称
+                    <span></span>
+                </div>
+            <input type="text" id="userName" maxlength="255" class="text_input" name="userName" datatype="*" nullmsg="用户名称不能为空"  errormsg="请输入用户名称（汉字英文字母和数字组合）！" />
+            <div class="Validform_checktip marginTop2"></div>
+                <div class=" text_lab_7 input_xin">
+                    <span class="star">*</span>用户类型
+                </div>
+                <select id="userType" class="text_select " disabled="disabled">
+                    <option value="0">一般客户</option>
+                    <option value="1" selected="selected">机主</option>
+                </select><div class="Validform_checktip marginTop2"></div>
+            <div class=" text_lab_7 marginTop12">
+                <span class="emptyStar"></span>用户级别
+            </div>
+            <!--<input type="text" id="usrAlmType" class="text_input_7 " name=""/>-->
+            <select id="usrAlmType" class="text_select marginTop12">
+                <option value=""></option>
+                <option value="0">一级</option>
+                <option value="1">二级</option>
+                <option value="2">三级</option>
+                <option value="3">四级</option>
+                <option value="4">五级</option>
+            </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" text_lab_6 marginTop12">
+                    <span class="emptyStar"></span>用户属性
+                </div>
+               <!-- <input type="text" id="userProperty" class="text_input " name=""/>-->
+                <select id="userProperty" class="text_select marginTop12">
+                    <option value="0">未注册</option>
+                    <option value="1">已注册</option>
+                </select><div class="Validform_checktip margintop14"></div>
+            <div class=" input_3 marginTop12">
+                <!--<span class="emptyStar"></span>-->用户行业
+            </div>
+            <select id="businessName" class="text_select marginTop12">
+                <!-- <option value="0">一般客户</option>
+                 <option value="1">机主</option>-->
+            </select><div class="Validform_checktip margintop14"></div>
+                <div class=" text_5 marginTop12">
+                   <!-- <span class="emptyStar"></span>-->所属分中心
+                </div>
+                <select id="centerName" class="input_5 marginTop12">
+                   <!-- <option value="0">一般客户</option>
+                    <option value="1">机主</option>-->
+                </select><div class="Validform_checktip margintop14"></div>
+            <div class=" text_lab_6 marginTop12">
+                <span class="star">*</span>口令
+            </div>
+            <input type="text" id="payNO" class="text_input marginTop12" name="" maxlength="64" datatype="*" nullmsg="口令不能为空"  errormsg="请输入口令（汉字英文字母和数字组合）！" />
+            <div class="Validform_checktip margintop14"></div>
+               <!-- <input type="text" id="centerName" class="text_input " name=""/>-->
+                <div class="input_xin marginTop12">
+                    <span class="star">*</span>服务类型
+                </div>
+                <!--<input type="text" id="userServerType" class="text_input " name=""/>-->
+                <select id="userServerType" class="text_select marginTop12">
+
+                </select><div class="Validform_checktip margintop14">
+
+        </div>
+            <!--</div>-->
+            <!--<div class="content_rigth">-->
+               <!-- <div id="operatorId_text" class=" text_lab_6">
+                    <span class="star">*</span>用户名称
+                    <span></span>
+                </div>-->
+                <!--<input type="text" id="userName" class="text_input" name="userName"/>-->
+                <div class=" text_lab_7 marginTop12">
+                    <span class="emptyStar"></span>用户地址
+                </div>
+                <input type="text" id="userAddr" class="long_input marginTop12" name="" maxlength="255"/>
+            <div class="Validform_checktip margintop14"></div>
+              <!--  <input type="text" id="businessName" class="text_input " name=""/>-->
+
+            <!--</div>-->
+            <div class=" input_3 marginTop12">
+                <!--<span class="emptyStar"></span>-->联网电话
+            </div>
+            <input id="pnlTel" class="text_input marginTop12" maxlength="100" datatype="*"  errormsg="请输入正确的联网电话"/>
+            <div class="Validform_checktip margintop14"></div>
+            <div class="text_lab_7 marginTop12">
+                <span class="emptyStar"></span>备注
+            </div>
+            <textarea id="fMemo" row="3" col="4"maxlength="1000" class="input_8 marginTop12"></textarea>
+        </div>
+    </div>
+    <div id="responsible_container" class="info_container">
+        <div id="responsible_title" class="info_title">负责人信息</div>
+        <div id="responsible_content" class="info_content">
+            <!--<div class="content_left">-->
+                <div class="account_text text_lab">
+                    <span class="star">*</span>单位负责人
+                </div>
+                <input type="text" id="contact" class="input_5" name="" maxlength="100" datatype="*" nullmsg="单位负责人不能为空"  errormsg="请输入单位负责人"/>
+            <div class="Validform_checktip marginTop2"></div>
+                <div class="account_text text_mid_5">
+                    <span class="star">*</span>负责人手机
+                </div>
+                <input type="text" id="cMobile" class="input_5 " maxlength="100" name="cMobile" datatype="*" nullmsg="负责人手机不能为空"  errormsg="请输入正确的负责人手机"/>
+            <div class="Validform_checktip marginTop2"></div>
+                <div class="account_text text_7">
+                    <!--<span class="emptyStar"></span>-->负责人家庭电话
+                </div>
+                <input type="text" id="cHmPhone" class="input_7 " maxlength="32" name="cHmPhone" datatype="*"  errormsg="请输入正确的负责人家庭电话"/>
+            <div class="Validform_checktip marginTop2"></div>
+
+            <!--</div>-->
+            <!--<div class="content_rigth">-->
+                <!--<div class=" text_lab_6">
+                    <span class="emptyStar"></span>负责人口令
+                </div>
+                <input type="text" id="contactPayNO" class="text_input" name=""/>-->
+                <div class=" text_5 marginTop12">
+                    <!--<span class="emptyStar"></span>-->负责人电话
+                </div>
+                <input type="text" id="cPhone" class="input_5 marginTop12" maxlength="100" name="cPhone" />
+            <div class="Validform_checktip margintop14"></div>
+            <!--</div>-->
+        </div>
+    </div>
+    <div id="integrated_container" class="info_container">
+        <div id="integrated_title" class="info_title">综合</div>
+        <div id="integrated_content" class="info_content">
+            <!--<div id="content_left" class="content_left">-->
+                <div class="account_text text_xin_7">
+                    <span class="star">*</span>定期撤布防用户
+                </div>
+               <!-- <input type="text" id="nomRpt " class="text_input_7" name=""/>-->
+                <select id="nomRpt" class="input_7 ">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip marginTop2"></div>
+                <div class=" text_xin_6">
+                    <span class="star">*</span>定期测试用户
+                </div>
+                <!--   <input type="text" id="engageTest" class="text_input_7 " name=""/>-->
+                <select id="engageTest" class="input_mid_xin_6">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip marginTop2"></div>
+                <div class="account_text text_xin_6 ">
+                    <span class="star">*</span>紧急按钮用户
+                </div>
+              <!--  <input type="text" id="nomTest" class="text_input_7 " name=""/>-->
+                <select id="nomTest" class="input_xin_6 ">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip marginTop2"></div>
+                <div class=" account_text text_xin_7 marginTop12">
+                    <span class="star">*</span>短信转发
+                </div>
+                <!-- <input type="text" id="isVideoCheck" class="text_input_7 " name=""/>-->
+                <select id="isVideoCheck" class="input_7 marginTop12">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class="account_text text_xin_6 marginTop12">
+                    <span class="star">*</span>所属区域
+                    <span></span>
+                </div>
+                <input type="text" id="areaName" class="input_mid_xin_6 marginTop12" name="areaName" datatype="*" nullmsg="所属区域不能为空"  errormsg="请选择所属区域！" />
+                <div class="Validform_checktip margintop14"></div>
+                <div class=" text_xin_6 marginTop12">
+                    <span class="star">*</span>投保
+                    <span></span>
+                </div>
+                <!-- <input type="text" id="isInsurance" class="text_input_7 " name="isInsurance"/> -->
+                <select id="isInsurance" class="input_xin_6 marginTop12">
+                    <option value="0">未投保</option>
+                    <option value="1">已投保</option>
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" account_text text_xin_7 marginTop12">
+                    <span class="star">*</span>是否来电正常
+                </div>
+               <!-- <input type="text" id="hasBak" class="text_input_7 " name=""/>-->
+                <select id="hasBak" class="input_7 marginTop12">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" account_text text_xin_6 marginTop12">
+                    <span class="star">*</span>缴费状态
+                </div>
+                <!--<input type="text" id="isPay" class="text_input_7 " name=""/>-->
+                <select id="isPay" class="input_mid_xin_6 marginTop12">
+                    <option value="0">未缴费</option>
+                    <option value="1">已缴费</option>
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" text_xin_6 marginTop12">
+                    <span class="star">*</span>录入人
+                </div>
+                <input type="text" id="operName" class="input_xin_6 marginTop12" name="" maxlength="100" datatype="nce" nullmsg="录入人不能为空"  errormsg="请输入录入人名称（英文字母和数字组合）！"/>
+            <div class="Validform_checktip margintop14"></div>
+                <div class="account_text text_xin_7 marginTop12">
+                    <span class="star ">*</span>录入时间
+                </div>
+                <!--<input type="text" id="inputtime" class="input_7 time_input marginTop12" name="" maxlength="10" datatype="date" nullmsg="录入时间不能为空"  errormsg="请选择录入时间！" />-->
+            <input type="text" readonly="readonly" id="instDate" class="input_7 time_input marginTop12" name="" maxlength="10" datatype="date" nullmsg="录入时间不能为空"  errormsg="请选择录入时间！" />
+
+            <div class="Validform_checktip margintop14"></div>
+                <div class=" text_xin_6 marginTop12">
+                    <span class="emptyStar"></span>道路标志
+                </div>
+                <input type="text" id="road" class="input_mid_xin_6 marginTop12" name="" maxlength="100"/>
+            <div class="Validform_checktip margintop14"></div>
+                <!--<div class=" input_3 marginTop12">
+                    &lt;!&ndash;<span class="emptyStar"></span>&ndash;&gt;布防时间
+                </div>
+                <input type="text" id="define3" class="text_input_7 time_input marginTop12" name=""/>-->
+                <div class="account_text text_xin_6 marginTop12">
+                    <span class="emptyStar"></span>子行业
+                </div>
+                <!-- <input type="text" id="define1" class="text_input_7 " name=""/>-->
+
+                <input id="define1" class="input_7 marginTop12" maxlength="255" style="width: 164px;"/>
+
+            <div class="Validform_checktip margintop14"></div>
+               <!-- <div class=" text_lab_6 marginTop12">
+                    <span class="emptyStar"></span>中心号
+                </div>
+                &lt;!&ndash;<input type="text" id="define6" class="text_input_7 " name=""/>&ndash;&gt;
+                <select id="define6" class="text_select marginTop12">
+                    &lt;!&ndash;<option value="0">否</option>
+                    <option value="1">是</option>&ndash;&gt;
+                </select>-->
+                <div class=" account_text text_xin_7 marginTop12">
+                    <span class="emptyStar"></span>故障提示
+                </div>
+                <!--<input type="text" id="badMem" class="text_input_7 " name=""/>-->
+                <select id="badMem" class="input_7 marginTop12">
+                    <!--<option value="0">否</option>
+                    <option value="1">是</option>-->
+                </select>
+            <div class="Validform_checktip margintop14"></div>
+
+            <div class=" text_xin_6 marginTop12">
+                <!--<span class="emptyStar"></span>-->无线卡号
+            </div>
+            <input id="pnlHdTel" class="input_mid_xin_6 marginTop12" maxlength="26"  />
+                <!--<div class=" text_lab_7 marginTop12">
+                    <span class="emptyStar"></span>暂停时间
+                </div>
+                <input type="text" id="define2" class="text_input_7 time_input marginTop12" name=""/>-->
+
+               <!-- <div class=" account_text text_xin_6 marginTop12">
+                    <span class="star">*</span>安装日期
+                    <span></span>
+                </div>
+                <input type="text" id="instDate" maxlength="100" class="input_xin_6 time_input marginTop12" name="instDate" datatype="date" nullmsg="安装日期不能为空"  errormsg="请选择安装日期！" />
+            <div class="Validform_checktip margintop14"></div>-->
+
+               <!-- <div class=" input_3 marginTop12">
+                    &lt;!&ndash;<span class="emptyStar"></span>&ndash;&gt;暂停服务
+                </div>
+                &lt;!&ndash; <input type="text" id="fMemo" class="text_input_7 " name=""/>&ndash;&gt;
+                <select id="  " class="text_select marginTop12">
+                    &lt;!&ndash;    <option value="0">否</option>
+                        <option value="1">是</option>&ndash;&gt;
+                </select>-->
+               <!-- <div class=" text_lab_7 marginTop12">
+                    <span class="emptyStar"></span>入网类型
+                </div>
+                &lt;!&ndash; <input type="text" id="pnlTelType" class="text_input_7 " name=""/>&ndash;&gt;
+                <select id="pnlTelType" class="text_select marginTop12">
+                    &lt;!&ndash;    <option value="0">否</option>
+                        <option value="1">是</option>&ndash;&gt;
+                </select>-->
+                <!--<div class=" text_lab_7 ">
+                    <span class="emptyStar"></span>备注4
+                </div>-->
+                <!--<input type="text" id="define4" class="text_input_7 " name=""/>-->
+                <!--<select id="define4" class="text_select ">
+                    &lt;!&ndash;<option value="0">否</option>
+                    <option value="1">是</option>&ndash;&gt;
+                </select>-->
+                <!--<div class=" text_lab_6 marginTop12">
+                    <span class="emptyStar"></span>入网日期
+                </div>
+                <input type="text" id="liveDate" class="text_input_7 time_input marginTop12" name=""/>-->
+            </div>
+            <!--<div id="content_rigth" class="content_rigth">
+                <div class=" text_lab_6 ">
+                    <span class="emptyStar"></span>处警注释
+                </div>
+               &lt;!&ndash; <input type="text" id="uMem" class="text_input_7 " name=""/>&ndash;&gt;
+                <select id="uMem" class="text_select ">
+                   &lt;!&ndash; <option value="0">否</option>
+                    <option value="1">是</option>&ndash;&gt;
+                </select>
+
+            </div>-->
+        </div>
+    <!--</div>-->
+    <div id="role_container" class="info_container">
+        <div id="role_title" class="info_title">角色</div>
+        <div id="role_content" class="info_content">
+            <div id="title" class="title">
+                <div id="title_add" class="title_add">
+                    <div id="title_add_img" class="title_add_img"></div>
+                    <div id="title_add_text" class="title_add_text">添加角色</div>
+                </div>
+
+            </div>
+            <div id="table" class="table">
+                <div id="table_title" class="table_title">
+                    <div id="zoneNum" class="table_title_item">角色编号</div>
+                    <div id="" class="table_title_item">角色类型</div>
+                    <div class="table_title_item">角色名称</div>
+                    <div class="table_title_item">角色描述</div>
+
+                </div>
+                <div id="table_content" class="table_content">
+                    <!--<div class="row">
+                        <div class="row_noChecked"></div>
+                        <div class="table_item_4">0001</div>
+                        <div class="table_item_4">MX-40</div>
+                        <div class="table_item_4">营业厅北门健康发生的很快就</div>
+                        <div class="table_item_4">2002-8-23</div>
+
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bottom_buttons" class="bottom_buttons">
+    <div id="confirmButton" class="confirmButton">确定</div>
+    <div id="cancelButton" class="cancelButton">取消</div>
+</div>
+</form>
+</body>
+<script type="text/javascript" src="../../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../../select/select.js"></script>
+<script type="text/javascript" src="../../../../resource/js/popus.js"></script>
+<script type="text/javascript" src="../../../../resource/demo/js/Validform_v4.0.js"></script>
+<script type="text/javascript" src="./owner.js"></script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>contact</title>
+	<link rel="stylesheet" type="text/css" href="rolePopups.css"/>
+	<link rel="stylesheet" href="../../zTreeStyle.css" type="text/css">
+	<script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+	<script type="text/javascript" src="../../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+	<script type="text/javascript" src="../../jquery.ztree.core.js"></script>
+	<!--<script type="text/javascript" src="rolePopupsleft.js"></script>-->
+	<script type="text/javascript" src="rolePopups.js"></script>
+</head>
+<body>
+<div id="title" class="title">
+	<div id="title_left" class="title_left">选择角色</div>
+	<div id="title_close" class="title_close"></div>
+</div>
+<div id="left">
+	<aside  class="left-side">
+		<div id="area">
+			<label class="areatex">角色架构</label>
+			<!--<div class="ateabutt" id="add"></div>
+            <div class="ateabutt" id="update"></div>
+            <div class="ateabutt" id="close"></div>-->
+		</div>
+
+		<div id="refrelany">
+			<div class="search-div"> <input id="test" class="" type="text" />
+				<i title="搜索"></i>
+			</div>
+			<div class="flash-btn" id="flash" title="刷新"></div>
+		</div>
+		<div class="streediv">
+			<div id="tree">
+				<!--<div id="title">角色类型</div>-->
+				<!--树结构-->
+				<ul id="treeDemo" class="ztree">
+
+				</ul>
+			</div>
+		</div>
+	</aside>
+</div >
+<div id="contentRight" class="contentRight">
+	<div id="contentRight_title" class="contentRight_title">
+		<div class="rolemanagement">角色管理</div>
+		<div id="contentRight_search" class="contentRight_search">
+			<div id="contentRight_search_img" class="contentRight_search_img"></div>
+			<input type="text" id="contentRight_search_input" class="contentRight_search_input" name=""/>
+
+		</div>
+	</div>
+	<div id="content" class="content">
+		<div id="table" class="table">
+			<div id="table_title" class="table_title">
+				<div id="zoneNum" class="table_title_item">角色编号</div>
+				<div id="" class="table_title_item">角色类型</div>
+				<div class="table_title_item">角色名称</div>
+				<div class="table_title_item">角色描述</div>
+
+			</div>
+			<div id="table_content" class="table_content">
+
+			</div>
+			
+		</div>
+		<div id="contentBottom" class="contentBottom">
+			<div id="pageBox" class="pageBox"></div>
+		</div>
+	</div>
+</div>
+
+<div class="line"></div>
+	<div id="bottom_buttons" class="bottom_buttons">
+		<div id="confirmButton" class="confirmButton">确定</div>
+		<div id="cancelButton" class="cancelButton">取消</div>
+	</div>
+</body>
+</html>

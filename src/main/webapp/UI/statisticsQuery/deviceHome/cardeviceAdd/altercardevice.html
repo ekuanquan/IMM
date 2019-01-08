@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改车载设备管理</title>
+    <link rel="stylesheet" type="text/css" href="altercardevice.css">
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../resource/js/popus.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="altercardevice.js"></script>
+</head>
+<body>
+<div class="ifarea">
+    <div class="title">
+        <div class="table" >修改车载设备管理</div><div class="close" id="close"></div>
+    </div>
+    <div class="middle">
+        <div class="char">
+            <div class="select" id="basic">基本信息</div>
+        </div>
+        <div class="content_title">设备信息</div>
+        <div class="line" style="margin-top: 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin">*</div>设备编号</div><div class="leinput"><input class="posiInput" type="text" id="devId" readonly="readonly" style="background-color: rgb(233,233,233)"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin">*</div>设备名称</div><div class="riinput"><input class="posiInput" type="text" id="devName"></div>
+            </div>
+        </div>
+        <div class="line" style="margin: 10px 20px 0px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin">*</div>终端类型</div>
+                <div class="leinput">
+                    <select class="posiInput more select2" id="ter_id"></select>
+                </div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin">*</div>SIM卡号</div><div class="riinput"><input class="posiInput" type="text" id="sim"></div>
+            </div>
+        </div>
+        <div class="line" style="margin: 10px 20px 0px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin">*</div>所属区域</div><div class="leinput"><input class="posiInput more" type="text" id="areaId"></div>
+            </div>
+        </div>
+        <div class="line" style="margin: 10px 20px 0px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin" style="margin-right: 10px"></div>通道参数</div>
+                <div class="leinput1" style="width: 87px">
+                    <select class="posiInput more1 select1" id="channelNum" onchange=" chooseChannelNum()">
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                    </select>
+                </div>
+            </div>
+            <div class="leinput1"><input class="posiInput CH isChecked" id="CH1" value="CH1"></div>
+            <div class="leinput1"><input class="posiInput CH isChecked" id="CH2" value="CH2"></div>
+            <div class="leinput1"><input class="posiInput CH isChecked" id="CH3" value="CH3"></div>
+            <div class="leinput1"><input class="posiInput CH isChecked" id="CH4" value="CH4"></div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH5" value="CH5"></div>
+            <div class="leinput2"><input class="posiInput CH noChecked" id="CH6" value="CH6"></div>
+        </div>
+        <div class="line" style="margin: 10px 20px 0px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin" style="margin-right: 10px"></div></div><div class="leinput1" style="width: 87px"></div>
+            </div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH7" value="CH7"></div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH8" value="CH8"></div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH9" value="CH9"></div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH10" value="CH10"></div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH11" value="CH11"></div>
+            <div class="leinput2"><input class="posiInput CH noChecked" id="CH12" value="CH12"></div>
+        </div>
+        <div class="line" style="margin: 10px 20px 20px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin1"></div></div><div class="leinput1" style="width: 87px"></div>
+            </div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH13" value="CH13"></div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH14" value="CH14"></div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH15" value="CH15"></div>
+            <div class="leinput1"><input class="posiInput CH noChecked" id="CH16" value="CH16"></div>
+        </div>
+        <div class="content_title">车辆信息</div>
+        <div class="line" style="margin-top: 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin">*</div>车牌颜色</div>
+                <div class="leinput">
+                    <select class="posiInput more select2" id="plateColorId"></select>
+                </div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin">*</div>车牌号码</div><div class="riinput"><input class="posiInput" type="text" id="carno"></div>
+            </div>
+        </div>
+        <div class="line" style="margin: 10px 20px 0px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin1"></div>车辆颜色</div><div class="leinput"><input class="posiInput" type="text" id="color"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin1"></div>车辆品牌</div><div class="riinput"><input class="posiInput" type="text" id="pinpai"></div>
+            </div>
+        </div>
+        <div class="line" style="margin: 10px 20px 0px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin1"></div>安装日期</div><div class="leinput"><input class="posiInput time" type="text" id="devInstDate" readonly="readonly" style="background-color: rgb(233,233,233)"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin1"></div>车辆类型</div><div class="riinput"><input class="posiInput" type="text" id="carType"></div>
+            </div>
+        </div>
+        <div class="line" style="margin: 10px 20px 0px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin1"></div>服务开始日</div><div class="leinput"><input class="posiInput time" type="text" id="stime" readonly="readonly" style="background-color: rgb(233,233,233)"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin1"></div>服务结束日</div><div class="riinput"><input class="posiInput time" type="text" id="etime"></div>
+            </div>
+        </div>
+        <div class="line" style="margin: 10px 20px 0px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin1"></div>核定载人数</div><div class="leinput"><input class="posiInput" type="text" id="loadNum"></div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin1"></div>司机名称</div><div class="riinput"><input class="posiInput" type="text" id="czxm"></div>
+            </div>
+        </div>
+        <div class="line" style="margin: 10px 20px 20px 20px">
+            <div class="lineleft">
+                <div class="lename"><div class="xin">*</div>车辆分组</div>
+                <div class="leinput">
+                    <select class="posiInput more select2" id="terGroupId"></select>
+                </div>
+            </div>
+            <div class="lineright">
+                <div class="riname"><div class="xin1"></div>司机电话</div><div class="riinput"><input class="posiInput" type="text" id="tel"></div>
+            </div>
+        </div>
+        <div class="endbutt">
+            <div id="sure" class="buttsure">确定</div><div id="cancel" class="buttcancel">取消</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

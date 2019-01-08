@@ -1,0 +1,163 @@
+*{
+	font-family: 'Microsoft YaHei';
+	float: left;
+	box-sizing: border-box;
+}
+body{
+	width: 387px;
+	height: 520px;
+	margin: 0;
+}
+.title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #2577e5;
+	font-size: 14px;
+	color: #FFF;
+}
+.title_left{
+	margin-left: 10px;
+}
+.title_close{
+	float: right;
+	width: 30px;
+	height: 30px;
+
+	background-image: url(../../../../resource/images/index/close.png);
+	background-repeat: no-repeat;
+	background-position: 8px 8px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.title_close:hover{
+	background-color: #f75352;
+}
+.content{
+	width: 100%;
+	height: auto;
+	margin-top: 6px;
+	font-size: 14px;
+}
+.singleLine{
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+
+}
+
+
+.content_text{
+	margin-left: 15px;
+	width: 88px;
+}
+.star{
+	margin-top: 3px;
+	padding-right: 2px;
+	color: red;
+    width: 9px;
+}
+.emptyStar{
+	width: 9px;
+	height: 9px;
+}
+
+
+.singleLineInput{
+	margin-left: 10px;
+	height: 26px;
+	width: 256px;
+	margin-top: 6px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #d9d9d9;
+}
+.notes_text{
+	margin-top: 6px;
+}
+.multiLine{
+	width: 100%;
+	height: 110px;
+	margin-top: 8px;
+
+}
+
+.multiLineInput{
+	margin-left: 10px;
+	height: 102px;
+	width: 256px;
+	margin-top: 6px;
+	border: 1px solid #d9d9d9;
+}
+.bottom_buttons{
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+	padding-left: 88px;
+}
+.confirmButton{
+	width: 103px;
+	height: 25px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #2577e5;
+	color: #FFF;
+	line-height: 25px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.confirmButton:hover{
+	background-color: #1b5fde;
+}
+.confirmButton:active{
+	padding-top: 1px;
+
+}
+.cancelButton{
+	width: 103px;
+	height: 25px;
+	margin-left: 10px;
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #2577e5;
+	color: #2577e5;
+	line-height: 23px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.cancelButton:hover{
+	border: 1px solid #1b5fde;
+	color: #323232;
+}
+.cancelButton:active{
+	padding-top: 1px;
+	color: #323232;
+
+}
+
+.fMemo_input{
+	resize : none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.instTime_input {
+	margin-left: 10px;
+	height: 26px;
+	width: 256px;
+	margin-top: 6px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #d9d9d9;
+    background: url("../../../../resource/images/index/time.png") no-repeat 98% center;
+}

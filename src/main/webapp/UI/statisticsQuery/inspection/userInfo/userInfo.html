@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户基本信息</title>
+    <link href="userInfo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../../resource/colResizable/colResizable-1.5.min.js"></script>
+    <script type="text/javascript" src="../../../resource/colResizable/colResizableNot-1.5.min.js"></script>
+    <script type="text/javascript" src="userInfo.js"></script>
+</head>
+<body>
+<div id="main" class="main">
+    <!--<div id="title" class="title">
+        <div id="table" class="table">用户基本信息</div>
+        <div id="close" class="close"></div>
+    </div>-->
+    <div class="middle">
+        <div id="content_title" class="content_title">
+            <div id="owner_tab" class="tab_item" data-show="#specific_content">基本信息</div>
+            <div id="associatedDevice_tab" class="tab_item" style="display: none;" data-show="#contact_content">相关联系人</div>
+        </div>
+        <div class="content">
+            <div id="specific_content" class="content_input" style="display: none;">
+                <div class="baseUserInfo_titletest">
+                    用户基本信息
+                </div>
+                <div style="width: 100%" class="a1">
+                    <div class=" text_lab_4 marginTop8">
+                        用户编号
+                        <span></span>
+                    </div>
+                    <input type="text" id="userId" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        单位负责人
+                        <span></span>
+                    </div>
+                    <input type="text" id="contact" readonly="readonly" class="text_input_5 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        负责人手机
+                        <span></span>
+                    </div>
+                    <input type="text" id="cMobile" readonly="readonly" class="text_input_5 marginTop8 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop8">
+                        用户名称
+                        <span></span>
+                    </div>
+                    <input type="text" id="userName" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        口令
+                        <span></span>
+                    </div>
+                    <input type="text" id="PayNO" readonly="readonly" class="text_input_5 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        用户级别
+                        <span></span>
+                    </div>
+                    <input type="text" id="rdClass" readonly="readonly" class="text_input_5 marginTop8 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop8 marginLeft12">
+                        用户地址
+                    </div>
+                    <input type="text" id="userAddr" readonly="readonly" class="text_input_8 marginTop8 "  name=""/>
+                    <div class=" text_lab_5 marginTop8">
+                        用户类型
+                        <span></span>
+                    </div>
+                    <input type="text" id="userType" readonly="readonly" class="text_input_5 marginTop8 " />
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop8">
+                        所属区域
+                        <span></span>
+                    </div>
+                    <input type="text" id="areaName" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        用户行业
+                        <span></span>
+                    </div>
+                    <input type="text" id="businessName" readonly="readonly" class="text_input_5 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        子行业
+                        <span></span>
+                    </div>
+                    <input type="text" id="business_subName" readonly="readonly" class="text_input_5 marginTop8 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop8">
+                        服务类型
+                        <span></span>
+                    </div>
+                    <input type="text" id="serverType" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        缴费状态
+                        <span></span>
+                    </div>
+                    <input type="text" id="isPay" readonly="readonly" class="text_input_5 marginTop8 " />
+                    <!--<div class=" text_lab_5 marginTop8">
+                        所属分中心
+                        <span></span>
+                    </div>
+                    <input type="text" id="centerName" readonly="readonly" class="text_input_5 marginTop8 " />-->
+                    <div class=" text_lab_5 marginTop8">
+                        道路标志
+                        <span></span>
+                    </div>
+                    <input type="text" id="road" readonly="readonly" class="text_input_5 marginTop8 " />
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop8">
+                        短信转发
+                        <span></span>
+                    </div>
+                    <input type="text" id="isVideoCheck" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        负责人电话
+                        <span></span>
+                    </div>
+                    <input type="text" id="cPhone" readonly="readonly" class="text_input_5 marginTop8 " />
+                    <div class=" text_lab_7 marginTop8">
+                        定期测试用户
+
+                    </div>
+                    <input type="text" id="engageTest" readonly="readonly" class="text_input_7 marginTop8 " />
+
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop8">
+                        录入人
+                        <span></span>
+                    </div>
+                    <input type="text" id="operName" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        安装时间
+                        <span></span>
+                    </div>
+                    <input type="text" id="instDate" readonly="readonly" class="text_input_5 marginTop8 " />
+                    <div class=" text_lab_7 marginTop8">
+                        定期撤布防用户
+                    </div>
+                    <input type="text" id="nomRpt" readonly="readonly" class="text_input_7 marginTop8 " />
+                </div>
+                <div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop8">
+                        联网电话
+                    </div>
+                    <input type="text" id="pnlTel" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_5 marginTop8">
+                        无线卡号
+                    </div>
+                    <input type="text" id="pnlHdTel" readonly="readonly" class="text_input_5 marginTop8 " />
+
+                </div>
+                <!--<div style="width: 100%" class="a2">
+                    <div class=" text_lab_4 marginTop8">
+                        道路标志
+                    </div>
+                    <input type="text" id="road" readonly="readonly" class="text_input_4 marginTop8 " />
+                </div>-->
+                <div style="width: 100%" class="a3">
+                    <div class="text_lab_4 marginTop8">
+                        备注
+                    </div>
+                    <textarea id="fMemo" row="3" col="4" readonly="readonly" class="input_8 marginTop8"></textarea>
+                </div>
+                <div class="baseUserInfo_titletest">
+                    出单信息
+                </div>
+                <div style="width: 100%"  class="a3">
+                    <div class=" text_lab_4 marginTop8">
+                        出单时间
+                    </div>
+                    <input type="text" id="createTime" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_4 marginTop8 marginLeft30">
+                        接警员
+                    </div>
+                    <input type="text" id="acceptAlarmer" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_4 marginTop8 marginLeft30">
+                        巡检类型
+                    </div>
+                    <input type="text" id="inspectionType" readonly="readonly" class="text_input_4 marginTop8 " />
+                </div>
+                <div class="baseUserInfo_titletest">
+                    巡检结果
+                </div>
+                <div style="width: 100%" class="a1">
+                    <div class=" text_lab_4 marginTop8">
+                        巡检单位
+                    </div>
+                    <input type="text" id="inspectionUnit" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_4 marginTop8 marginLeft30">
+                        巡检员
+                    </div>
+                    <input type="text" id="inspectioner" readonly="readonly" class="text_input_4 marginTop8 " />
+                    <div class=" text_lab_4 marginTop8 marginLeft30">
+                        巡检日期
+                    </div>
+                    <input type="text" id="inspectionDate" readonly="readonly" class="text_input_4 marginTop8 " />
+
+                </div>
+                <div style="width: 100%"  class="a2">
+                    <div class=" text_lab_4 marginTop8">
+                        巡检结果
+                    </div>
+                    <input type="text" id="inspectionResult" readonly="readonly" class="text_input_10 marginTop8 " />
+                </div>
+                <div style="width: 100%"  class="a3">
+                    <div class=" text_lab_4 marginTop8">
+                        备注
+                    </div>
+                    <input type="text" id="remarks" readonly="readonly" class="text_input_10 marginTop8 " />
+                </div>
+            </div>
+           <!-- <div id="contact_content" style="display: none; ">
+                <div class="Row" style="background-color: #edeeee">-->
+            <div id="contact_content" class="content2">
+                <div id="right_div">
+                    <div id="right_div1">
+                        <div id="right_divx">
+                            <table id="listBox1" class="table table-bordered">
+                                <tr class="table_title Row" style="background-color: #edeeee">
+                                    <td class="peoId split">联系人编号</td>
+                                    <td class="peoName split">联系人名称</td>
+                                    <td class="telephone1 split">联系人电话1</td>
+                                    <td class="telephone2 split">联系人电话2</td>
+                                    <td class="familyPhone split">家庭电话</td>
+                                    <td class="mobilePhone split">手机电话</td>
+                                    <td class="mobilePhone split">口令</td>
+                                    <td class="remarks">备注</td>
+                                    <td style="width:0px"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="right_div2">
+                        <table id="listBox2" class="table table-bordered">
+                            <tbody id="table_content" class="table_content">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <!--</div>
+            </div>
+        </div>
+    </div>
+</div>-->
+</body>
+</html>

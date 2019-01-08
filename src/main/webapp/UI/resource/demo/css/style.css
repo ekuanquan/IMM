@@ -1,0 +1,28 @@
+
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip{
+	margin-left: 2px;
+	line-height:20px;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+	color:#999;
+	font-size:12px;
+}
+.Validform_right{
+	color:#71b83d;
+	background:url(../images/sure.png) no-repeat left center;
+}
+.Validform_wrong{
+	color:red;
+	white-space:nowrap;
+	background:url(../images/delete.png) no-repeat left center;
+}
+.Validform_sigh{
+	color:red;
+	white-space:nowrap;
+	background:url(../images/sigh.png) no-repeat left center;
+}
+.marginTop17{
+	margin-top: 17px;
+}

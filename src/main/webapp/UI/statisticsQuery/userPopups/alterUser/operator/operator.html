@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>owner</title>
+    <link rel="stylesheet" type="text/css" href="operator.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../../../select/select.css"/>
+    <link rel="stylesheet" type="text/css" href="../owner/js/validate.css"/>-->
+</head>
+<body>
+<div id="box" class="box">
+   <form id="form">
+    <div id="accountInfo_container" class="info_container">
+        <div id="accountInfo_title" class="info_title">账户信息</div>
+        <div id="accountInfo_content" class="info_content">
+            <div class="content_left">
+                <div class="account_text text_lab_5">
+                    操作员账户
+                </div>
+                <input type="text" id="userAccount" readonly="readonly" maxlength="18" class="text_input_5" name="userAccount"/>
+            </div>
+            <!--<div class="content_mid">
+                <div class=" text_lab_4">
+                    创建日期
+                </div>
+                <input type="text" id="createDate" readonly="readonly" class="text_input_4" name="userPwd" />
+            </div>-->
+            <div class="content_rigth">
+                <div class="account_text text_lab_5">
+                    操作员密码
+                </div>
+                <input type="text" id="userPwd" readonly="readonly" class="text_input_5" name=""/>
+            </div>
+        </div>
+    </div>
+    <div id="baseInfo_container" class="info_container">
+        <div id="baseInfo_title" class="info_title">基本信息</div>
+        <div id="baseInfo_content" class="info_content">
+            <div style="width: 100%">
+                <div class=" text_lab_5 marginTop8">
+                    操作员编号
+                </div>
+                <input type="text" id="userId" readonly="readonly" maxlength="9" class="text_input_5 marginTop8" name="userId" />
+                <div class=" text_lab_5 marginTop8 marginLeft30">
+                    操作员名称
+                </div>
+                <input type="text" id="userName" readonly="readonly" class="text_input_5 marginTop8 " name=""/>
+                <div class=" text_lab_5 marginTop8 marginLeft30">
+                    操作员类型
+                </div>
+                <input type="text" id="userType" readonly="readonly" class="text_input_5 marginTop8" name="userType" />
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop8">
+                    所属区域
+                </div>
+                <input type="text" id="areaName" readonly="readonly" maxlength="9" class="text_input_4 marginTop8" name="userId" />
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    过期时间
+                </div>
+                <input type="text" id="overDateTime" readonly="readonly" class="text_input_4 marginTop8 " name=""/>
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    操作员IP
+                </div>
+                <input type="text" id="acctIP" readonly="readonly" class="text_input_4 marginTop8" name="userType" />
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_5 marginTop8">
+                    操作员性别
+                </div>
+                <input type="text" id="sex" readonly="readonly" maxlength="9" class="text_input_5 marginTop8" name="userId" />
+                <div class=" text_lab_5 marginTop8 marginLeft30">
+                    操作员电话
+                </div>
+                <input type="text" id="cMobile" readonly="readonly" class="text_input_5 marginTop8 " name=""/>
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    邮箱
+                </div>
+                <input type="text" id="email" readonly="readonly" class="text_input_4 marginTop8" name="userType" />
+            </div>
+            <div style="width: 100%">
+                <div class=" text_lab_5 marginTop8">
+                    操作员职务
+                </div>
+                <input type="text" id="office" readonly="readonly" maxlength="9" class="text_input_5 marginTop8" name="userId" />
+                <!--<div class=" text_lab_5 marginTop8 marginLeft30">
+                    操作员学历
+                </div>
+                <input type="text" id="education" readonly="readonly" class="text_input_5 marginTop8 " name=""/>-->
+                <div class=" text_lab_5 marginTop8 marginLeft30">
+                    录入时间
+                </div>
+                <input type="text" id="operTime" readonly="readonly" class="text_input_5 marginTop8 " name=""/>
+                <div class=" text_lab_5 marginTop8 marginLeft30">
+                    所属平台
+                </div>
+                <input type="text" id="platform_name" readonly="readonly" class="text_input_5 marginTop8" name="userType" />
+            </div>
+
+            <div style="width: 100%">
+                <div class=" text_lab_4 marginTop8">
+                    密码提示
+                </div>
+                <input type="text" id="pwdNote" readonly="readonly" maxlength="9" class="text_input_4 marginTop8" name="userId" />
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    订阅
+                </div>
+                <input type="text" id="acctDY" readonly="readonly" class="text_input_4 marginTop8 " name=""/>
+                <!--<select id="acctDY" class="text_select marginTop8">
+                    <option value="0">不启用</option>
+                    <option value="1">启用并回发消息</option>
+                    <option value="2">启用不回发消息</option>
+                </select>-->
+                <div class=" text_lab_4 marginTop8 marginLeft30">
+                    备注
+                </div>
+                <input type="text" id="fMemo" readonly="readonly" class="text_input_4 marginTop8" name="userType" />
+            </div>
+            <div style="width: 100%">
+                <div class="account_text text_lab_4 marginTop8">
+                    录入人
+                </div>
+                <input readonly="readonly" type="text" id="operName" class="text_input_4 marginTop8 marginLeft9" name="areaName"/>
+                <!--<div class="account_text text_lab_4 marginTop8 marginLeft3000">
+                    录入时间
+                </div>
+                <input type="text" id="operTime" class="text_input_4 marginTop8 marginLeft13"/>-->
+            </div>
+        </div>
+    </div>
+    <div id="role_container" class="info_container">
+        <div id="role_title" class="info_title">角色</div>
+        <div id="role_content" class="info_content">
+            <div id="table" class="table">
+                <div id="table_title" class="table_title">
+                    <div id="zoneNum" class="table_title_item">角色编号</div>
+                    <div id="" class="table_title_item">角色类型</div>
+                    <div class="table_title_item">角色名称</div>
+                    <div class="table_title_item">角色描述</div>
+                </div>
+                <div id="table_content" class="table_content">
+                </div>
+            </div>
+        </div>
+    </div>
+   </form>
+</div>
+</body>
+<script type="text/javascript" src="../../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../../select/select.js"></script>
+<script type="text/javascript" src="../../../../resource/js/popus.js"></script>
+<script type="text/javascript" src="../owner/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../owner/js/account_rule.js"></script>
+<script type="text/javascript" src="../owner/js/validate.js"></script>
+<script type="text/javascript" src="operator.js"></script>
+</html>

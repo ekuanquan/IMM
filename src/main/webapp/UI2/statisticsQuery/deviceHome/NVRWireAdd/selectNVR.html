@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="selectNVR.css">
+
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../../resource/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="selectNVR.js"></script>
+</head>
+<body>
+    <div class="devarea">
+        <div style="width: 100%">
+            <div class=" text_lab_4 marginTop12">
+                设备编号
+            </div>
+            <input type="text" id="devId" readonly="readonly" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_4 marginTop12 marginLeft30">
+                设备名称
+            </div>
+            <input type="text" id="devName" readonly="readonly" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_7 marginTop12 marginLeft30">
+                设备关联编号
+            </div>
+            <input type="text" id="pnlActID" readonly="readonly" class="text_input_7 marginTop12 " />
+        </div>
+        <div style="width: 100%">
+            <div class=" text_lab_4 marginTop12">
+                所属区域
+            </div>
+            <input type="text" id="openarea" readonly="readonly" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_4 marginTop12 marginLeft30">
+                设备类型
+            </div>
+            <input type="text" id="devtype" readonly="readonly" value="互联网NVR" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_7 marginTop12 marginLeft30">
+                设备登录用户名
+            </div>
+            <input type="text" id="devLoginName" readonly="readonly" class="text_input_7 marginTop12 " />
+        </div>
+        <div style="width: 100%">
+            <div class=" text_lab_4 marginTop12 ">
+                设备型号
+            </div>
+            <input type="text" id="devModelId" readonly="readonly" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_4 marginTop12 marginLeft30">
+                设备厂商
+            </div>
+            <input type="text" id="manufacturer" readonly="readonly" value="报警主机" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_7 marginTop12 marginLeft30">
+                设备登录密码
+            </div>
+            <input type="text" id="devLoginPwd" readonly="readonly" class="text_input_7 marginTop12 " />
+        </div>
+        <div style="width: 100%">
+            <div class=" text_lab_4 marginTop12">
+                P2P ID
+            </div>
+            <input type="text" id="devIp" readonly="readonly" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_4 marginTop12 marginLeft30">
+                经度
+            </div>
+            <input type="text" id="line" readonly="readonly" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_4 marginTop12 marginLeft30">
+                纬度
+            </div>
+            <input type="text" id="column" readonly="readonly" class="latitude marginTop12 " />
+            <div class="place marginTop12"></div><div class="plname marginTop12" id="choseplace">查看位置</div>
+        </div>
+        <div style="width: 100%">
+            <div class=" text_lab_5 marginTop12 marginLeft20">
+                设备通道数
+            </div>
+            <input type="text" id="ChannelNum" readonly="readonly" class="text_input_5 marginTop12 " />
+            <div class=" text_lab_4 marginTop12 marginLeft30">
+                设备位置
+            </div>
+            <input type="text" id="pnlAddr" readonly="readonly" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_4 marginTop12 marginLeft30">
+                安装员
+            </div>
+            <input type="text" id="instMan" readonly="readonly" class="text_input_4 marginTop12 " />
+        </div>
+        <div style="width: 100%">
+            <div class=" text_lab_4 marginTop12 marginLeft20">
+                安装单位
+            </div>
+            <input type="text" id="instUnit" readonly="readonly" class="text_input_4 marginTop12 " />
+            <div class=" text_lab_7 marginTop12 marginLeft30">
+                流转服务器IP
+            </div>
+            <input type="text" id="videoServer" readonly="readonly" class="text_input_7 marginTop12 " />
+            <div class=" text_lab_4 marginTop12 marginLeft30">
+                安装时间
+            </div>
+            <input type="text" id="installTime_input" readonly="readonly" class="text_input_4 marginTop12 " />
+        </div>
+
+        <div style="width: 100%">
+            <div class=" text_lab_4 marginTop12">
+                备注
+            </div>
+            <textarea id="fMemo" readonly="readonly" class="texnote marginTop12"></textarea>
+        </div>
+
+        <div style="width: 100%">
+            <div class="lenamebox marginTop12 marginLeft20">
+                <div id="lenameCheckbox" class="lenameCheckbox isChecked">
+                </div>
+            </div>
+            <div class="lenamename marginTop12">设备编号自动关联设备</div>
+        </div>
+        <div class="endbutt">
+            <!--<div id="host" class="host">相关机主</div><div id="sure" class="buttsure">保存</div><div id="cancel" class="buttcancel">取消</div>-->
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

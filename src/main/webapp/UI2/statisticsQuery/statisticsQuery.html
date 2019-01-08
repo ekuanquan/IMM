@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%; width: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/statisticsQuery.css">
+
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/statisticsQuery.js"></script>
+</head>
+<body >
+<div id="left">
+    <div id="contentLeft" class="contentLeft">
+
+        <div class="bar1" id="userManage">用户查询<div id="userBara" class="down i"></div></div>
+        <div class="user son" id="hostClient" ><div class="sonImgdiv"><div id="hostClientSonImg" class="sonImg"></div></div><div style="height:100%;float: left">机主客户</div></div>
+        <div class="user son" id="averageCustomer" ><div class="sonImgdiv"><div id="averageCustomerSonImg" class="sonImg"></div></div><div style="height:100%;float: left">一般客户</div></div>
+        <div class="user son" id="operator" ><div class="sonImgdiv"><div id="operatorSonImg" class="sonImg"></div></div><div style="height:100%;float: left">操作员</div></div>
+        <!-- -------------------------------------------------------------------------------------------->
+        <div class="bar1" id="eventManagement">事件查询<div id="eventBara" class="i"></div></div>
+        <div class="event son" id="eventManage"><div class="sonImgdiv"><div id="eventManageSonImg" class="sonImg"></div></div><div style="height:100%;float: left">历史事件查询</div></div>
+        <div class="event son" id="eventStatistics"><div class="sonImgdiv"><div id="eventStatisticsSonImg" class="sonImg"></div></div><div style="height:100%;float: left">事件月统计</div></div>
+        <!-------------------------------------------------------------------------------------------------------------->
+        <div class="bar1" id="deviceManagement">设备查询<div id="deviceBara" class="i"></div></div>
+        <div class="device son" id="deviceHome"><div class="sonImgdiv"><div id="deviceHomeSonImg" class="sonImg"></div></div><div style="height:100%;float: left">设备管理</div></div>
+        <!------------------------------------------------------------------------------------------------------------------------------->
+        <div class="bar1" id="documentManagement">单据查询<div id="documentBara" class="i"></div></div>
+        <div class="document son"  id="singleHandle" ><div class="sonImgdiv"><div id="singleHandleSonImg" class="sonImg"></div></div><div style="height:100%;float: left">处警单</div></div>
+        <div class="document son"  id="repairOrder" ><div class="sonImgdiv"><div id="repairOrderSonImg" class="sonImg"></div></div><div style="height:100%;float: left">维修单</div></div>
+        <div class="document son"  id="nuclearPoliceList"><div class="sonImgdiv"><div id="nuclearPoliceListSonImg" class="sonImg"></div></div><div style="height:100%;float: left">核警单</div></div>
+        <div class="document son"  id="inspectionFromList"><div class="sonImgdiv"><div id="inspectionFromListSonImg" class="sonImg"></div></div><div style="height:100%;float: left">巡检单</div></div>
+        <!-------------------------------------------------------------------------------------------------------------->
+        <div class="bar1" id="systemLogManagement">日志查询<div id="systemLogBara" class="i"></div></div>
+        <div class="systemLog son" id="systemLog"><div class="sonImgdiv"><div id="systemLogSonImg" class="sonImg"></div></div><div style="height:100%;float: left">日志</div></div>
+    </div>
+</div>
+<div id="contentRight" class="contentRight">
+    <iframe id="hostClientIframe" name="hostClientIframe" src="hostClient/hostClient.html"></iframe>
+    <iframe id="averageCustomerIframe" name="averageCustomerIframe" src=""></iframe>
+    <iframe id="operatorIframe" name="operatorIframe" src=""></iframe>
+    <iframe id="eventManageIframe" name="eventManageIframe" src=""></iframe>
+    <iframe id="eventStatisticsIframe" name="eventStatisticsIframe" src="eventmonth/eventmonth.html"></iframe>
+    <iframe id="deviceHomeIframe" name="deviceHomeIframe" src=""></iframe>
+    <iframe id="singleHandleIframe" name="singleHandleIframe" src=""></iframe>
+    <iframe id="repairOrderIframe" name="repairOrderIframe" src=""></iframe>
+    <iframe id="nuclearPoliceListIframe" name="nuclearPoliceListIframe" src=""></iframe>
+    <iframe id="inspectionFromListIframe" name="inspectionFromListIframe" src=""></iframe>
+    <iframe id="systemLogIframe" name="systemLogIframe" src=""></iframe>
+</div>
+</body>
+</html>

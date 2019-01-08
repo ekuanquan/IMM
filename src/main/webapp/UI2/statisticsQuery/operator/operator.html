@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+    <meta charset="utf-8"/>
+    <title>用户信息</title>
+    <link rel="stylesheet" type="text/css" href="operator.css"/>
+</head>
+<body style="width:100%;height: 100%;">
+<div id="title" class="title">
+    <div id="title_left" class="title_left">
+        <div id="title_left_text" class="title_left_text">操作员</div>
+    </div>
+</div>
+<div id="searchTitle" class="searchTitle">
+    <div style="width:100%;float: left;">
+        <select id="search" class="selet pic" >
+            <option value="all" >全部</option>
+            <option value="accountNum">用户编号</option>
+            <option value="accountName">用户名称</option>
+        </select>
+        <div id="searchInput" class="searchInput ">
+            <input id="search_text" class="search_text" type="text" placeholder="" name="" value=""/>
+        </div>
+        <div class="tex">所属区域</div>
+        <input id="areaname" class="selet" type="text" placeholder="" name="" value=""/>
+        <div class="tex">操作员类型</div><select class="selet pic" id="acctType">
+        <option value="all">全部</option>
+        <option value="2">系统操作员</option>
+        <option value="3">业务操作员</option>
+    </select>
+
+    </div>
+    <div>
+        <div class="textime" style="margin-left: 10px">录入时间</div><input id="startTime" class="inpt" type="text">
+        <div class="textime">至</div><input id="endTime" class="inpt" type="text">
+        <div id="policeCheck" class="btns btn1">搜索</div>
+        <div id="timeorder" class="timeorder">操作员编号升降<div id="timePng" class="timePng"></div></div>
+    </div>
+</div>
+<div id="content" class="content">
+    <table id="userInfoTab" class="table">
+        <tr class="table_title">
+            <th id="userId_title" class=" table_title_item borderRight">操作员编号</th>
+            <th id="userName_title" class=" table_title_item borderRight">操作员名称</th>
+            <th id="userType_title" class=" table_title_item borderRight">操作员类型</th>
+            <th id="areaName_title" class=" table_title_item borderRight">所属区域</th>
+            <th id="overDateTime_title" class=" table_title_item borderRight">过期时间</th>
+            <th id="acctIP_title" class=" table_title_item borderRight">操作员IP</th>
+            <th id="sex_title" class=" table_title_item borderRight">操作员性别</th>
+            <th id="telephone_title" class=" table_title_item borderRight">操作员电话</th>
+
+            <th id="email_title" class=" table_title_item borderRight">邮箱</th>
+            <!--<th id="education_title" class=" table_title_item borderRight">操作员学历</th>-->
+            <th id="office_title" class=" table_title_item borderRight">操作员职务</th>
+            <th id="userPWDhint_title" class=" table_title_item borderRight">密码提示</th>
+
+            <th id="centerName_title" class=" table_title_item borderRight">所属分中心</th>
+            <th id="acctDY_title" class=" table_title_item borderRight">订阅</th>
+            <th id="fMemo_title" class=" table_title_item">备注</th>
+        </tr>
+        <tbody id="table_content" class="table_content"></tbody>
+    </table>
+</div>
+</div>
+<div id="contentBottom" class="contentBottom">
+    <div id="pageBox" class="pageBox"></div>
+</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../resource/js/load.js"></script>
+<script type="text/javascript" src="../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+<script type="text/javascript" src="../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../tool/exchange.js"></script>
+<script type="text/javascript" src="./operator.js"></script>
+<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../resource/js/popups.js"></script>
+</html>

@@ -1,0 +1,9 @@
+mysql表更新日志:
+2018.03.14
+mcs_devstatus 表更新字段isBF为devStatus,为适应旁路的需求,最新表结构以mysql.sql的"设备子系统布撤防状态表(旧)--设备子系统状态表(新)"为准
+mcs_devstatus_view 设备布撤防状态视图相应更新字段isBF为devStatus并新增旁路判断
+tri_imm_sub_sys_ins 设备子系统表插入触发器相应更新字段isBF为devStatus
+devinfostatus_view 用户主设备状态视图相应更新字段isBF为devStatus
+UserStateMonitorDaoImpl类getUserStateListDao方法相应更新字段isBF为devStatus,并新增旁路判断
+UserStateMonitor/getChildInfoByDevId.do接口的dao相应方法更新新字段isBF为devStatus
+页面需要更新:用户设备查看页面,子系统状态查看页面

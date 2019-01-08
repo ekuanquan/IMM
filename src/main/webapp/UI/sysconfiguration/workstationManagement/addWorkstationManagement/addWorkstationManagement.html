@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addWorkstationManagement</title>
+    <link rel="stylesheet" type="text/css" href="../../../resource/demo/css/style.css">
+    <link rel="stylesheet" href="./addWorkstationManagement.css">
+    <link rel="stylesheet" href="../zTreeStyle.css">
+
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../jquery.ztree.core.js"></script>
+    <script type="text/javascript" src="../jquery.ztree.excheck.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="addWorkstationManagement.js"></script>
+    <script type="text/javascript" src="../../../resource/demo/js/Validform_v4.0.js"></script>
+</head>
+<body>
+<form id="form">
+<div class="main">
+    <div class="add_top">
+        <!--头-->
+        <div id="addcode_title">
+            <div class="title_top">添加</div>
+            <div id="close" class="close"></div>
+        </div>
+    </div>
+        <div class="lineWM">
+            <div class="riname"><div class="xin">*</div>工作站编号</div>
+            <div class="riinput">
+                <input id="stationNum" name="devModelId" type="text" class="posiInput" datatype="nember" nullmsg="工作站编号不能为空" errormsg="请输入工作站编号（16位进制数）" maxlength="50"/>
+                <div class="Validform_checktip margin-top-2"></div>
+            </div>
+            <div class="riname"><div class="xin">*</div>工作站名称</div>
+            <div class="riinput">
+                <input id="stationName" name="devModelId" type="text" class="posiInput" datatype="*" nullmsg="工作站名称不能为空" errormsg="请输入工作站名称" maxlength="50"/>
+                <div class="Validform_checktip margin-top-2"></div>
+            </div>
+        </div>
+        <div class="lineWM">
+            <div class="riname"><div class="xin">*</div>工作站IP</div>
+            <div class="riinput">
+                <input id="stationHost" name="devModelName" type="text" class="posiInput" datatype="ip" nullmsg="工作站IP不能为空" errormsg="请输入正确的IP号（如：10.0.0.1）" maxlength="32"/>
+                <div class="Validform_checktip margin-top-2"></div>
+            </div>
+            <div class="riname"><div class="xin">*</div>工作站端口</div>
+            <div class="riinput">
+                <input id="stationPort" name="devModelName" type="text" class="posiInput" datatype="port" nullmsg="工作站端口不能为空" errormsg="请输入正确的工作站端口（0-65535）" maxlength="5"/>
+                <div class="Validform_checktip margin-top-2"></div>
+            </div>
+        </div>
+        <div class="lineDIV">
+            <div class="riname" style="width: 90px;margin-left: 20px;">事件订阅配置</div>
+            <div class="riDiv " id="ztree">
+                <ul id="treeDemo" class="ztree"></ul>
+            </div>
+        </div>
+        <div class="food_choose">
+            <div id="sure" class="sure">保存</div>
+            <div id="remove" class="remove">取消</div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

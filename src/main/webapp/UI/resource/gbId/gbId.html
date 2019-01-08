@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="gbId.css">
+    <script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../resource/js/popus.js"></script>
+    <script type="text/javascript" src="gbId.js"></script>
+</head>
+<body>
+
+<div class="area">
+
+    <div class="title">
+        <div class="table" >生成国标Id</div><div class="close"></div>
+    </div>
+
+    <div class="middle">
+
+        <div class="line" style="margin-top: 20px">
+            <div class="name"><span class="xin" >*</span>父节点Id</div>
+            <input id="parentId" class="tex" type="text" />
+        </div>
+
+        <div class="line">
+            <div class="name"><span class="xin">*</span>类型</div>
+            <select id="type" class="text_select">
+                <option value="131">摄像机</option>
+                <option value="100">省级目录</option>
+                <option value="101">市级目录</option>
+                <option value="102">区县目录</option>
+                <option value="103">基层接入单位目录</option>
+                <option value="200">系统（平台）目录</option>
+                <option value="215">业务目录</option>
+                <option value="216">虚拟目录</option>
+                <option value="118">NVR</option>
+            </select>
+        </div>
+        <div class="line">
+            <div class="name"><span class="xin">&nbsp</span>乡镇街道代码</div>
+            <input id="baseCode" class="tex" type="text" />
+        </div>
+
+        <div class="endbutt">
+            <div class="buttsure">保存</div><div class="buttcancel" id="cancel">取消</div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+</body>
+</html>

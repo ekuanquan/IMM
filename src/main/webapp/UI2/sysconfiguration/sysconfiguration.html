@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="sysconfiguration.css">
+    
+    <link rel="stylesheet" href="zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="permissionRight.css" type="text/css">
+    <script type="text/javascript" src="../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="jquery.ztree.core.js"></script>
+    <!--<script src="../permission/permissionRight.js"></script>-->
+</head>
+<body >
+    <div id="left">
+        <aside  class="left-side">
+            <div>
+                <ul id="system_Configure">
+                    <li id="systemCode" type="systemCode">系统码</li>
+                    <li id="infoLibrary" type="infoLibrary">信息标准库</li>
+                    <li id="codingScheme" type="codingScheme">编码方案</li>
+                    <li id="equipmentType" type="equipmentType">设备型号</li>
+                    <li id="probeType" type="probeType">探头型号</li>
+                    <li id="regionalManagement" type="regionalManagement">区域管理</li>
+                    <li id="departmentManagement" type="departmentManagement">部门管理</li>
+                    <li id="eventForwarding" type="eventForwarding">事件转发110预案</li>
+                    <li id="eventLinkage" type="eventLinkage">事件联动方案</li>
+                    <li id="storageService" type="storageService">存储服务</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+<div id="contentRight" class="contentRight">
+    <!--<div id="contentRight_title" class="contentRight_title">-->
+        <!--<div id="contentRight_add" class="contentRight_add">
+            <div id="contentRight_add_text" class="contentRight_add_text">信息标准库</div>
+        </div>
+        &lt;!&ndash;<div id="contentRight_taskPlan" class="contentRight_taskPlan">
+            <div id="contentRight_taskPlan_img" class="contentRight_taskPlan_img"></div>
+            <div id="contentRight_taskPlan_text" class="contentRight_taskPlan_text">任务计划</div>
+        </div>&ndash;&gt;
+        <div id="contentRight_search" class="contentRight_search">
+            <div id="contentRight_search_img" class="contentRight_search_img"></div>
+            <input type="text" id="contentRight_search_input" class="contentRight_search_input" name=""/>
+
+        </div>
+    </div>
+    <div id="main" class="main">
+        <main class="main-side">
+            <div>
+                <ul>
+                    <li>类型列表</li>
+                    <li>故障原因</li>
+                    <li>报警原因</li>
+                    <li>出警方式</li>
+                    <li>巡警单位</li>
+                    <li>巡警类型</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <div id="contentRight_bottom" class="contentRight_bottom">
+        <div id="contentRight_tab_container" class="contentRight_tab_container">
+            <div id="roleManagement_tab" class="roleManagement_tab tab_item">角色管理</div>
+            &lt;!&ndash;<div id="operator_tab" class="operator_tab tab_item">操作员</div>&ndash;&gt;
+        </div>
+
+        <div id="contentRight_Iframe_container" class="contentRight_Iframe_container">
+            <iframe id="firstIframe" src=""></iframe>
+            <iframe id="roleManagementIframe" name="roleManagementIframe" class="roleManagement" src="roleManagementIframe/roleManagementIframe.html"></iframe>
+            &lt;!&ndash;<iframe id="operatorIframe"  name="operatorIframe" class="operatorIframe" src="operatorIframe/operatorIframe.html"></iframe>&ndash;&gt;
+
+        </div>-->
+        <iframe id="systemCodeIframe"  name="systemCodeIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="infoLibraryIframe"  name="infoLibraryIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="codingSchemeIframe"  name="codingSchemeIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="equipmentTypeIframe"  name="equipmentTypeIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="probeTypeIframe"  name="probeTypeIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="regionalManagementIframe"  name="regionalManagementIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="departmentManagementIframe"  name="departmentManagementIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="eventForwardingIframe"  name="eventForwardingIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="eventLinkageIframe"  name="eventLinkageIframe" class="CodeIframe" src=""></iframe>
+        <iframe id="storageServiceIframe"  name="storageServiceIframe" class="CodeIframe" src=""></iframe>
+    <!--</div>-->
+    
+</div>
+</body>
+<script type="text/javascript" src="sysconfiguration.js"></script>
+</html>

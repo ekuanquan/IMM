@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+    <meta charset="utf-8"/>
+    <title>
+        日志
+    </title>
+    <link rel="stylesheet" type="text/css" href="systemLog.css"/>
+
+</head>
+<body>
+<div id="title" class="title">
+    <div id="title_left" class="title_left">
+        <div id="title_left_text" class="title_left_text">
+            日志
+        </div>
+    </div>
+</div>
+<div id="searchTitle" class="searchTitle">
+    <div id="searchFirstDiv">
+        <div class="textime" style="margin-left: 10px">录入时间</div>
+        <input id="startTime" class="inpt" type="text">
+        <div class="textime">至</div>
+        <input id="endTime" class="inpt" type="text">
+        <div id="policeCheck" class="btns btn1">搜索</div>
+        <div id="timeorder" class="timeorder">时间升降<div id="timePng" class="timePng"></div></div>
+    </div>
+</div>
+<div id="content" class="content">
+    <table id="table" class="table">
+        <tr id="" class="table_title">
+            <th id="disposalAlarmNum_title" class="eventNum_title borderRight">日志编号</th>
+            <th id="eventNum_title" class="eventNum_title borderRight">日期时间</th>
+            <th id="usrAlmType_title" class="usrAlmType_title borderRight">日志描述</th>
+            <!--<th id="cPayNO_title" class="accountNum_title table_title_item">操作员编号</th>-->
+            <th id="accountNum_title" class="accountNum_title">操作员名称</th>
+        </tr>
+        <tbody id="table_content" class="table_content">
+        </tbody>
+    </table>
+</div>
+<div id="contentBottom" class="contentBottom">
+    <div id="pageBox" class="pageBox"></div>
+</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/colResizable-1.5.min.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../resource/js/load.js"></script>
+<script type="text/javascript" src="../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+<script type="text/javascript" src="../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../tool/exchange.js"></script>
+<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="systemLog.js"></script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>eventSetting</title>
+		<link rel="stylesheet" type="text/css" href="eventSetting.css" />
+		<script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+		<script type="text/javascript" src="../../../resource/colResizable/colResizable-1.5.min.js"></script>
+		<script type="text/javascript" src="../../../resource/colResizable/colResizableNot-1.5.min.js"></script>
+
+	</head>
+
+	<body>
+		<div class="main">
+			<div id="title" class="title">
+				<div id="linkage_setting" class="linkage_setting">
+					<div class="linkage_settingImg"></div>
+					<div class="title_text">联动设置</div>
+				</div>
+				<div id="SMS_forwarding" class="SMS_forwarding">
+					<div class="SMSImg"></div>
+					<div class="title_text">短信转发</div>
+				</div>
+			</div>
+			<div class="titletow">
+				<div class="configurationType">
+					<div style="margin: 2px 0 0 10px;">配置类型</div>
+					<select id="configurationType" class="titletow_select">
+						<option value="">全部</option>
+						<option value="0">用户防区</option>
+						<option value="1">用户监控点</option>
+					</select>
+				</div>
+				<div id="title_add" class="title_add">
+					<div id="title_add_img" class="title_add_img"></div>
+					<div id="title_add_text" class="title_add_text">添加</div>
+				</div>
+				<div id="title_del" class="title_del">
+					<div id="title_del_img" class="title_del_img"></div>
+					<div id="title_del_text" class="title_del_text">删除</div>
+				</div>
+			</div>
+			<!--div id="table" class="table">
+				<div id="table_title" class="table_title">-->
+			<div id="content" class="content">
+				<div id="right_div">
+					<div id="right_div1">
+						<div id="right_divx">
+							<table id="listBox1" class="table table-bordered">
+								<tr id="table_title" class="table_title">
+									<td class="title_UserEvtId">
+										<div id="allCheck" class="noChecked"></div>
+										事件配置编号
+									</td>
+									<td  class="title_ZoneCHFlag">配置类型</td>
+									<td  class="title_ZoneCHValue1">用户防区</td>
+									<td  class="title_ZoneCHValue2">用户监控点</td>
+									<td  class="title_isVideo">启用联动</td>
+									<td  class="title_fMemo">备注</td>
+									<td class="table_title_item_last"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div id="right_div2">
+						<table id="listBox2" class="table table-bordered">
+							<tbody id="table_content" class="table_content">
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+				<!--</div>
+				<div id="table_content" class="table_content">
+				</div>
+			</div>
+		</div>-->
+	</body>
+	<script type="text/javascript" src="eventSetting.js"></script>
+
+</html>

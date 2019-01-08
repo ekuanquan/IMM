@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="permission.css">
+    
+    <link rel="stylesheet" href="zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="permissionRight.css" type="text/css">
+    <script type="text/javascript" src="../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="jquery.ztree.core.js"></script>
+</head>
+<body >
+    <div id="left">
+        <aside  class="left-side">
+            <div id="area">
+                <label class="areatex">角色架构</label>
+                <!--<div class="ateabutt" id="add"></div>
+                <div class="ateabutt" id="update"></div>
+                <div class="ateabutt" id="close"></div>-->
+            </div>
+
+            <!--<div id="refrelany">
+              <div class="search-div"> <input id="test" class="" type="text" />
+                  <i title="搜索"></i>
+              </div>
+              <div class="flash-btn" id="flash" title="刷新"></div>
+          </div>-->
+          <div class="streediv">
+            <div id="tree">
+               <!--<div id="title">角色类型</div>-->
+               <!--树结构-->
+               <ul id="treeDemo" class="ztree">
+               	
+               </ul>
+           </div>
+       </div>
+   </aside>
+</div>
+
+<div id="contentRight" class="contentRight">
+    <div id="contentRight_title" class="contentRight_title">
+        <div id="contentRight_add" class="contentRight_add">
+            <div id="contentRight_add_img" class="contentRight_add_img"></div>
+            <div id="contentRight_add_text" class="contentRight_add_text">添加</div>
+        </div>
+        <div id="contentRight_del" class="contentRight_del">
+            <div id="contentRight_del_img" class="contentRight_del_img"></div>
+            <div id="contentRight_del_text" class="contentRight_del_text">删除</div>
+        </div>
+        <!--<div id="contentRight_taskPlan" class="contentRight_taskPlan">
+            <div id="contentRight_taskPlan_img" class="contentRight_taskPlan_img"></div>
+            <div id="contentRight_taskPlan_text" class="contentRight_taskPlan_text">任务计划</div>
+        </div>-->
+        <div id="contentRight_search" class="contentRight_search">
+            <div id="contentRight_search_img" class="contentRight_search_img"></div>
+            <input type="text" id="contentRight_search_input" class="contentRight_search_input" name=""/>
+            
+        </div>
+    </div>
+    <div id="contentRight_bottom" class="contentRight_bottom">
+        <div id="contentRight_tab_container" class="contentRight_tab_container">
+            <div id="roleManagement_tab" class="roleManagement_tab tab_item">角色管理</div>
+            <!--<div id="operator_tab" class="operator_tab tab_item">操作员</div>-->
+           
+        </div>
+        <div id="contentRight_Iframe_container" class="contentRight_Iframe_container">
+            <iframe id="firstIframe" src=""></iframe>
+            <iframe id="roleManagementIframe" name="roleManagementIframe" class="roleManagement" src="roleManagementIframe/roleManagementIframe.html"></iframe>
+        </div>
+    </div>
+    
+</div>
+</body>
+<script type="text/javascript" src="permission.js"></script>
+<script type="text/javascript" src="permissionRight.js"></script>
+</html>

@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    border:0;
+    float: left;
+}
+body{
+    width: 748px;
+    height: 413px;
+    margin:auto;
+    float: left;
+}
+
+.top{
+    float: left;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #D5D5D5;
+}
+.hostName{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.hostNum{
+    float: left;
+    margin-top: 7px;
+    margin-left: 10px;
+    width: 232px;
+    height:26px;
+    padding-left: 5px;
+    line-height: 26px;
+    border: 1px solid #d9d9d9;
+}
+.line{
+    width: 100%;
+    height: 29px;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 1px solid #D5D5D5;
+}
+.line_work{
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 1px solid #F0F0F0;
+}
+.border_right{
+    border-right:1px solid #D5D5D5;
+}
+.line_1{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.line_2{
+    width: 106px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.line_3{
+    width: 224px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.line_4{
+    width: 134px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+}
+.line_work_1{
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.line_work_2{
+    width: 106px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.line_work_3{
+    width: 224px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.line_work_4{
+    width: 134px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.choose_no{
+    float: left;
+    background-image: url("../img/noChecked.png");
+    background-repeat: no-repeat;
+    margin-top: 13px;
+    margin-left: 20px;
+    width: 14px;
+    height: 14px;
+    margin-right: 26px;
+}
+.choose_is{
+    float: left;
+    background-image: url("../img/isChecked.png");
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    width: 14px;
+    height: 14px;
+    margin-top: 13px;
+    margin-right: 26px;
+}
+.input_time{
+    background: url("../../../resource/images/index/more.png") no-repeat scroll 98% center transparent;
+    width: 202px;
+    height: 26px;
+    padding-left: 5px;
+    line-height: 26px;
+    border: 1px solid #d9d9d9;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 12px;
+    text-align: center;
+}
+.copy{
+    width: 44px;
+    height: 25px;
+    border:1px solid #d9d9d9;
+    margin-top: 7px;
+    line-height: 25px;
+    margin-left: 18px;
+    background-color: #d9d9d9;
+    cursor: default;
+}
+.paste{
+    width: 44px;
+    height: 25px;
+    border:1px solid #d9d9d9;
+    margin-top: 7px;
+    line-height: 25px;
+    margin-left: 10px;
+    cursor: default;
+}
+.foot{
+    margin-top: 10px;
+}
+.fMemo_word{
+    margin-left: 20px;
+}
+.fMemo{
+    width: 681px;
+    height: 67px;
+    border: 1px solid #d9d9d9;
+    margin-left: 10px;
+    padding: 5px;
+    resize: none;
+}
+.flagcls{
+
+}
+

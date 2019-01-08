@@ -1,0 +1,1 @@
+ALTER TABLE `imm_hd_developer`.`imm_snmodel` CHANGE `buyPrice` `buyPrice` DECIMAL(10,2) NULL COMMENT '探测器价格', CHANGE `servicePrice` `servicePrice` DECIMAL(10,2) NULL COMMENT '服务费用'; 

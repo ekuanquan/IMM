@@ -1,0 +1,356 @@
+//var deviceData = parent.parent.parent.parent.getPopupsRowJson();
+$(document).ready(function () {
+    init();
+});
+;(function (window, $, undefined) {
+    window.init = _init;
+
+    var _config = {
+        ajaxUrl: {
+            getUserZoneIsAlarmUrl: "/IntegratedMM/query/alarmStatus.do",
+            getMapPicByRoleIdUrl:"/IntegratedMM/getMapPicByRoleId.do",
+            getZonesByRoleIdUrl:"/IntegratedMM/getZoneByOwnerId.do"
+        }
+    }
+
+    var _global = {
+        top: parent,
+        userZonePojo: null,
+        mouseoutEventA: null,
+        jsonData:'',
+        isUserZoneShow:false,
+        mapPath: "",
+        pathId:""
+    };
+    var rowJson = parent.parent.getPopupsRowJson();
+
+    function _init() {
+        _initData();
+    }
+
+
+    function _initData() {
+        //获取防区图防区信息
+        _getZonesinfos();
+    }
+
+    function _getMapPic(){
+        if(_global.isUserZoneShow==false){
+            _global.isUserZoneShow = true;
+            var params = _getMapPicParams();
+            post_async(params,_config.ajaxUrl.getMapPicByRoleIdUrl,_callback_getMapPic);
+        }
+    }
+
+    function _getMapPicParams() {
+        var params = {};
+        params.userPojo = {};
+        params.userPojo.ownerId =  rowJson.userId;
+        return params;
+    }
+    function _getUserZoneParams() {
+        var params = {};
+        params.userPojo = {};
+        params.userPojo.ownerId = rowJson.userId;
+        return params;
+    }
+    function _callback_getMapPic(data) {
+        var result = data.result;
+        if (result.code == '0') {
+            var pojo = data.MappicPojo;
+            if(pojo == null || pojo.length == 0) {
+                var $div=$("<div></div>");
+                _global.pathId = "areaImage0";
+                $div.addClass("areaImage").attr("id",_global.pathId);
+                $("#Map").append($div);
+                _showNoPicture();
+                return;
+            }
+            for(var i=0, len = pojo.length;i<len;i++){
+                //将防区图路径存储起来
+                _global.mapPath = pojo[i].mapPath;
+                //配置防区图下拉
+
+                var $option = $('<div class="selectOption">' + pojo[i].mapName + '</div>');
+                if(i==0){
+                    $($option).addClass("select");
+                }
+                $('#selectMapPic').append($option);
+                $($option).data('mapId',pojo[i].mapId);
+                $($option).click(function () {
+                    $(".selectOption").removeClass("select");
+                    $(this).addClass("select");
+                    var mapval = $(this).data('mapId');
+                    var mapId =  "#areaImage"+mapval;
+                    $(mapId).show().siblings().hide();
+                    $("#Map").data("areaImage",mapId);
+                });
+                //配置防区图显示
+                var $div=$("<div></div>");
+                _global.pathId = "areaImage"+pojo[i].mapId;
+                $div.attr("id",_global.pathId).addClass("areaImage");
+                $("#Map").append($div);
+
+                $('#'+"areaImage"+pojo[i].mapId).data("draggableJson",[]);
+                if(i == (len -1)){
+                    $div.imageView(_global.mapPath, getUserZone, _geifalseback);
+
+                }else{
+                    $div.imageView(_global.mapPath, getUserZoneOK, _geifalseback);
+                }
+                //$div.imageView(_global.mapPath, getUserZone, _geifalseback);
+
+                //防区数组初始化
+                $('#'+"areaImage"+pojo[i].mapId).data("zoom",1);
+            }
+            //只显示一个区域
+            var mapval = $(".select").data('mapId');
+            var mapId =  "#areaImage"+mapval;
+            $("#Map").data("areaImage",mapId);
+            $(mapId).show().siblings().hide();
+            $.fn.addiconList({
+                containerId:"Map",
+                minZoom:0.4,
+                maxZoom:3,
+                zoomSize:0.05,
+                zoom:1,
+            });
+            function getUserZoneOK(id)  {
+                $('#' + id).data('isOk',1);
+            }
+
+            function getUserZone(id)  {
+                $('#' + id).data('isOk',1);
+                _getUserZone(true);
+            }
+        }
+        else {
+            var $div=$("<div></div>");
+            _global.pathId = "areaImage0";
+            $div.addClass("areaImage").attr("id",_global.pathId);
+            $("#Map").append($div);
+            _showNoPicture();
+        }
+    }
+    function _showNoPicture(){
+        $("#"+_global.pathId).addClass('NoPicture');
+    }
+    function _geifalseback(id,mapPath) {
+        var $div=$("<div></div>").addClass("box");
+        var $div1=$("<div></div>").addClass('falsePicture');
+        var $div2=$("<div></div>").addClass('div2');
+        var $div3=$("<div></div>").addClass('div3');
+        var $div4=$("<div></div>").addClass('div4');
+        var $div5=$("<div></div>").addClass('div5');
+        var $span = $("<span></span>");
+        $div2.text('页面加载失败');
+        $div4.text('1、网络故障，');
+        $span.text('请重新加载图片').addClass("onclick").click(function () {
+            $span.css('color','red');
+            $("#"+id).imageView(mapPath, _removefalseback, _geifalseback);
+        });
+        $div5.text('2、图片丢失，请联系系统操作员到管理平台重新上传');
+        $div3.append($div4);
+        $div3.append($span);
+        $div.append($div1);
+        $div.append($div2);
+        $div.append($div3);
+        $div.append($div5);
+        $div.appendTo("#"+id);
+        _getUserZone(false);
+        function _removefalseback() {
+            $div.remove();
+            _getUserZone(true);
+        }
+    }
+    function _getUserZone(isShow) {
+        _getUserZoneIsAlarm(isShow)
+    }
+    //获取探头信息
+    function _getZonesinfos() {
+        var params = _getUserZoneParams();
+        post_async(params,_config.ajaxUrl.getZonesByRoleIdUrl,_callback_getUserZone)
+    }
+    function _callback_getUserZone(data,isShow) {
+        var result = data.result;
+        if (result.code == '0') {
+            _global.userZonePojo = data.zonePojo;
+            //_showZone(isShow);
+            _getMapPic();
+        }
+    }
+    function _getUserZoneIsAlarm(isShow) {
+            for (var i = 0; i < _global.userZonePojo.length; i++) {
+                if(isShow){
+                    var pathId = "#areaImage" + _global.userZonePojo[i].mapId;
+                    if($(pathId).length==0||(_global.userZonePojo[i].x==0&&_global.userZonePojo[i].y==0))
+                    {
+                        continue;
+                    }
+                    if($(pathId).data('isOk') == 1){
+                        if(_global.userZonePojo[i].isAlert == 1) {
+                            _createAlarmIcon(_global.userZonePojo[i].x, _global.userZonePojo[i].y, _global.userZonePojo[i].ownerZoneName, $(pathId), _global.userZonePojo[i]);
+                        } else {
+                            _createIcon(_global.userZonePojo[i].x, _global.userZonePojo[i].y, _global.userZonePojo[i].ownerZoneName, $(pathId), _global.userZonePojo[i]);
+                        }
+                    }
+                }
+            }
+    }
+    function _createAlarmIcon(posX, posY, index, $img_center, jsonData) {
+        var $imgCenter = $img_center;//$('#img_center');
+        var $icon = $('<div></div>');
+        var $tip = $('<span></span>');
+        $imgCenter.append($icon);
+        $icon.append($tip);
+        $icon.addClass('alarmPic');
+        $icon.attr('id','zone'+jsonData.ownerZoneName);
+        $tip.text(index);
+        $tip.addClass('picTip');
+        var imageOriginal = $imgCenter.data('imageOriginal');
+        var imageTarget = $imgCenter.data('imageTarget');
+        var element = {
+            width: $imgCenter.width(),
+            height: $imgCenter.height()
+        };
+        var pointTar = _getPoint(imageOriginal, element, imageTarget, posX, posY);
+        $icon.css({
+            top: pointTar.top  + 'px',
+            left: pointTar.left  + 'px'
+        });
+        $icon.mouseover(function (e) {
+            // alert("sss");
+            var positionX = e.pageX;
+            var positionY = e.pageY;
+            _rightKeyPopus($('body'), positionX, positionY, jsonData);
+            clearTimeout(_global.mouseoutEventA);
+        }).mouseout(function () {
+            _global.mouseoutEventA = setTimeout(function () {
+                $("#rightKey_contains").remove();
+            }, 500);
+        });
+        //记录防区坐标位置
+        var jsonArr=$img_center.data("draggableJson")||[];
+        var jsonStr={
+            "id":'zone'+jsonData.ownerZoneName,
+            "x":posX,
+            "y":posY,
+        }
+        jsonArr.push(jsonStr);
+        $img_center.data("draggableJson",jsonArr);
+    }
+
+    function _createIcon(posX, posY, index, $img_center, jsonData) {
+        var $imgCenter = $img_center;//$('#img_center');
+        var $icon = $('<div></div>');
+        var $tip = $('<span></span>');
+        $imgCenter.append($icon);
+        $icon.append($tip);
+        $icon.addClass('noAlarmPic');
+        $icon.attr('id','zone'+jsonData.ownerZoneName);
+        $tip.text(index);
+        $tip.addClass('picTip');
+        var imageOriginal = $imgCenter.data('imageOriginal');
+        var imageTarget = $imgCenter.data('imageTarget');
+        var element = {
+            width: $imgCenter.width(),
+            height: $imgCenter.height()
+        };
+        var pointTar = _getPoint(imageOriginal, element, imageTarget, posX, posY);
+        $icon.css({
+            top: pointTar.top + 'px',
+            left: pointTar.left + 'px'
+        });
+        $icon.mouseover(function (e) {
+            //alert("sss");
+            var positionX = e.pageX;
+            var positionY = e.pageY;
+            _rightKeyPopus($('body'), positionX, positionY, jsonData);
+            clearTimeout(_global.mouseoutEventA);
+        }).mouseout(function () {
+            _global.mouseoutEventA = setTimeout(function () {
+                $("#rightKey_contains").remove();
+            }, 500);
+        });
+        //记录防区坐标位置
+        var jsonArr=$img_center.data("draggableJson")||[];
+        var jsonStr={
+            "id":'zone'+jsonData.ownerZoneName,
+            "x":posX,
+            "y":posY,
+        }
+        jsonArr.push(jsonStr);
+        $img_center.data("draggableJson",jsonArr);
+    }
+
+    function _getPoint(original, element, target, posX, posY) {
+        var pointOrg = {
+            top: 0,
+            left: 0
+        };
+        var pointTar = {
+            top: 0,
+            left: 0
+        };
+        var bLeft = (element.width - target.width) / 2;// 1
+        var bTop = (element.height - target.height) / 2;//62.5655
+        pointOrg.left = original.width * posX ;//265.01718528
+        pointOrg.top = original.height * posY;//128.322576824
+        pointTar.left = (pointOrg.left * target.width) / original.width + bLeft - 17;//165.807562096
+        pointTar.top = (pointOrg.top * target.height) / original.height + bTop - 41;//142.366175043068
+        return pointTar;
+    }
+
+    function _rightKeyPopus($body, x, y, jsonData) {
+        var row_json = {};
+        row_json = jsonData;
+        if ($("#rightKey_contains").length > 0) {
+            $("#rightKey_contains").remove();
+        } else {
+
+        }
+        var snModelName=row_json.snModelName==""?row_json.snModelId:row_json.snModelName;
+        $div_contains = $("<div></div>");
+        $div_ownerZoneName = $("<div></div>");
+        $div_atPos = $("<div></div>");
+        $div_snType = $("<div></div>");
+        $div_snNum = $("<div></div>");
+        $div_ownerZoneName.addClass('mouseOver_item').text("用户防区编号：" + row_json.ownerZoneName);
+        $div_atPos.addClass('mouseOver_item').text("防区位置：" + row_json.atPos);
+        $div_snType.addClass('mouseOver_item').text("探头型号：" + snModelName);
+        $div_snNum.addClass('mouseOver_item').text("探头数量：" + row_json.snNum);//
+
+        $div_contains.addClass("rightKey_contains").attr('id', 'rightKey_contains')
+            .append($div_ownerZoneName)
+            .append($div_atPos)
+            .append($div_snType)
+            .append($div_snNum)
+            .mouseout(function () {
+
+                _global.mouseoutEventA = setTimeout(function () {
+                    $div_contains.remove();
+                }, 500);
+            }).mouseover(function () {
+            clearTimeout(_global.mouseoutEventA);
+        });
+        $body.append($div_contains);
+        var bodyHeight = $("body").height();
+        var bodyWidth = $("body").width();
+        if ((bodyWidth - x) < 283 + 5) {
+            x = x - 288;
+            $div_contains.addClass('rightTrangel');
+        } else {
+            x += 5;
+            $div_contains.addClass('leftTrangel');
+        }
+        if ((bodyHeight - y) < 156) {
+            y = y - 155;
+        } else {
+            y--;
+        }
+        $div_contains.css({
+            "top": y + 'px',
+            "left": x + 'px'
+        });
+    }
+})(window, jQuery, undefined);

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+	<meta charset="utf-8"/>
+	<title>历史事件查询</title>
+	<link rel="stylesheet" type="text/css" href="eventQuery.css"/>
+
+</head>
+<body>
+	<div id="title" class="title">
+		<div id="title_left" class="title_left">
+			<div id="title_left_img" class="title_left_img"></div>
+			<div id="title_left_text" class="title_left_text">历史事件查询</div>
+		</div>
+	</div>
+	<div id="searchTitle" class="searchTitle">
+		<div style="width:100%;float: left;">
+				<select id="fuzzy" class="selet pic" >
+					<option value="all" >全部</option>
+					<option value="eventNum">事件编号</option>
+					<option value="accountNum">用户编号</option>
+					<option value="accountName">用户名称</option>
+					<option value="cphone">联络电话</option>
+				</select>
+			<div id="searchInput" class="searchInput ">
+				<input id="search_text" class="search_text" type="text" placeholder="" name="" value=""/>
+			</div>
+			<div class="tex">事件类型</div><select id="codeTypeId" class="selet pic" ><option value="">全部</option></select>
+			<div class="tex">事件描述</div><select id="eventDesc" class="selet pic"><option value="">全部</option></select>
+		</div>
+		<div style="width:100%;float: left;">
+			<div class="textime" style="margin-left: 10px;width: 56px;">事件状态</div>
+			<select id="disposeStatus" class="selet1 pic">
+				<option value="">全部</option>
+				<option value="0">未处理</option>
+				<option value="1">已处理</option>
+				<option value="2">预处理</option>
+			</select>
+			<div class="textime" style="margin-left: 10px">报警时间</div>
+			<input id="startTime" class="inpt" type="text">
+			<div class="textime">至</div>
+			<input id="endTime" class="inpt" type="text">
+			<div id="policeCheck" class="btns btn1">搜索</div>
+			<div id="timeorder" class="timeorder">时间升降<div id="timePng" class="timePng"></div></div>
+		</div>
+	</div>
+	<!--<div id="content" class="content">
+		<table id="table" class="table">
+			<tr id="" class="table_title">-->
+	<div id="content" class="content">
+		<div id="right_div">
+			<div id="right_div1">
+				<div id="right_divx">
+					<table id="listBox1" class="table table-bordered">
+						<tr class=d"table_title">
+							<td id="state_title" style="width: 110px;" class="state_title table_title_item borderRight">状态</td>
+							<td style="width: 110px;" class="table_title_item borderRight">报警原因</td>
+							<td id="date_title" style="width: 110px;" class="state_title table_title_item borderRight">日期</td>
+							<td id="time_title" class="time_title table_title_item borderRight">时间</td>
+							<td id="userCode_title" class="state_title table_title_item borderRight">用户编号</td>
+							<td id="userName_title" class="userName_title borderRight">用户名称</td>
+							<td id="deviceId_title" class="deviceId_title table_title_item borderRight">设备编号</td>
+							<td id="userZone_title" class="userZone_title  borderRight">用户防区编号</td>
+							<td id="eventDescribe_title" class="eventDescribe_title table_title_item borderRight">事件描述</td>
+							<td id="eventSource_title" class="eventSource_title table_title_item borderRight">事件来源</td>
+							<td id="systemCode_title" class="systemCode_title table_title_item borderRight">系统码</td>
+
+							<td id="usrAlmType_title" class="userName_title table_title_item borderRight">用户级别</td>
+							<td id="eventNum_title" class="eventNum_title borderRight">事件编号</td>
+							<td id="userAddress_title" class="userName_title borderRight">用户地址</td>
+							<td id="eventType_title" class="eventType_title table_title_item borderRight">事件类型</td>
+							<td class=" borderRight">接警员</td>
+							<td id="deviceZone_title" class="deviceZone_title borderRight">设备防区编号</td>
+
+							<td id="zoneLocation_title" class="zoneLocation_title table_title_item borderRight">防区位置</td>
+							<td id="probeType_title" class="probeType_title table_title_item borderRight">探头类型</td>
+							<td id="probeModel_title" class="probeModel_title table_title_item borderRight">探头型号</td>
+
+							<td id="deviceModel_title" class="zoneNum_title borderRight">设备型号</td>
+							<td id="pliceInfoType_title" class="pliceInfoType_title table_title_item borderRight">警情类型</td>
+							<td id="reactivityType_title" class="reactivityType_title table_title_item borderRight">反应类型</td>
+							<td id="callerException_title" class="callerException_title table_title_item borderRight">来显异常</td>
+							<td id="callerID_title" class="callerID_title table_title_item borderRight">来电显示</td>
+
+							<td id="zoneName_title" class="zoneName_title table_title_item borderRight">所属区域</td>
+							<td id="deviceSubSystem_title" class="deviceSubSystem_title table_title_item borderRight">设备子系统</td>
+							<td id="cameraName_title" class="cameraName_title table_title_item borderRight">摄像机名称</td>
+							<td id="userMonitorId_title" class="userMonitorId_title borderRight">用户监控点编号</td>
+							<td id="cameraModelId_title" class="cameraModelId_title table_title_item borderRight">监控点编号</td>
+							<td id="atPos_title" class="atPos_title table_title_item borderRight">摄像机位置</td>
+							<td id="docResult_title" class="docResult_title table_title_item">单据结果</td>
+							<td class="table_title_item_last"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="right_div2">
+				<table id="listBox2" class="table table-bordered">
+					<tbody id="table_content" class="table_content">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+			<!--</tr>
+			<tbody id="table_content" class="table_content">
+			</tbody>
+		</table>
+
+	</div>-->
+	<div id="contentBottom" class="contentBottom">
+		<div id="pageBox" class="pageBox"></div>
+	</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../resource/js/load.js"></script>
+<script type="text/javascript" src="../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+<script type="text/javascript" src="../../resource/colResizable/colResizable-1.5.min.js"></script>
+<script type="text/javascript" src="../../resource/colResizable/colResizableNot-1.5.min.js"></script>
+<script type="text/javascript" src="../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../tool/exchange.js"></script>
+<script type="text/javascript" src="./eventQuery.js"></script>
+<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+</html>

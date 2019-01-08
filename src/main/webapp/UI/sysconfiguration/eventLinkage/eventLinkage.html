@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>事件联动方案</title>
+    <link type="text/css" rel="stylesheet" href="eventLinkage.css">
+    <script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+    <script src="eventLinkage.js" type="text/javascript"></script>
+</head>
+<body style="height: 100%;width: 100%">
+<div class="main">
+    <div class="title">事件联动方案</div>
+    <div class="content">
+        <div id="choose_Linkage">
+            <div class="content_nav">勾选联动选项</div>
+            <div id="item0" class="item">
+                <div id="isRecordShoot" class="lenameCheckbox noChecked" style="margin-top: 5px"></div>
+                <div class="item_content">启动设备录像（中心服务器存储）</div>
+                <div>
+                    <div class="item_content1">存储时长</div>
+                    <select id="Time" class="pic select" disabled="disabled">
+                        <option value="10">10s</option>
+                        <option value="20">20s</option>
+                        <option value="30">30s</option>
+                        <option value="40">40s</option>
+                        <option value="50">50s</option>
+                        <option value="60">60s</option>
+                    </select>
+                </div>
+            </div>
+            <div id="item1" class="item">
+                <div id="isScreenshots" class="lenameCheckbox noChecked" style="margin-top: 5px"></div>
+                <div class="item_content">启动联动抓图</div>
+            </div>
+            <div id="item2" class="item1">
+                <div id="isPreset" class="lenameCheckbox noChecked" style="margin-top: 5px"></div>
+                <div class="item_content">启动预置位跳转</div>
+            </div>
+        </div>
+        <div id="choose_eventType">
+            <div class="content_nav">勾选事件类型</div>
+            <div id="contentMain" class="content_main">
+                <div class="choose">
+                    <div id="all" class="all noChecked"></div>
+                    <div class="allType">全部</div>
+                </div>
+               <!-- <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="0" class="eventType">&lt;!&ndash;错误&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="1" class="eventType">&lt;!&ndash;紧急&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="2" class="eventType">&lt;!&ndash;报警&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="3" class="eventType">&lt;!&ndash;火警&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="4" class="eventType">&lt;!&ndash;劫盗&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="5" class="eventType">&lt;!&ndash;监控&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="6" class="eventType">&lt;!&ndash;故障事件&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="7" class="eventType">&lt;!&ndash;撤布防&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="8" class="eventType">&lt;!&ndash;遥控编程&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="9" class="eventType">&lt;!&ndash;出入&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="10" class="eventType">&lt;!&ndash;停用&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="11" class="eventType">&lt;!&ndash;旁路&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="12" class="eventType">&lt;!&ndash;测试报告&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="13" class="eventType">&lt;!&ndash;状态报告&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="14" class="eventType">&lt;!&ndash;用户&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="15" class="eventType">&lt;!&ndash;计划任务&ndash;&gt;</div>
+                </div>
+                <div class="choose">
+                    <div class="lenameCheckbox noChecked"></div>
+                    <div id="16" class="eventType">&lt;!&ndash;编程&ndash;&gt;</div>
+                </div>-->
+            </div>
+            <div class="content_bottom">
+                <div class="buttom1" id="sure">保存</div>
+                <div class="buttom2" id="cancel">取消</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

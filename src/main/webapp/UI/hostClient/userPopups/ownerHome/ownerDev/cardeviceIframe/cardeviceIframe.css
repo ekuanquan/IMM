@@ -1,0 +1,124 @@
+*{
+    float: left;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+.table{
+    width: 100%;
+    height: calc(100% - 32px);
+    overflow: auto;
+}
+.table_title{
+    width: 2020px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+.table_title_item{
+    padding-left: 35px;
+    padding-right: 30px;
+}
+.table_content{
+    width: 2020px;
+}
+.row{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: default;
+}
+.row:hover{
+    background-color: #e4f1f9;
+}
+
+.contentBottom{
+    width: 100%;
+    height: 32px;
+    background-color: #e4f1f9;
+}
+
+.rowshow{
+    background-color: #e4f1f9;
+}
+
+.isChecked{
+	width: 15px;
+	height: 15px;
+	margin: 8px 0px 0 5px;
+	background-image: url(../hmdrectoryimg/isChecked.png);
+}
+.noChecked{
+	width: 15px;
+	height: 15px;
+	margin: 8px 0px 0 5px;
+	background-image: url(../hmdrectoryimg/noChecked.png);
+}
+
+.table_item_2{
+    width: 70px;
+    height:30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.table_item_3{
+    width: 84px;
+    height:30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.table_item_4{
+    width: 98px;
+    height:30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table_item_5{
+    width: 118px;
+    height:30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.table_item_6{
+    width: 116px;
+    height:30px;
+    padding-right: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.table_item_7{
+    width: 150px;
+    height:30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    /*float: left;*/
+}
+body{
+    width: 362px;
+    /*height: 394px;*/
+    height: 300px;
+    margin:auto;
+    /*border:1px solid #1b5fde;*/
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+.add_top{
+    /*float: left;*/
+    background-color: #2577E5;
+    width: 100%;
+    height: 30px;
+}
+.title_top{
+    float: left;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.close {
+    float: right;
+    color: white;
+    background-image: url("../../hmdrectoryimg/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+   /* margin-right: 15px;
+    margin-top: 8px;*/
+}
+.close:hover {
+    background-color: #f75352;
+}
+.riname{
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    width: 104px;
+    /*width: 108px;
+    padding-left: 30px;*/
+}
+.selec{
+
+    background-image: url("../../img/more.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+}
+.xin{
+    color: red;
+    float: left;
+    line-height: 32px;
+    height: 26px;
+    margin-right: 5px;
+    width: 5px;
+    margin-left: 10px;
+}
+.line{
+    margin-top: 9px;
+    width: 100%;
+    height: 26px;
+}
+.riinput{
+    float: left;
+    /*width: 222px;*/
+    width: 252px;
+    height: 26px;
+    /*margin-right: 20px;*/
+}
+.posiInput{
+    width:220px;
+    height:26px;
+    margin-left:10px;
+    border:1px solid #d9d9d9;
+    padding-left: 5px;
+}
+.food_choose{
+    float: left;
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+.sure{
+     float: left;
+     border-radius: 5px;
+     width: 105px;
+     height: 26px;
+     margin-left: calc((100% - 220px)/2);
+    line-height: 26px;
+    text-align: center;
+    background-color: #2577E5;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+ }
+.sure:hover{
+    background-color: #1b5fde;
+    color: #ffffff;
+}
+
+.remove{
+    float: left;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    width: 105px;
+    height: 25px;
+    margin-left: 10px;
+    text-align: center;
+    color: #2577E5;
+    cursor: pointer;
+    line-height: 25px;
+}
+.remove:hover{
+    color: black;
+}
+.more{
+    background-image: url("../../hmdrectoryimg/more.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+.margin-top-2{
+    margin-top: 2px;
+    float:right;
+}

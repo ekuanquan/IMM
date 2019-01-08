@@ -1,0 +1,32 @@
+.main{
+    width: 1136px;
+    height: 744px;
+    /* border: solid 1px #dddddd; */
+}
+.title{
+    height: 30px;
+    background: #2577E5;
+}
+.title_1{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #ffffff;
+    line-height:30px;
+    margin-left: 11px;
+}
+#close{
+    background: url("../../resource/images/index/close.png") no-repeat 7px 7px;
+    width: 16px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+    padding: 7px;
+}
+#close:hover,#close:active{
+    background-color: #d44027;
+}
+.mapContainer{
+    margin: 10px;
+    height: 693px;
+    border: solid 1px #dddddd;
+}

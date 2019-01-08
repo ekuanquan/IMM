@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+	<meta charset="utf-8"/>
+	<title>事件查询</title>
+	<link rel="stylesheet" type="text/css" href="deviceInfo.css"/>
+	<link href="jquery.searchableSelect.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div id="title" class="title">
+		<div id="title_left" class="title_left">
+			<div id="title_left_img" class="title_left_img"></div>
+			<div id="title_left_text" class="title_left_text">设备管理</div>
+		</div>
+	</div>
+	<div id="searchTitle" class="searchTitle">
+		<div style="width:100%;float:left">
+			<select id="fuzzy" class="selet pic" >
+					<option value="all">全部</option>
+					<option value="devId">设备编号</option>
+					<option value="devName">设备名称</option>
+					<option value="pnlHdTel">无线卡号</option>
+					<option value="pnlTel">联网电话</option>
+					<!--<option value="userId">用户编号</option>
+                    <option value="userName">用户名称</option>
+                    <option value="">联络电话</option>-->
+				</select>
+			<div id="searchInput" class="searchInput ">
+				<input id="search_text" class="search_text" type="text" placeholder="" name="" value=""/>
+			</div>
+			<div class="tex">设备型号</div><select id="devType" class="selet pic"><option value="all">全部</option></select>
+			<div class="tex">无主设备</div><select id="devNone" class="selet pic"><option value="all">全部</option><option value="1">是</option><option value="0">否</option></select>
+		</div>
+		<div style="width:100%;float:left">
+			<div class="textime" style="margin-left: 10px">安装时间</div><input id="startTime" class="inpt" type="text">
+			<div class="textime">至</div><input id="endTime" class="inpt" type="text">
+			<div id="policeCheck" class="btns btn1">搜索</div>
+
+			<div id="timeorder" class="timeorder">设备编号升降<div id="timePng" class="timePng"></div></div>
+		</div>
+	</div>
+	<div style="width: 100%;height: 36px;border-right: solid;border-left: solid;border-color: #d9d9d9;border-width: 1px;float: left">
+	   <div id="nav_tab">
+		    <div id="alarmHost" class="dev_table_title triangle" href="#table">
+		          报警主机
+		    </div>
+		    <div id="wireNvr" class="nvr_table_title" href="#table_nvr_online">
+		                有线NVR
+		    </div>
+		    <div id="internetNvr" class="nvr_table_title" href="#table_nvr_internet">
+		                互联网NVR
+		    </div>
+	    </div>
+	</div>
+	<div id="content" class="content">
+	    <div>
+		<table id="table" class="table">
+			<tr id="" class="table_title">
+				<th id="devId_title" class="devId_title borderRight">设备编号</th>
+				<th id="devModelName_title" class="zoneNum_title borderRight">设备型号</th>
+				<th id="devTypeName_title" class="devTypeName_title table_title_item borderRight">设备类型</th>
+				<th id="devName_title" class="userName_title borderRight">设备名称</th>
+				<th id="devZone_title" class="accountNum_title table_title_item borderRight">所属区域</th>
+				<th id="internetTel_title" class="zoneNum_title borderRight">联网电话</th>
+				<th id="eqipRelatedNum_title" class="accountNum_title table_title_item borderRight">设备关联编号</th>
+				<th id="returnCode_title" class="keyboardAddr_title table_title_item borderRight">回控码</th>
+				<th id="wireless_title" class="zoneNum_title borderRight">无线卡号</th>
+				<th id="Lng_title" class="Lng_title borderRight">经度</th>
+				<th id="Lat_title" class="Lat_title borderRight">纬度</th>
+				<th id="installUnit_title" class="installUnit_title table_title_item borderRight">安装单位</th>
+				<th id="devAddr_title" class="zoneNum_title borderRight">设备位置</th>
+				<th id="powerAddr_title" class="zoneNum_title borderRight">电源位置</th>
+				<th id="TelAddr_title" class="zoneNum_title borderRight">电话位置</th>
+				<th id="keyboardAddr_title" class="zoneNum_title borderRight">键盘位置</th>
+				<th id="installName_title" class="installName_title table_title_item borderRight">安装员</th>
+				<th id="installDate_title" class="installDate_title table_title_item_time borderRight">安装时间</th>
+				<th id="fMemo_title" class="fMemo_title table_title_item borderRight">备注</th>
+
+			</tr>
+			<tbody id="table_content" class="table_content">
+				
+			</tbody>
+		</table>
+		<table id="table_nvr_online" class="table" style="display:none;">
+			<tr  class="table_title">
+				<th id="devId_nvr" class="devId_title borderRight">设备编号</th>
+				<th id="devName_nvr" class="table_title_item borderRight">设备名称</th>
+				<th id="pnlActID_nvr" class="devTypeName_title borderRight">设备关联编号</th>
+				<th id="areaName_nvr" class="table_title_item borderRight">所属区域</th>
+				<th id="devTypeName_nvr" class="accountNum_title table_title_item borderRight">设备类型</th>
+				<th id="devModelName_nvr" class="accountNum_title table_title_item borderRight">设备型号</th>
+				<th id="manufacturer_nvr" class="accountNum_title table_title_item borderRight">设备厂商</th>
+				<th id="devLoginName_nvr" class="devLoginName_nvr_title borderRight">设备登录用户名</th>
+				<th id="devLoginPwd_nvr" class="table_title_item borderRight">设备登录密码</th>
+				<th id="devIP_nvr" class="accountNum_title table_title_item borderRight">设备IP</th>
+				<th id="devPort_nvr" class="table_title_item borderRight">设备端口</th>
+				<th id="Lng_nvr" class="Lng_title borderRight">经度</th>
+				<th id="Lat_nvr" class="Lat_title borderRight">纬度</th>
+				<th id="serverIP_nvr" class="zoneNum_title borderRight">流转服务器IP</th>
+				<th id="channelNum_nvr" class="table_title_item borderRight">设备通道数</th>
+				<th id="instMan_nvr" class="table_title_item borderRight">安装员</th>
+				<th id="instUnit_nvr" class="table_title_item borderRight">安装单位</th>
+				<th id="instTime_nvr" class="table_title_item borderRight">安装时间</th>
+				<th id="devAddr_nvr" class="table_title_item borderRight">设备位置</th>
+				<th id="fMemo_nvr" class="zoneNum_title borderRight">备注</th>
+			</tr>
+			<tbody id="table_content_line" class="table_content">
+				
+			</tbody>
+		</table>
+		<table id="table_nvr_internet" class="table" style="display:none;">
+			<tr  class="table_title">
+				<th id="devId_NVR" class="devId_title borderRight">设备编号</th>
+				<th id="devName_NVR" class="zoneNum_title borderRight">设备名称</th>
+				<th id="pnlActID_NVR" class="devTypeName_title borderRight">设备关联编号</th>
+				<th id="areaName_NVR" class="userName_title borderRight">所属区域</th>
+				<th id="devTypeName_NVR" class="table_title_item borderRight">设备类型</th>
+				<th id="devModelName_NVR" class="table_title_item borderRight">设备型号</th>
+				<th id="manufacturer_NVR" class="table_title_item borderRight">设备厂商</th>
+				<th id="loginName_NVR" class="devLoginName_nvr_title borderRight">设备登录用户名</th>
+				<th id="loginPwd_NVR" class="table_title_item borderRight">设备登录密码</th>
+				<th id="P2PID_NVR" class="table_title_item borderRight">P2P ID</th>
+				<th id="devInstDate_NVR" class="table_title_item borderRight">安装时间</th>
+				<th id="devLng_NVR" class="Lng_title borderRight">经度</th>
+				<th id="devlat_NVR" class="Lat_title borderRight">纬度</th>
+				<th id="channelNum_NVR" class="table_title_item borderRight">设备通道数</th>
+				<th id="devAddr_NVR" class="zoneNum_title borderRight">设备位置</th>
+				<th id="instMan_NVR" class="table_title_item borderRight">安装员</th>
+				<th id="instUnit_NVR" class="table_title_item borderRight">安装单位</th>
+				<th id="serverIP_NVR" class="zoneNum_title borderRight">流转服务器IP</th>
+				<th id="fMemo_NVR" class="zoneNum_title borderRight">备注</th>
+			</tr>
+			<tbody id="table_content_internet" class="table_content">
+				
+			</tbody>
+		</table>
+		</div>
+	</div>
+	<div id="contentBottom" class="contentBottom">
+		<div id="pageBox" class="pageBox"></div>
+	</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/colResizable-1.5.min.js"></script>
+<script src="../../../resource/js/jquery.searchableSelect.js"></script>
+<script src="../../resource/js/jquery.searchableSelect.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../resource/js/load.js"></script>
+<script type="text/javascript" src="../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../tool/exchange.js"></script>
+<script type="text/javascript" src="./deviceInfo.js"></script>
+</html>

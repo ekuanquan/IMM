@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* float: left;*/
+}
+#showiframeBase{
+    float: left;
+}
+.ifarea{
+    /*width: 771px;
+    height: 676px;*/
+    width: 1000px;
+    height: 600px;
+   /* border: 1px solid #c8c8c8;*/
+}
+
+.title{
+    background-color: #2577e5;
+    width: 100%;
+    height: 30px;
+}
+
+.table{
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.close{
+    float: right;
+    color: white;
+    background-image: url("img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: #f75352;;
+}
+
+.middle{
+    /*width: 751px;
+    height: 625px;*/
+    width: 980px;
+    height: 548px;
+    border: 1px solid #c8c8c8;
+    margin: 10px 0 0 10px;
+}
+
+.char{
+    width: 100%;
+    height: 30px;
+    background-color: #deecff;
+    font-size: 14px;
+}
+
+.select{
+    width: 70px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.select:hover{
+    background-color: #ffffff;
+}
+
+.chariframe{
+    width: 100%;
+    /*height: 595px;*/
+    height: 516px;
+    /*background-color: #d9d9d9;*/
+}
+.ifremecs{
+    /*width: 749px;
+    height: 595px;*/
+    width: 978px;
+    height: 516px;
+    border: none;
+
+}
+#firstIframe{
+    width: 0px;
+    /*height: 595px;*/
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

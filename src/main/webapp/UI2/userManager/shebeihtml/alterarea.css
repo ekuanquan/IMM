@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.area{
+    width: 360px;
+    height: 384px;
+    /*border: 1px solid #c8c8c8;*/
+}
+
+.title{
+    background-color: #2577e5;
+    width: 100%;
+    height: 30px;
+}
+
+.table{
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.close{
+    float: right;
+    color: white;
+    background-image: url("img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: red;
+}
+
+.middle{
+    width: 100%;
+    height: 354px;
+    /*border: 1px solid red;*/
+}
+
+.line{
+    margin: 12px 20px 0px 20px ;
+    width: 320px;
+}
+
+.name{
+    font-size: 14px;
+    color: #323232;
+    line-height: 26px;
+}
+
+.tex{
+     width: 222px;
+     height: 26px;
+     float: right;
+     border: 1px solid #d9d9d9;
+    padding: 5px;
+ }
+
+.charname{
+    font-size: 14px;
+    line-height: 26px;
+    margin-right: 20px;
+}
+
+.radio{
+    margin: 6px 5px 0 0;
+}
+
+.texarea{
+    width: 222px;
+    height: 102px;
+    float: right;
+    resize: none;
+    border: 1px solid #d9d9d9;
+    padding: 5px;
+}
+
+.endbutt{
+    margin-top: 20px;
+    width: 100%;
+    height: 25px;
+    padding-left: 75px;
+}
+.buttsure{
+    background-color: #2577e5;
+    color: #ffffff;
+    width: 103px;
+    height: 100%;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align:center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.buttsure:hover{
+    background-color: #1b5fde;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.buttcancel{
+    background-color: #ffffff;
+    color: #2577e5;
+    width: 103px;
+    height: 100%;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align:center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.buttcancel:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.shower{
+    color:#898989 ;
+    background-color: #e5e5e5 ;
+}
+
+.moreimg{
+    background-image: url("img/more.png");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+.xin{
+    color: red;
+    line-height: 32px;
+    height: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

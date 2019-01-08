@@ -1,0 +1,270 @@
+* {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    float:left;
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+}
+.main {
+    width: 1000px;
+    height: 600px;
+    border-radius: 3px;
+}
+
+.title{
+    background-color: #2577e5;
+    width: 100%;
+    height: 30px;
+}
+
+.table{
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.close{
+    float: right;
+    color: white;
+    background-image: url("img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: #f75352;;
+}
+.middle{
+    width: 1000px;
+    height: calc(100% - 30px);
+    margin-left: 10px;
+}
+.titleText{
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight:bold;
+}
+.content{
+    width: calc(100% - 20px);
+    height: calc(100% - 55px);
+    border: 1px solid #d9d9d9;
+}
+.newDevice{
+    width:100%;
+    height: 35px;
+    line-height: 35px;
+}
+.oldDevice{
+    width:100%;
+    height: 35px;
+    line-height: 35px;
+    border-top: 1px dotted #d9d9d9;
+}
+.searchDevice{
+    width:100%;
+    height: 35px;
+}
+
+.endbutt{
+    width: 100%;
+    height: 66px;
+    border-top: 1px solid #c8c8c8;
+}
+.buttsure{
+    background-color: #2577e5;
+    color: #ffffff;
+    width: 103px;
+    /*height: 100%;*/
+    height: 25px;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align:center;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    float: left;
+}
+.buttsure:hover{
+    background-color: #1b5fde;
+    color: #ffffff;
+}
+.buttcancel{
+    background-color: #ffffff;
+    color: #2577e5;
+    width: 103px;
+    height: 25px;
+    border: 1px solid #2577e5;
+    border-radius: 3px;
+    text-align:center;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.buttcancel:hover{
+    color: black;
+}
+.deviceRadio{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.searchDeviceLeft{
+    width: 50%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+.contentRight_search{
+    float: right;
+    width: 202px;
+    height: 26px;
+    margin-top: 7px;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+}
+.contentRight_search_img{
+    float: right;
+    width: 38px;
+    height: 24px;
+    background-color: #2577e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-image: url(../../../resource/images/index/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px 3px;
+    cursor: pointer;
+}
+.contentRight_search_input{
+    width: 162px;
+    height: 24px;
+    border-width: 0px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    padding-left: 5px;
+
+}
+.searchDeviceRight{
+    width: 50%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight:bold;
+}
+.tableDevice{
+    width: 100%;
+    height: calc(100% - 176px);
+    border-top: 1px solid #d9d9d9;
+}
+.tableDeviceLeft{
+    width: 50%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+.tableDeviceRight{
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid #d9d9d9;
+}
+.device_List{
+    width: 100%;
+    height: calc(100% - 66px);
+    overflow-y: auto;
+}
+.adddevice_List{
+    width: 100%;
+    height: calc(100% - 30px);
+    overflow-y: auto;
+}
+
+.device_List_title{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #d1d1d1;
+}
+.device_List_row{
+    width: 100%;
+    cursor: pointer;
+    height: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d1d1d1;
+}
+.device_List_row:hover{
+    background: #d5e5ff;
+}
+
+.contentBottom{
+    width: -moz-calc(96%);
+    width: -webkit-calc(96%);
+    width: calc(96%);
+    height: 36px;
+    margin: 0 20px 0 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #d1d1d1;
+}
+
+.disable_row {
+    color: #999999;
+    pointer-events:none;
+}
+
+.delet_row{
+    background: url(img/delet_row.png);
+    width: 20px;
+    height: 20px;
+    position: relative;
+    /*left: 390px;*/
+    top: 5px;
+}
+.delet_row:hover{
+    background: url(img/delet_row_.png);
+}
+
+.devId{
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.devName{
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.areaName{
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.areaName2{
+    width: calc(40% - 20px);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.borderleft{
+    border-left: 1px solid #d1d1d1;
+}

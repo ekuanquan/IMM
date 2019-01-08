@@ -1,0 +1,12 @@
+/.classpath
+/.project
+/.settings/
+/db/
+/target/
+/log/
+*/.idea/*
+src\main\resources\properties
+src\main\webapp\WEB-INF
+src/main/resources/properties/dev/*
+src/main/webapp/.idea/*
+

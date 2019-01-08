@@ -1,0 +1,282 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Microsoft YaHei';
+	font-size: 14px;
+}
+body{
+	width: 100%;
+	/*height: 815px;*/
+	height: 490px;
+	margin: 0px;
+	font-size: 14px;
+	
+}
+
+.title_upload_container{
+	width: calc(100%);
+	height: 26px;
+	margin-left: 0px;
+	margin-top: 10px;
+	
+}
+.title_upload_container *{
+	float: left;
+}
+.title_upload_input{
+	margin-left: 0px;
+	width:340px;
+	height: 26px;
+	line-height: 24px;
+	border: 1px solid #d5d5d5; 
+}
+.upload_input_text{
+	width: 238px;
+	color: #d5d5d5;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.upload_input_button{
+	width: 100px;
+	text-align: center;
+	height: 24px;
+	line-height: 22px;
+	background-color: #d5d5d5;
+}
+.uploadButton{
+	margin-left: 20px;
+}
+.title_bottom_text{
+	margin-top: 3px;
+	margin-left: 5px;
+	width: 320px;
+	
+}
+.addZone{
+	margin-top: 20px;
+	margin-left: 25px;
+	height: 15px;
+	cursor: pointer;
+}
+.addZone_img{
+	width: 12px;
+	height: 15px;
+	background-image: url("./img/zone.jpg");
+	display: inline-block;
+}
+.addZone_text{
+	margin-left: 5px;
+	line-height: 15px;
+	color: #2477e4;
+}
+.addZone * {
+	float: left;
+}
+.mapContainer{
+	/*width:715px; !*calc(100% - 50px);*!
+	height: 624px;*/
+	width: calc(100% - 50px);
+	height: 304px;
+	margin-left: 25px;
+	margin-top: 10px;
+	border: 1px solid #d9d9d9;
+}
+.bottomContainer{
+	width:100%;
+
+}
+.bottomContainer *{
+	float: left;
+
+}
+.buttom_save{
+	width: 103px;
+	height: 26px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #2577e5;
+	color: #FFF;
+	line-height: 25px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.buttom_save:hover{
+	background-color: #1b5fde;
+}
+.buttom_save:active{
+	padding-top: 1px;
+
+}
+#buttom_save{
+	margin-left: calc((100% - 226px)/2);
+}
+
+.buttom_cancel{
+	width: 103px;
+	height: 26px;
+	margin-left: 10px;
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #2577e5;
+	color: #2577e5;
+	line-height: 23px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.buttom_cancel:hover{
+	border: 1px solid #1b5fde;
+	color: #323232;
+}
+.buttom_cancel:active{
+	padding-top: 1px;
+	color: #323232;
+
+}
+.falsePicture{
+	/*position: relative;*/
+	background-image: url("img/NoPicture.png");
+	/*background-position: center 150px;*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	/*height: 238px;
+	top: -217px;
+	left: -27px;*/
+
+}
+
+.subIframe{
+	display: none;
+	border: none;
+	width: 100%;
+	height: 480px;
+}
+.subIframe.show{
+	display: block;
+}
+.leftDiv{
+	float: left;
+	width: 150px;
+	height: 500px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 1px solid #d9d9d9;
+}
+.lieb{
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	background-color: #f1f1f1;
+}
+.liebImg{
+	width: 12px;
+	height: 10px;
+	margin-top: 8px;
+	margin-left: 10px;
+	background-image: url(../../../resource/images/index/liebiao.png);
+	float:left;
+}
+.liebText{
+	margin-left: 5px;
+	float:left;
+}
+
+.btnDiv{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #d9d9d9;
+}
+.contentRight_add{
+	height: 30px;
+	width: 70px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	float:left;
+}
+.contentRight_add:hover{
+	color: #2777E2;
+}
+.contentRight_add:active{
+	padding-top: 1px;
+}
+.contentRight_add_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 10px;
+	background-image: url(../../../resource/images/index/add.png);
+	background-position: -12px;
+	float:left;
+	margin-left: 10px;
+}
+.contentRight_add_text{
+	margin-left: 5px;
+	line-height: 30px;
+	float:left;
+
+}
+.contentRight_del{
+	width: 70px;
+	height: 30px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	float:left;
+}
+.contentRight_del:hover{
+	color: #F65351;
+
+}
+.contentRight_del:active{
+	padding-top: 1px;
+}
+.contentRight_del_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-image: url(../../../resource/images/index/del_close.png);
+	background-position: -12px;
+	float:left;
+}
+.contentRight_del_text{
+	margin-left: 5px;
+	line-height: 30px;
+	float:left;
+}
+
+.rightDiv{
+	float: left;
+	width: 790px;
+	height: 500px;
+	margin-left: 10px;
+}
+.select{
+	background-color: #C3D7F5;
+}
+.fenge{
+	float: left;
+	width: 5px;
+	height: 28px;
+}
+.selectOption{
+	padding-left: 10px;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.selectMapPic{
+	height: calc(100% - 56px);
+	width: 100%;
+	overflow-y: auto;
+}

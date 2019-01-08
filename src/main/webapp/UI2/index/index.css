@@ -1,0 +1,182 @@
+*{
+	margin-top: 0px;
+	margin-left: 0px;
+	float: left;
+	box-sizing: border-box;
+	font-family: 'Microsoft YaHei';
+}
+body{
+
+}
+.login_title{
+	height: 25px;
+	width: 100%;
+	color: #323232;
+	font-size: 12px;
+	line-height: 25px;
+}
+.title{
+	height: 65px;
+	width: 100%;
+	
+	
+}
+.title_left{
+	width: calc((100% - 1280px)/2);
+	height: 100%;
+	background-color: #1683d8;
+}
+.title_center{
+	width: 1280px;
+	height: 100%;
+	background-image: url(../resource/images/index/title/titlebackground_02.png);
+}
+.title_right{
+	width: calc((100% - 1280px)/2);
+	height: 100%;
+	background-color: #1471d0;
+}
+.title_content{
+	position: absolute;
+	width: 100%;
+	height: 65px;
+  	left:0px;
+  	top:25px;
+  	z-index:1;
+  	
+
+}
+.title_content_left{
+	height: 39px;
+	width: 362px;
+	margin-top: 14px;
+	margin-left: 20px;
+	background-image: url(../resource/images/index/title/logo.png);
+	background-repeat: no-repeat;
+
+}
+.title_content_right_box{
+	width: 770px;
+	height: 100%;
+	margin-left: 120px;
+}
+.title_content_index{
+	width: 110px;
+	height: 100%;
+	background-image: url(../resource/images/index/title/title_content_index_03.png);
+}
+
+.title_content_device{
+	width: 110px;
+	height: 100%;
+	/*background-image: url(../resource/images/index/title/title_content_device_04.png);*/
+	background-image: url(../resource/images/index/title/title_device.png);
+}
+.title_content_user{
+	width: 110px;
+	height: 100%;
+	/*background-image: url(../resource/images/index/title/title_content_user_05.png);*/
+	background-image: url(../resource/images/index/title/title_user.png);
+}
+.title_content_permission{
+	width: 110px;
+	height: 100%;
+	/*background-image: url(../resource/images/index/title/title_content_permission_06.png);*/
+	background-image: url(../resource/images/index/title/title_privilege.png);
+}
+.title_content_systemSetting{
+	width: 110px;
+	height: 100%;
+	/*background-image: url(../resource/images/index/title/title_content_permission_06.png);*/
+	background-image: url(../resource/images/index/title/title_system.png);
+}
+.title_content_videoManager{
+	width: 110px;
+	height: 100%;
+	background-image: url(../resource/images/index/title/Videomanagement.png);
+}
+.title_content_statisticsQuery{
+	width: 110px;
+	height: 100%;
+	background-image: url(../resource/images/index/title/title_tongji.png);
+}
+.title_content_item_text{
+	width: 100%;
+	margin-top: 38px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	-moz-user-select:none;
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+}
+
+.title_content_right_item{
+	cursor: pointer;
+
+}
+.title_content_right_item:hover{
+	background-color: #024E8F;
+}
+.title_ischecked{
+	background-color: #024E8F;
+}
+.title_noChecked{
+
+}
+
+
+
+.login_title_left{
+	margin-left: 20px;
+}
+.date_img{
+	width: 16px;
+	height: 16px;
+	margin-top: 4px;
+	margin-left: 10px;
+	background-image: url(../resource/images/index/calendar.png);
+}
+.date_text{
+	margin-left: 5px;
+}
+
+.login_title_right{
+	float: right;
+	margin-right: 20px;
+	
+}
+.login_title_line{
+	height: 12px;
+	margin-left: 20px;
+	margin-top: 7px;
+	border-right: 1px solid #bfbfbf;
+
+}
+.login_title_right_item{
+	margin-left: 20px;
+}
+.update_password{
+	margin-left: 20px;
+	cursor:pointer;
+}
+.exit{
+	margin-left: 20px;
+	cursor:pointer;
+}
+
+.content{
+	width: 100%;
+	height: calc(100% - 90px);
+	
+}
+#firstIframe{
+	width: 0px;
+	height: 100%;
+
+}
+.content iframe{
+	width: 0px;
+	height: 100%;
+	border-width: 0px;
+}

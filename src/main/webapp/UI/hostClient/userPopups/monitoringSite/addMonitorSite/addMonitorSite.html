@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>监控点</title>
+    <link rel="stylesheet" type="text/css" href="addMonitorSite.css"/>
+    <link  rel="stylesheet" type="text/css" href="../../../../resource/demo/css/style.css"/>
+</head>
+<body>
+<div id="title" class="title">
+    <div id="title_left" class="title_left">添加监控点</div>
+    <div id="title_close" class="title_close"></div>
+</div>
+<div id="content" class="content">
+    <form id="form">
+    <div id="userMonitorId" class="cameraName singleLine">
+        <div id="_text" class="cameraName_text content_text"><span class="star">*</span>用户监控点编号</div>
+        <input type="text" id="userMonitorId_input" class="cameraName_input singleLineInput" name="" datatype="positiveinteger"
+               nullmsg="用户监控点编号不能为空"  errormsg="请输入用户监控点编号（数字）!" maxlength="4"/>
+        <div class="Validform_checktip marginTop7"></div>
+    </div>
+
+    <div id="devId" class="cameraName singleLine">
+        <div id="devId_text" class="cameraName_text content_text"><span class="star">*</span>设备编号</div>
+        <!--<input type="text" id="devId_input" class="cameraName_input singleLineInput" name=""/>-->
+        <select id="devId_input" class="selectInput" >
+
+        </select>
+    </div>
+
+    <div id="devMonitorId" class="cameraName singleLine">
+        <div id="devMonitorId_text" class="cameraName_text content_text"><span class="star">*</span>监控点编号</div>
+        <!--<input type="text" id="devMonitorId_input" class="cameraName_input singleLineInput" name=""/>-->
+        <select id="devMonitorId_input" class="selectInput" >
+
+        </select>
+    </div>
+
+    <div id="cameraName" class="cameraName singleLine">
+        <div id="cameraName_text" class="cameraName_text content_text"><span class="star"></span>摄像机名称</div>
+        <div type="text" id="cameraName_input" class="cameraName_input singleLineInput" name=""></div>
+    </div>
+    <div id="cameraAddr" class="cameraAddr singleLine">
+        <div id="cameraAddr_text" class="cameraAddr_text content_text"><span class="star"></span>摄像机位置</div>
+        <div type="text" id="cameraAddr_input" class="cameraAddr_input singleLineInput" name=""></div>
+    </div>
+    <div id="channelNum" class="channelNum singleLine">
+        <div id="channelNum_text" class="channelNum_text content_text"><span class="star"></span>通道号</div>
+        <div type="text" id="channelNum_input" class="channelNum_input singleLineInput" name=""></div>
+    </div>
+    <div id="policeType" class="policeType singleLine">
+        <div id="policeType_text" class="policeType_text content_text"><span class="star"></span>警情类型</div>
+        <div type="text" id="policeType_input" class="policeType_input singleLineInput" name=""></div>
+    </div>
+    <div id="instTime" class="instTime singleLine">
+        <div id="instTime_text" class="instTime_text content_text"><span class="star"></span>安装时间</div>
+        <div type="text" id="instTime_input" class="instTime_input" name=""></div>
+    </div>
+    <div id="wantDo" class="wantDo singleLine">
+        <div id="wantDo_text" class="wantDo_text content_text"><span class="emptyStar"></span>反应类型</div>
+        <div type="text" id="wantDo_input" class="wantDo_input singleLineInput" name=""></div>
+    </div>
+    <div id="cameraType" class="cameraType singleLine ">
+        <div id="cameraType_text" class="cameraType_text content_text"><span class="emptyStar"></span>摄像机类型</div>
+        <div type="text" id="cameraType_input" class="cameraType_input singleLineInput" name=""></div>
+    </div>
+    <div id="cameraModel" class="cameraModel singleLine ">
+        <div id="cameraModel_text" class="cameraModel_text content_text"><span class="emptyStar"></span>摄像机型号</div>
+        <div type="text" id="cameraModel_input" class="cameraModel_input singleLineInput" name=""></div>
+    </div>
+    <div id="fMemo" class="fMemo multiLine">
+        <div id="fMemo_text" class="fMemo_text content_text"><span class="emptyStar"></span>备注</div>
+        <textarea id="fMemo_input" disabled="disabled" class="fMemo_input multiLineInput" name=""></textarea>
+    </div>
+    </form>
+</div>
+<div id="bottom_buttons" class="bottom_buttons">
+    <div id="confirmButton" class="confirmButton">保存</div>
+    <div id="cancelButton" class="cancelButton">取消</div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../../../resource/demo/js/Validform_v4.0.js"></script>
+<script type="text/javascript" src="addMonitorSite.js"></script>
+</html>

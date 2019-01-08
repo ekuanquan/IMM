@@ -1,0 +1,220 @@
+<html lang="zh-CN">
+
+<head>
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PoiPicker/examples/index.html -->
+    <base href="http://webapi.amap.com/ui/1.0/ui/misc/PoiPicker/examples/" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>输入框选择POI点</title>
+    <style>
+
+        html,
+        body,
+        #container {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            font-size: 13px;
+        }
+
+        #pickerBox {
+            position: absolute;
+            z-index: 9999;
+            top: 20px;
+            left: 30px;
+            width: 300px;
+        }
+
+        #pickerInput {
+            width: 200px;
+            padding: 5px 5px;
+        }
+
+        #poiInfo {
+            background: #fff;
+        }
+
+        .amap_lib_placeSearch .poibox.highlight {
+            background-color: #CAE1FF;
+        }
+
+        .amap_lib_placeSearch .poi-more {
+            display: none!important;
+        }
+
+        .amap_lib_placeSearch,
+        .amap-ui-poi-picker-sugg-container {
+            border: none!important;
+        }
+
+        .amap_lib_placeSearch .poibox.highlight {
+            background-color: #CAE1FF;
+        }
+
+        .poi-more {
+            display: none!important;
+        }
+
+        .buttonC{
+            width: 103px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 13px;
+            background-color: #2577e5;
+            border: solid 1px;
+            border-radius: 3px;
+            color: #ffffff;
+            margin-left: calc(50% - 52px);
+        }
+    </style>
+</head>
+
+<body>
+<div id="container" class="map" tabindex="0"></div>
+<div id="pickerBox">
+    <input id="pickerInput" placeholder="输入关键字选取地点" />
+    <div id="poiInfo"></div>
+</div>
+<script type="text/javascript" src='http://webapi.amap.com/maps?v=1.4.5&key=de0d54a361c736b318916c6743e9f982&plugin=AMap.Geocoder'></script>
+<!-- UI组件库 1.0 -->
+<script src="http://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<script type="text/javascript">
+    var map = null;
+    var G_marker = null ;
+    var paramLocation = {};
+    map = new AMap.Map('container', {
+        zoom: 16
+    });
+    AMapUI.loadUI(['control/BasicControl'], function(BasicControl) {
+        var zoomCtrl1 = new BasicControl.Zoom({
+            position: 'br',
+            showZoomNum: true
+        });
+        map.addControl(zoomCtrl1);
+    });
+    AMapUI.loadUI(['misc/PoiPicker'], function(PoiPicker) {
+        var poiPicker = new PoiPicker({
+            //city:'北京',
+            input: 'pickerInput'
+        });
+        //初始化poiPicker
+        poiPickerReady(poiPicker);
+    });
+    map.on('complete', function() {
+        var paramSign = parent.getDeviceLocation();
+        var xSign = paramSign.x;
+        var ySign = paramSign.y;
+        if(xSign != "" && ySign!=""){
+            parent._setTitle2("编辑经纬度");
+            paramLocation.x = xSign;
+            paramLocation.y = ySign;
+            setMarker(xSign,ySign);
+        }
+        else{
+            parent._setTitle2("添加经纬度");
+        }
+    });
+
+    function poiPickerReady(poiPicker) {
+        window.poiPicker = poiPicker;
+        var infoWindow = new AMap.InfoWindow({
+            offset: new AMap.Pixel(0, -20)
+        });
+        //选取了某个POI
+        poiPicker.on('poiPicked', function(poiResult) {
+            var source = poiResult.source,
+                poi = poiResult.item;
+
+            paramLocation.x = poi.location.lng;
+            paramLocation.y = poi.location.lat;
+
+            var marker = getGMarker();
+            marker.setMap(map);
+            infoWindow.setMap(map);
+            marker.setPosition(poi.location);
+            // 设置缩放级别和中心点
+            map.setZoomAndCenter(map.getZoom(), [poi.location.lng, poi.location.lat]);
+            openInfo(poi.name, poi.address);
+            document.getElementById("pickerInput").value = poi.name;
+        });
+    }
+
+    map.on('click', function(e) {
+        setMarker(e.lnglat.getLng(), e.lnglat.getLat());
+    });
+    //在指定位置打开信息窗体
+    function openInfo(address,address1) {
+        //构建信息窗体中显示的内容e.poi.location
+        var info = [];
+        //info.push("<div><div><img style=\"float:left;\" src=\"../resource/image/LAL.png\"/>点击选择设备位置</div> ");
+        info.push(address1+address);
+        //info.push("坐标 : " + lng + "," + lat);
+        info.push("<button class='buttonC' onclick='sureClick()'>确定</button>");
+        infoWindow = new AMap.InfoWindow({
+            content: info.join("<br/>"),  //使用默认信息窗体框样式，显示信息内容
+            offset:new AMap.Pixel(0,-30)
+        });
+
+        var marker = getGMarker();
+        infoWindow.open(map, marker.getPosition());
+    }
+    function sureClick() {
+        parent.sendDeviceLocation(paramLocation);
+        map.clearInfoWindow();
+        parent.alertTip("位置坐标已经保存。",2000,null);
+        //alert("位置坐标已经保存。");
+        parent._closePopus2();
+    }
+    function close(){
+        if (G_marker) {
+            //map.remove(marker);
+            G_marker.setMap(null);
+            G_marker = null;
+        }
+    }
+
+    function regeocoder(marker) {  //逆地理编码
+        var geocoder = new AMap.Geocoder({
+            radius: 1000,
+            extensions: "all"
+        });
+        geocoder.getAddress(marker.getPosition(), function(status, result) {
+            if (status === 'complete' && result.info === 'OK') {
+                //geocoder_CallBack(result);
+                var marker = getGMarker();
+                var address = result.regeocode.formattedAddress
+                openInfo(address,"");
+                //return address;
+            }
+        });
+    }
+
+    function setMarker(lng,lat){
+        paramLocation.x = lng;
+        paramLocation.y = lat;
+
+        // 设置缩放级别和中心点
+        map.setZoomAndCenter(map.getZoom(), [lng, lat]);
+        // 在新中心点添加 marker
+        var marker = getGMarker();
+        marker.setPosition(new AMap.LngLat(lng, lat));
+        regeocoder(marker);
+
+    }
+    function getGMarker(){
+        if(G_marker == null){
+            G_marker = new AMap.Marker({
+                map: map,
+                zoom:map.getZoom(),
+            });
+            G_marker.on('click', function() {
+                regeocoder(G_marker);
+            });
+        }
+        return G_marker;
+    }
+</script>
+</body>
+</html>

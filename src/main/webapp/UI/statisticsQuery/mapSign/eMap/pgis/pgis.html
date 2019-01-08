@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            border: 1px solid #c8c8c8;
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        .data-container {
+            float: left;
+            width: 30%;
+            height: 500px;
+        }
+
+        #result, #callback {
+            float: left;
+            border: 1px solid #000080;
+            margin: 1px;
+            width: 100%;
+            height: 250px;
+            overflow-y: auto;
+            overflow-x:auto;
+        }
+
+        #map {
+            float: left;
+            border: 1px solid red !important;
+            width: 60% !important;
+            height: 500px !important;
+            margin: auto 5px;
+        }
+
+        .opra {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        ul, li {
+            list-style-type: none;
+        }
+
+        li {
+            border: 1px solid #f00;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="data-container">
+    <div id="result"></div>
+    <div id="callback"></div>
+</div>
+<div id="map"></div>
+<div class="opra">
+    <ul>
+        <li>
+            <button onclick="p_addMarker()">添加标注</button>
+            <button onclick="p_editMarker()">修改标注</button>
+            <button onclick="p_removeOverlay()">删除指定标注</button>
+            <button onclick="p_startMoveMarker()">移动标注</button>
+            <button onclick="p_stopMoveMarker()">停止移动</button>
+            <button onclick="p_openInfoWindowHtml()">打开气泡</button>
+            <button onclick="p_closeInfoWindowHtml()">关闭气泡</button>
+            <button onclick="p_activeClick()">激活监听点击</button>
+            <label>标注序号</label>
+            <input id="m_index" value="0"/>
+            x:<input id="am_pointx" value="110.29052"/>
+            y:<input id="am_pointy" value="25.27734"/>
+        </li>
+        <li>
+            <button onclick="p_clearMarker()">删除所有痕迹</button>
+        </li>
+        <li>
+            <button onclick="p_showPathway()">轨迹显示</button>
+            point:<input id="point"
+                         value="110.19052,25.37734,110.49052,25.47734,110.69052,25.77734,110.19052,25.87734"/>
+            color<input id="color"/>
+            linWidth:<input id="linWidth"/>
+            opacity:<input id="opacity"/>
+            arrow:<input id="arrow"/>
+        </li>
+        <li>
+            <button onclick="p_getCenter()">获取中心点</button>
+        </li>
+        <li>
+            <button onclick="p_getZoomLevel()">获取地图级别</button>
+        </li>
+        <li>
+            <button onclick="p_addOverView()">鹰眼显示</button>
+            width:<input id="width" value=""/>
+            height:<input id="height" value=""/>
+            minLevel:<input id="minLevel" value=""/>
+            maxLevel:<input id="maxLevel" value=""/>
+        </li>
+        <li>
+            <input id="btn1" type="button" value="点击画圆" onclick="getDrawCircle()">
+            <input id="btn2" type="button" value="点击画线" onclick="getDrawLine()">
+            <input id="btn3" type="button" value="点击画矩形" onclick="getDrawRect()">
+            <input id="btn4" type="button" value="点击画多边形" onclick="getDrawPolygon()">
+        </li>
+        <li>
+            <button onclick="p_fullExtent()">全图显示</button>
+            <button onclick="addResource()">添加资源</button>
+            <button onclick="removeResource()">删除资源</button>
+        </li>
+    </ul>
+</div>
+</body>
+<script type="text/javascript" charset="GB2312" src="http://10.151.1.83:80/PGIS_S_TileMap/js/EzMapAPI.js"></script>
+<script type="text/javascript" src="../base/require.js"></script>
+<script type="text/javascript" src="pgis.test-1.0.js"></script>
+</html>

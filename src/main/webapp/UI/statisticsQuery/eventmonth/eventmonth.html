@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+	<meta charset="utf-8"/>
+	<title>事件月统计</title>
+	<link rel="stylesheet" type="text/css" href="eventmonth.css"/>
+	<script src="damo.js"></script>
+
+</head>
+<body>
+	<div id="title" class="title">
+		<div id="title_left" class="title_left">
+			<div id="title_left_text" class="title_left_text">事件月统计</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main_top">
+			<div>
+				<div class="search_time">查询时间</div>
+				<input name="choose_time" id="search_select" class="search_select">
+				<div id="sure" class="sure">查询</div>
+			</div>
+			<!--<div class="data_out">数据导出</div>-->
+
+			<div></div>
+		</div>
+		<div class="main_all">
+			<div id="main_one" class="main_one">
+				<div class="main_oneleft">
+					<div class="left_one">
+						<div class="left_oneleft">
+							<div id="one_time" class="one_time"></div>
+							<div class="thing_num">综合事件总数</div>
+						</div>
+						<div class="left_oneright">
+							<div id="all_num" class="all_num">0</div>
+						</div>
+					</div>
+					<div class="left_two">
+						<div class="left_twoleft">
+							<div id="police_nun" class="police_nun">0</div>
+							<div class="police_all">报警总数</div>
+						</div>
+						<div class="left_tworight">
+							<div id="fault_num" class="police_nun fault_num">0</div>
+							<div class="police_all">故障总数</div>
+						</div>
+					</div>
+					<div class="left_three">
+						<div class="left_threeleft ">
+							<div id="Supertested_num" class="police_nun Supertested_num">0</div>
+							<div class="police_all">超测总数</div>
+						</div>
+						<div class="left_threeright ">
+							<div id="system_num"  class="police_nun system_num">0</div>
+							<div class="police_all">系统总数</div>
+						</div>
+					</div>
+				</div>
+				<div id="main_oneright" class="main_oneright"></div>
+			</div>
+			<div class="main_two">
+				<div id="two_left" class="two_left"></div>
+				<div class="two_right">
+					<div class="list list_title">
+						<div id="fire_alarm" class="fire_alarm fire_title" divId=""></div>
+						<div id="fire_allnum" class="fire_allnum fire_title"></div>
+					</div>
+					<div id="two_right"></div>
+				</div>
+			</div>
+			<div id="main_three" class="main_three"></div>
+			<div id="main_four" class="main_four"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="echarts.min.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../tool/time/time.js"></script>
+<!--<script type="text/javascript" src="pie.js"></script>
+<script type="text/javascript" src="firealarm.js"></script>
+<script type="text/javascript" src="fault.js"></script>
+<script type="text/javascript" src="system.js"></script>-->
+<script type="text/javascript" src="./eventmonth.js"></script>
+</html>

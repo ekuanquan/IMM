@@ -1,0 +1,224 @@
+*{
+	float: left;
+	box-sizing: border-box;
+	font-family: 'Microsoft YaHei';
+}
+body{
+	width: 100%;
+	margin: 0px;
+	font-size: 14px;
+}
+.main{
+	width: 705px;
+	height: 580px;
+}
+.title{
+    background-color: #2577e5;
+    width: 100%;
+    height: 30px;
+}
+
+.table{
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.close{
+    float: right;
+    color: white;
+    background-image: url("../img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: #f75352;;
+}
+.centen{
+	margin: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 50px);
+	border: 1px solid #D9D9D9;
+}
+.center_title{
+	width: calc(100% - 20px);
+	height: 66px;
+	line-height: 66px;
+	margin-left: 20px;
+}
+#userId{
+	margin: 20px 60px 0 10px;
+}
+.noChecked{
+	width: 13px;
+	height: 13px;
+	background: url(../img/noChecked.png);
+	margin: 26px 10px 0 0;
+}
+.isChecked{
+	width: 13px;
+	height: 13px;
+	background: url(../img/isChecked.png);
+    margin: 26px 10px 0 0;
+}
+.isVideo{
+	height: 66px;
+	line-height: 66px;
+	float: left;
+}
+.isVideo_text{
+	
+}
+.center_tap{
+	height: 30px;
+	width:100%;
+	background: #e5f1f9;
+}
+.tap{
+	float: left;
+	width: 55px;
+	text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: default;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.tab_isChecked {
+    background-color: #bed4f3;
+}
+.center_main{
+	width: 671px;
+	height: 374px;
+	margin: 0 7px;
+}
+.center_val{
+	width: 100%;
+	height: 100%;
+}
+.val_top{
+    height: 10px;
+    width: 100%;
+
+}
+.search-div{
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    float: left;
+    width: 357px;
+    height: 27px;
+    margin: 7px 0 0 0px;
+    line-height: 27px;
+}
+.search-div input{
+    border:none;
+    float: left;
+    width: 326px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+.search-div i{
+    float: right;
+    width: 20px;
+    height: 27px;;
+    margin-right: 5px;
+    background: url("../img/search.png")  no-repeat center ;
+    cursor: pointer;
+}
+.search-div i:active{
+	background-position: 0px 5px;
+}
+.flash-btn{
+    float: right;
+    width: 20px;
+    height: 35px;
+    margin:3px 0 0 15px;
+    background: url("../img/flash.png") no-repeat 0px 8px;
+    cursor: pointer;
+}
+.flash-btn:active{
+    background-position: 0px 9px;
+}
+.val_centen{
+	width: 671px;
+	height: 370px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border: 1px solid #D9D9D9;
+	border-radius: 3px;
+}
+.title_row{
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.row_noChecked{
+	width: 13px;
+	height: 13px;
+	background: url(../img/noChecked.png);
+	margin: 8px 10px 0 25px;
+}
+.row_isChecked{
+	width: 13px;
+	height: 13px;
+	background: url(../img/isChecked.png);
+    margin: 8px 10px 0 25px;
+}
+.row_row{
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.centen_buttom{
+	width: 100%;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+}
+.save{
+	height: 25px;
+    text-align: center;
+    line-height: 23px;
+    width: 80px;
+	background-color: rgb(37, 119, 229);
+    color: white;
+    border-radius: 3px;
+    margin: 15px 10px 0 240px;
+    cursor: pointer;
+}
+.save:hover{
+	background-color: rgb(27, 95, 222);
+}
+.save:active{
+	padding-top: 1px;
+}
+.cancel{
+	height: 25px;
+    text-align: center;
+    line-height: 23px;
+    width: 80px;
+	background-color: rgb(37, 119, 229);
+    color: white;
+    border-radius: 3px;
+    margin: 15px 0  0 0;
+    cursor: pointer;
+}
+.cancel:hover{
+	background-color: rgb(27, 95, 222);
+}
+.cancel:active{
+	padding-top: 1px;
+}
+.displayNone{
+	display: none;
+}

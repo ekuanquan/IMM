@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="selectAkey.css">
+    <link rel="stylesheet" type="text/css" href="../../../resource/demo/css/style.css">
+    <script type="text/javascript" src="../../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../../resource/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../resource/js/popus.js"></script>
+    <script type="text/javascript" src="selectAkey.js"></script>
+    <script type="text/javascript" src="../../../resource/demo/js/Validform_v4.0.js"></script>
+</head>
+<body>
+<div style="width: 978px;height: 516px">
+    <form id="signupForm" class="registerform">
+        <div class="devarea">
+
+            <div class="line" style="margin-top: 20px">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">&nbsp;</div>设备编号</div><div class="leinput">
+                    <input id="devId" type="text" readonly="readonly" class="" />
+                </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>设备名称</div><div class="riinput">
+                    <input id="devName" type="text" maxlength="255" readonly="readonly"/>
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename" style="width: 104px"><div class="xin">&nbsp;</div>设备关联编号</div><div class="leinput" style="width: 196px;margin-right: 0px">
+                    <input id="pnlActID" type="text" style="width: 174px" maxlength="64" readonly="readonly"/>
+                </div>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>所属区域</div><div class="riinput">
+                    <input type="text" readonly="readonly" class="" id="openarea">
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">&nbsp;</div>设备类型</div>
+                    <div class="leinput">
+                        <input id="devType"  value="一键式紧急报警盒" type="text" readonly="readonly" class="">
+                    </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename" style="width: 118px"><div class="xin">&nbsp;</div>设备登录用户名</div><div class="leinput" style="width: 182px;margin-right: 0px">
+                    <input id="devLoginName" type="text" style="width: 160px" readonly="readonly">
+                </div>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">&nbsp;</div>设备ID</div>
+                    <div class="leinput">
+                        <input id="devSn" type="text" readonly="readonly">
+                    </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>设备型号</div><div class="riinput"  >
+                    <input id="devModelId"  class="selec" style="width: 198px" readonly="readonly"/>
+                </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname" style="width: 104px"><div class="xin"></div>设备登录密码</div><div class="riinput" style="width: 196px;margin-right: 0px">
+                    <input id="devLoginPwd" type="text" style="width: 174px" maxlength="32" readonly="readonly"/>
+                </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>设备位置</div><div class="riinput">
+                    <input id="pnlAddr" type="text"  maxlength="72"  readonly="readonly"/>
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">&nbsp;</div>经度</div><div class="leinput">
+                    <input id="line" type="text"  readonly="readonly"/>
+                </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>纬度</div><div class="riinput" style="margin-right: 0px;width: 226px">
+                    <input id="column" type="text" class="latitude"  readonly="readonly"/>
+                    <div class="place"></div><div id="choseplace" class="plname">查看位置</div></div>
+                </div>
+
+            </div>
+            <div class="line">
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>安装时间</div><div class="riinput">
+                    <input id="installTime_input" type="text" class="time" style="width: 198px" readonly="readonly">
+                    </div>
+                </div>
+                <div class="lineleft">
+                    <div class="riname"><div class="xin">&nbsp;</div>安装单位</div><div class="riinput">
+                    <input id="instUnit" type="text"  maxlength="40" readonly="readonly">
+                    </div>
+                </div>
+                <div class="lineright">
+                    <div class="lename"><div class="xin">&nbsp;</div>安装员</div><div class="leinput">
+                    <input id="instMan" type="text" style="width: 204px"  maxlength="46" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="lineright">
+                    <div class="riname"><div class="xin"></div>通信线路</div><div class="riinput">
+                    <input id="communicateLine"  class="selec" style="width: 198px" readonly="readonly"/>
+                        <!--<option value=""></option>
+                        <option value=""></option>-->
+                </div>
+                </div>
+                <div class="lineleft">
+                    <div class="riname"><div class="xin"></div>通信协议</div><div class="riinput">
+                    <input id="communicateProtocol"  class="selec" style="width: 198px" readonly="readonly"/>
+                        <!--<option value=""></option>
+                        <option value="-1">Ehome协议</option>-->
+                </div>
+                </div>
+                <div class="lineright">
+                    <div class="riname"><div class="xin">&nbsp;</div>所属平台</div>
+                    <div class="riinput">
+                        <input id="platformId" type="text" maxlength="40" readonly="readonly" style="width: 204px" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="lineright">
+                    <div class="lename" style="width: 104px"><div class="xin">&nbsp;</div>流转服务器IP</div><div class="leinput" style="width: 190px">
+                    <input id="akeyServer_AKey" type="text" style="width: 168px" readonly="readonly">
+                </div>
+                </div>
+
+                <div class="lineleft">
+                    <div class="riname" style="width: 120px;">
+                        <div class="xin">&nbsp;</div>
+                        流媒体服务端口
+                    </div>
+                    <div class="riinput" style="width: 178px">
+                        <input id="devPort" type="text"  style="width: 156px" maxlength="11" readonly="readonly"/>
+
+                    </div>
+                </div>
+                <div class="lineright">
+                    <div class="lename">
+                        <div class="xin">&nbsp;</div>
+                        设备厂商
+                    </div>
+                    <div class="riinput posi" style="width: 226px;margin-right: 14px;">
+                        <input name="manufacturer" id="manufacturer" class="selec posiInput" readonly="readonly" style="width: 204px" >
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="lineend">
+                <div class="lineleft">
+                    <div class="lename"><div class="xin">&nbsp;</div>备注</div><div class="divnote"><textarea id="fMemo" class="texnote" maxlength="255" readonly="readonly"></textarea></div>
+                </div>
+            </div>
+
+            <div class="linebox">
+                <div class="lenamebox"><!--<div class="xin">&nbsp;</div>-->
+                    <div id="lenameCheckbox" class="lenameCheckbox isChecked"></div>
+                </div>
+                <div class="lenamename">设备编号自动关联设备</div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

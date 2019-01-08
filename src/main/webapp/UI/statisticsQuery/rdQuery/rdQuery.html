@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+	<meta charset="utf-8"/>
+	<title>处警查询</title>
+	<link rel="stylesheet" type="text/css" href="rdQuery.css"/>
+
+</head>
+<body>
+	<div id="title" class="title">
+		<div id="title_left" class="title_left">
+			<div id="title_left_text" class="title_left_text">处警查询</div>
+		</div>
+	</div>
+	<div id="searchTitle" class="searchTitle">
+
+		<div id="searchFirstDiv">
+			<select id="fuzzy" class="selet pic" >
+				<option value="all" >全部</option>
+				<option value="disposalAlarmNum">单据编号</option>
+				<option value="accountNum">用户编号</option>
+				<option value="accountName">用户名称</option>
+				<option value="cMobile">联络电话</option>
+			</select>
+			<div id="searchInput" class="searchInput ">
+				<input id="search_text" class="search_text" type="text" placeholder="" name="" value=""/>
+			</div>
+			<div class="textime" style="margin-left: 10px">接警时间</div>
+			<input id="startTime" class="inpt" type="text">
+			<div class="textime">至</div>
+			<input id="endTime" class="inpt" type="text">
+			<div id="policeCheck" class="btns btn1">搜索</div>
+		</div>
+		<div id="searchSecDiv">
+			<div id="filtrate_contain" class="filtrate_contain">
+				<div id="dayForm" class="filtrate">
+					<div id="dayEvent_img" class="noChecked_search Checked_img"></div>
+					<div id="dayEvent_text" class="dayEvent_text search_item_text">当日单据</div>
+				</div>
+				<div id="yesterdayForm" class="filtrate">
+					<div id="yesterdayForm_img" class="noChecked_search Checked_img"></div>
+					<div id="yesterdayForm_text" class="search_item_text">昨日单据</div>
+				</div>
+				<div id="monthForm" class="filtrate">
+					<div id="monthForm_img" class="noChecked_search Checked_img"></div>
+					<div id="monthForm_text" class="search_item_text">当月单据</div>
+				</div>
+				<div id="allForm" class="filtrate">
+					<div id="allForm_img" class="isChecked_search Checked_img"></div>
+					<div id="allForm_text" class="search_item_text">全部</div>
+				</div>
+			</div>
+			<div id="timeorder" class="timeorder">时间升降<div id="timePng" class="timePng"></div></div>
+		</div>
+
+	</div>
+	<!--<div id="content" class="content">
+		<table id="table" class="table">
+			<tr id="" class="table_title">-->
+	<div id="content" class="content">
+		<div id="right_div">
+			<div id="right_div1">
+				<div id="right_divx">
+					<table id="listBox1" class="table table-bordered">
+						<tr class=d"table_title">
+							<td id="disposalAlarmNum_title" class="eventNum_title borderRight">处警单编号</td>
+							<td id="alarmcode_title" class="isPayName_title table_title_item borderRight">报警原因</td>
+							<td id="disposalAlarmResult_title" class="disposalAlarmResult_title borderRight">处警结果</td>
+							<td id="eventNum_title" class="eventNum_title borderRight">事件编号</td>
+							<td id="accountNum_title" class="accountNum_title borderRight">用户编号</td>
+							<td id="contact_title" class="contact_title borderRight">单位负责人</td>
+							<td id="usrAlmType_title" class="usrAlmType_title borderRight">用户级别</td>
+							<td id="payNO_title" class="memo_title table_title_item borderRight">口令</td>
+							<td id="cMobilee_title" class="cMobile_title table_title_item borderRight">负责人手机</td>
+							<td id="accountName_title" class="userName_title borderRight">用户名称</td>
+							<td id="accountAddr_title" class="userName_title borderRight">用户地址</td>
+							<td id="eventType_title" class="eventType_title table_title_item borderRight">事件类型</td>
+							<td id="eventDesc_title" class="eventDesc_title table_title_item borderRight">事件描述</td>
+							<td id="eventTime_title" class="eventTime_title table_title_item_time borderRight">报警时间</td>
+							<td id="position_title" class="eventTime_title table_title_item_time borderRight">报警位置</td>
+							<td id="acceptAlarmTime_title" class="acceptAlarmTime_title table_title_item_time borderRight">接警时间</td>
+							<td id="acceptAlarmer_title" class="acceptAlarmer_title table_title_item borderRight">接警员</td>
+							<td id="disposalAlarmTime_title" class="disposalAlarmTime_title table_title_item_time borderRight">处警时间</td>
+							<td id="dispatchType_title" class="dispatchType_title table_title_item borderRight">出警方式</td>
+							<td id="dispatchUnit_title" class="dispatchUnit_title table_title_item borderRight">出警单位</td>
+							<td id="disposalTeamHead_title" class="disposalTeamHead_title table_title_item borderRight">处警队负责人</td>
+							<td id="memo_title" class="memo_title table_title_item">备注</td>
+							<td class="table_title_item_last"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="right_div2">
+				<table id="listBox2" class="table table-bordered">
+					<tbody id="table_content" class="table_content">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+			<!--</tr>
+			<tbody id="table_content" class="table_content">
+
+			</tbody>
+		</table>
+	</div>-->
+	<div id="contentBottom" class="contentBottom">
+		<div id="pageBox" class="pageBox"></div>
+	</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../resource/js/load.js"></script>
+<script type="text/javascript" src="../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+<script type="text/javascript" src="../../resource/colResizable/colResizable-1.5.min.js"></script>
+<script type="text/javascript" src="../../resource/colResizable/colResizableNot-1.5.min.js"></script>
+<script type="text/javascript" src="../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../tool/exchange.js"></script>
+<script type="text/javascript" src="./rdQuery.js"></script>
+<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+</html>

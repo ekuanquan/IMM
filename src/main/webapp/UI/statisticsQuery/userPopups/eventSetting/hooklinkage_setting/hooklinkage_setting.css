@@ -1,0 +1,227 @@
+* {
+	float: left;
+	box-sizing: border-box;
+	font-family: 'Microsoft YaHei';
+}
+
+body {
+	width: 100%;
+	margin: 0px;
+	font-size: 14px;
+}
+
+.main {
+	width: 771px;
+	height: 532px;
+}
+
+.title {
+	background-color: #2577e5;
+	width: 100%;
+	height: 30px;
+}
+
+.table {
+	line-height: 30px;
+	color: white;
+	margin-left: 10px;
+	font-size: 14px;
+	float: left;
+}
+
+.close {
+	float: right;
+	color: white;
+	background-image: url("../img/close.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.close:hover {
+	background-color: #f75352;
+	;
+}
+
+.centen {
+	width: calc(100% - 20px);
+	height: calc(100% - 50px);
+	margin: 10px;
+	border: 1px solid #d9d9d9;
+}
+
+.row_title {
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.title_add {
+	height: 30px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	color: #898989;
+}
+
+.title_add:hover {
+	color: #2777E2;
+}
+
+.title_add:active {
+	padding-top: 1px;
+}
+
+.title_add_img {
+	width: 12px;
+	height: 12px;
+	margin: 9px 1px 0 16px;
+	background-image: url(../../../../resource/images/index/add.png);
+	background-position: -12px;
+}
+
+.title_add_text {
+	margin-left: 5px;
+	line-height: 30px;
+}
+
+.title_edit {
+	margin-left: 20px;
+	color: #898989;
+	cursor: pointer;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.title_edit:hover {
+	color: #ba74d6;
+}
+
+.title_edit:active {
+	padding-top: 1px;
+}
+
+.title_edit_img {
+	width: 12px;
+	height: 12px;
+	margin: 9px 1px 0 0;
+	background-image: url(../img/0_05.png);
+	background-position: -12px;
+}
+
+.title_edit_text {
+	margin-left: 5px;
+	line-height: 30px;
+}
+
+.title_del {
+	margin-left: 20px;
+	color: #898989;
+	cursor: pointer;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.title_del:hover {
+	color: #F65351;
+}
+
+.title_del:active {
+	padding-top: 1px;
+}
+
+.title_del_img {
+	width: 12px;
+	height: 12px;
+	margin: 9px 1px 0 0;
+	background-image: url(../../../../resource/images/index/del_close.png);
+	background-position: -12px;
+}
+
+.title_del_text {
+	margin-left: 5px;
+	line-height: 30px;
+}
+.devMonitorId_title{
+	height: 30px;
+	border-right: 1px solid #D9D9D9;
+	width: 150px;
+    text-align: center;
+}
+.isCamera{
+	height: 30px;
+	padding-left: 20px;
+}
+
+.row_main {
+	width: 100%;
+	border-bottom: 1px solid #D9D9D9;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 360px;
+}
+.row_row{
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #d9d9d9;
+}
+.devMonitorId{
+	height: 30px;
+	width: 150px;
+    text-align: center;
+}
+
+.centen_buttom {
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+}
+
+.save {
+	height: 25px;
+	text-align: center;
+	line-height: 23px;
+	width: 80px;
+	background-color: rgb(37, 119, 229);
+	color: white;
+	border-radius: 3px;
+	margin: 20px 10px 20px 280px;
+	cursor: pointer;
+}
+
+.save:hover {
+	background-color: rgb(27, 95, 222);
+}
+
+.save:active {
+	padding-top: 1px;
+}
+
+.cancel {
+	height: 25px;
+	text-align: center;
+	line-height: 23px;
+	width: 80px;
+	border: 1px solid rgb(37, 119, 229);
+	color: rgb(37, 119, 229);
+	border-radius: 3px;
+	margin: 20px 0 20px 0;
+	cursor: pointer;
+}
+
+.cancel:hover {
+	border: 1px solid rgb(7, 69, 191);
+	color: rgb(7, 69, 191);
+}
+
+.cancel:active {
+	padding-top: 1px;
+}

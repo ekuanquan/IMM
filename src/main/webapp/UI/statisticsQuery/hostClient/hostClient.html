@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+    <meta charset="utf-8"/>
+    <title>用户信息</title>
+    <link rel="stylesheet" type="text/css" href="hostClient.css"/>
+</head>
+<body style="width:100%;height: 100%;">
+<div id="title" class="title">
+    <div id="title_left" class="title_left">
+        <div id="title_left_text" class="title_left_text">机主客户</div>
+    </div>
+</div>
+<div id="searchTitle" class="searchTitle">
+    <div style="width:100%;float: left;">
+        <select id="fuzzy" class="selet pic" >
+            <option value="all">全部</option>
+            <option value="userId">用户编号</option>
+            <option value="userName">用户名称</option>
+            <option value="cphone">联络电话</option>
+            <option value="userAddr">用户地址</option>
+        </select>
+        <div id="searchInput" class="searchInput ">
+            <input id="search_text" class="search_text" type="text" placeholder="" name="" value=""/>
+        </div>
+        <div class="tex">所属区域</div>
+        <input id="areaname" class="selet" type="text" placeholder="" name="" value=""/>
+        <div id="areaReset" class="title_refresh_img" title="重置所属区域"></div>
+        <div class="tex">用户行业</div><select class="selet pic" id="accountBusiness"><option value="all">全部</option></select>
+    </div>
+    <div  style="width:100%;float: left;">
+        <div class="tex" style="margin: 14px 10px 0px 10px;">服务类型</div><select class="selet pic" style="margin-top: 10px;" id="accountType"><option value="all">全部</option></select>
+        <div class="tex" style="margin: 14px 10px 0px 10px;">定期撒布防用户</div><select style="margin-top: 10px;" class="selet pic" id="nomRpt"><option value="all">全部</option><option value="1">是</option><option value="0">否</option></select>
+    </div>
+    <div  style="width:100%;float: left;">
+        <div class="textime" style="margin-left: 10px;">安装时间</div><input id="startTime" class="inpt" type="text">
+        <div class="textime">至</div><input id="endTime" class="inpt" type="text">
+        <div id="policeCheck" class="btns btn1">搜索</div>
+        <div id="timeorder" class="timeorder">用户编号升降<div id="timePng" class="timePng"></div></div>
+    </div>
+</div>
+<div id="content" class="content">
+    <table id="userInfoTab" class="table">
+        <tr class="table_title">
+            <th id="accountNum_title" class="accountNum_title table_title_item borderRight">用户编号</th>
+            <th id="accountName_title" class="userName_title borderRight">用户名称</th>
+            <th id="accountAddr_title" class="userName_title borderRight">用户地址</th>
+            <th id="rdClass_title" class="userLevel_title table_title_item borderRight">用户级别</th><!--新添加的字段，用户级别-->
+            <th id="contact_title" class="contact_title table_title_item borderRight">单位负责人</th>
+            <th id="payNO_title" class="wirelessTel_title table_title_item borderRight">口令</th>
+            <th id="cPhone_title" class="cPhone_title table_title_item borderRight">负责人电话</th>
+            <th id="cMobile_title" class="cMobile_title table_title_item borderRight">负责人手机</th>
+            <th id="serverTypeName_title" class="accountTypeName_title table_title_item borderRight">服务类型</th>
+            <th id="areaName_title" class="areaName_title table_title_item borderRight">所属区域</th>
+            <th id="accountTypeName_title" class="accountTypeName_title table_title_item borderRight">用户类型</th>
+            <th id="platformName_title" class="platformName_title table_title_item borderRight">所属平台</th>
+            <th id="pnlTel_title" class="operName_title table_title_item borderRight">联网电话</th>
+            <th id="operName_title" class="operName_title table_title_item borderRight">录入人</th>
+            <!--<th id="createDate_title" class="operTime_title table_title_item borderRight">安装时间</th>&lt;!&ndash;新添加的字段，录入时间&ndash;&gt;-->
+            <th id="accountBusinessName_title" class="accountBusinessName_title table_title_item borderRight">用户行业</th>
+            <th id="business_subName_title" class="sonBusinessName_title table_title_item borderRight">子行业<span id="businessPng" class="businessPng"></span></th><!--新添加的字段，子行业-->
+            <th id="pnlHdTel_subName_title" class="sonBusinessName_title table_title_item borderRight">无线卡号</th>
+            <!--<th id="instDate_title" class="instDate_title table_title_item borderRight">安装日期</th>-->
+            <th id="instDate_title" class="instDate_title table_title_item borderRight">安装时间</th>
+            <th id="fMemo_title" class="zoneNum_title">备注<span id="fMemoPng" class="fMemoPng"></span></th>
+
+            <!--<th id="userProperty_title" class="userProperty_title table_title_item">用户属性</th>
+            <th id="cHmPhone_title" class="cHmPhone_title table_title_item">负责人家庭电话</th>
+            <th id="nomRpt_title" class="nomRpt_title table_title_item">定期撤布防用户</th>
+            <th id="engageTest_title" class="engageTest_title table_title_item">定期测试用户</th>
+            <th id="isVideoCheck_title" class="isVideoCheck_title table_title_item">短信转发</th>
+            <th id="isInsurance_title" class="isInsurance_title table_title_item">投保</th>
+            <th id="hasBak_title" class="hasBak_title table_title_item">是否来电正常</th>
+            <th id="isPay_title" class="isPay_title table_title_item">缴费状态</th>
+            <th id="nomTest_title" class="nomTest_title table_title_item">紧急按钮用户</th>
+            <th id="road_title" class="road_title table_title_item">道路标志</th>-->
+
+        </tr>
+        <tbody id="table_content" class="table_content"></tbody>
+    </table>
+</div>
+</div>
+<div id="contentBottom" class="contentBottom">
+    <div id="pageBox" class="pageBox"></div>
+</div>
+</body>
+<script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../../resource/js/colResizableY-1.5.min.js"></script>
+<script type="text/javascript" src="../../resource/js/load.js"></script>
+<script type="text/javascript" src="../../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+<script type="text/javascript" src="../../tool/time/time.js"></script>
+<script type="text/javascript" src="../../tool/exchange.js"></script>
+<script type="text/javascript" src="./hostClient.js"></script>
+<script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../../resource/js/popups.js"></script>
+</html>

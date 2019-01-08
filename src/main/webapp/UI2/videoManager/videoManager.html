@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%; width: 100%;">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="videoManager.css">
+
+		<link rel="stylesheet" href="zTreeStyle.css" type="text/css">
+		<link rel="stylesheet" href="videoManagerRight.css" type="text/css">
+		<script type="text/javascript" src="../resource/js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="../resource/js/jquery-ajax-expand.js"></script>
+		<script type="text/javascript" src="../tool/jquery-page-1.0.1/jquery-page-1.0.1.js"></script>
+		<script type="text/javascript" src="jquery.ztree.core.js"></script>
+	</head>
+
+	<body>
+		<div id="left">
+			<aside class="left-side">
+				<div id="area">
+					<label class="areatex">区域结构</label>
+				</div>
+
+				<!--<div id="refrelany">
+					<div class="search-div"> <input id="test" class="" type="text" />
+						<i title="搜索"></i>
+					</div>
+					<div class="flash-btn" id="flash" title="刷新"></div>
+				</div>-->
+				<div class="streediv">
+					<div id="tree">
+						<!--<div id="title">主目录</div>-->
+						<!--树结构-->
+						<ul id="treeDemo" class="ztree"></ul>
+					</div>
+				</div>
+			</aside>
+		</div>
+
+		<div id="contentRight" class="contentRight">
+			<div id="contentRight_title" class="contentRight_title">
+				<!--<div id="contentRight_del" class="contentRight_del">
+					<div id="contentRight_del_img" class="contentRight_del_img"></div>
+					<div id="contentRight_del_text" class="contentRight_del_text">清除配置</div>
+				</div>
+				&lt;!&ndash;<div id="contentRight_add" class="contentRight_add">
+            			<div id="contentRight_add_img" class="contentRight_add_img"></div>
+           	 			<div id="contentRight_add_text" class="contentRight_add_text">添加</div>
+        		</div>&ndash;&gt;
+				<div id="contentRight_search" class="contentRight_search">
+					<div id="contentRight_search_img" class="contentRight_search_img"></div>
+					<input type="text" id="contentRight_search_input" class="contentRight_search_input" name="" />
+				</div>-->
+			</div>
+			<div id="contentRight_bottom" class="contentRight_bottom">
+				<div class="centen_title">
+					<div class="monitoringPoint">监控点</div>
+					<div class="videoState">录像状态</div>
+					<div class="userId">用户编号</div>
+					<div class="userName">用户名称</div>
+					<div class="storagePlan">设备存储录像计划</div>
+					<div class="configurationPlan_Title">配置计划</div>
+				</div>
+				<div class="centen_centen">
+					<div class="centen_row">
+						<div class="monitoringPoint">监控点1</div>
+						<div class="videoState">正在录像</div>
+						<div class="userId">1000O1390</div>
+						<div class="userName">沧州银行任丘华</div>
+						<div class="storagePlan">全天模版</div>
+						<div class="configurationPlan">配置计划</div>
+					</div>
+				</div>
+				<div id="contentBottom" class="contentBottom">
+					<div id="pageBox" class="pageBox"></div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript" src="videoManager.js"></script>
+	<script type="text/javascript" src="videoManagerRight.js"></script>
+	
+
+</html>

@@ -1,0 +1,115 @@
+*{
+	color: #fff;
+	float: left;
+}
+body{
+	margin: 0px;
+}
+.content{
+	width: 968px;
+	height: 393px;
+
+
+}
+
+.title_close{
+	float: right;
+	width: 30px;
+	height: 30px;
+
+	background-image: url(../../resource/images/index/close.png);
+	background-repeat: no-repeat;
+	background-position: 8px 8px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.title_close:hover{
+	background-color: #f75352;
+}
+.title{
+	width: 100%;
+	height: auto;
+	margin-top: 26px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+}
+.container{
+	height: 162px;
+	margin-top: 40px;
+	/*margin-left: 92px;*/
+	margin-left: 26px;
+}
+.item{
+	height: 152px;
+	width: 131px;
+    cursor: pointer;
+
+}
+.NVR_img{
+	
+	background-image: url(./img/white_black/NVR.png);
+}
+.NVR_img:hover{
+	background-image: url(./img/color/NVR.png);
+}
+.NVRWire_img{
+	
+	background-image: url(./img/white_black/NVR.png);
+}
+.NVRWire_img:hover{
+	background-image: url(./img/color/NVRWire.png);
+}
+.alarmMainframe_img{
+	
+	background-image: url(./img/white_black/alarmMainframe.png);
+}
+.alarmMainframe_img:hover{
+	background-image: url(./img/color/alarmMainframe.png);
+}
+.face_img{
+	
+	background-image: url(./img/white_black/face.png);
+}
+.face_img:hover{
+	background-image: url(./img/color/face.png);
+}
+.car_img{
+	
+	background-image: url(./img/white_black/car.png);
+}
+.car_img:hover{
+	background-image: url(./img/color/car.png);
+}
+.WIFI_img{
+	
+	background-image: url(./img/white_black/WIFI.png);
+}
+.WIFI_img:hover{
+	background-image: url(./img/color/WIFI.png);
+}
+.cardevice_img{
+
+	background-image: url(./img/white_black/cardevice.png);
+}
+.cardevice_img:hover{
+	background-image: url(./img/color/cardevice.png);
+}
+
+.item_text{
+	width: 100%;
+	text-align: center;
+	margin-top: 16px;
+	font-size: 18px;
+    -moz-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.item_img{
+	width: 102px;
+	height: 102px;
+	margin-left: 14.5px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="icon" href="img/mulu.png"/>
+	</head>
+	<body>
+		<div>
+			<button onclick="queryAppRole()">queryAppRole</button>
+			<button onclick="queryAppUser()">queryAppUser</button>
+		</div>
+		<div id="center">
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="../../jquery-1.8.0.min.js" ></script>
+	<script type="text/javascript" src="../resource/js/jquery-ajax-expand.js" ></script>
+	<script type="text/javascript">
+		var _config = {
+			ajaxUrl:{
+				queryAppRole:'/IntegratedMM/role/queryAppRole.do',
+				queryAppUser:'/IntegratedMM/role/queryAppUser.do'
+			}
+		};
+		
+		function clerDiv(){
+			$('#center').empty();
+		}
+		function queryAppUser(){
+			var param = {};
+			param.applicationId = 'snowBrightWJ';
+			post_async(param,_config.ajaxUrl.queryAppUser,callbackqueryAppUser);
+		}
+		
+		function callbackqueryAppUser(data){
+			
+		}
+		function queryAppRole(){
+			var param = {};
+			param.applicationId = 'snowBrightWJ';
+			post_async(param,_config.ajaxUrl.queryAppRole,callbackqueryAppRole);
+		}
+		function callbackqueryAppRole(data){
+			
+		}
+			
+	</script>
+</html>

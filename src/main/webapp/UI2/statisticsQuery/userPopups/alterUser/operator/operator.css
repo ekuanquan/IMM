@@ -1,0 +1,375 @@
+
+*{
+	float: left;
+	font-family: 'Microsoft YaHei';
+	font-size: 14px;
+	box-sizing: border-box;
+
+}
+body{
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+	margin: 0px;
+}
+.box{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.info_container{
+	width: 100%;
+	color: #323232;
+}
+
+.info_title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	background-color: #E5E5E5;
+}
+.info_content{
+	width: 100%;
+	padding: 10px;
+}
+.star{
+	margin-top: 3px;
+	padding-right: 2px;
+	color: red;
+	width: 9px;
+}
+.emptyStar{
+	width: 9px;
+	height: 9px;
+}
+.text_lab{
+	height: 24px;
+	width: 79px;
+	line-height: 24px;
+	margin-left: 10px;
+}
+.text_lab_4{
+	height: 24px;
+	width: 65px;
+	line-height: 24px;
+	margin-left: 10px;
+}
+.text_lab_5{
+	height: 24px;
+	width: 79px;
+	line-height: 24px;
+	margin-left: 10px;
+}
+
+.text_lab_7{
+	height: 24px;
+	width: 107px;
+	line-height: 24px;
+	margin-left: 10px;
+}
+.text_input_4{
+	width: 200px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.text_input_5{
+	width: 186px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.text_input_7{
+	width: 158px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.text_input_8{
+	width: 508px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.text_input_9{
+	width: 466px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.marginLeft12{
+	margin-left: 32px;
+}
+.marginLeft52{
+	margin-left: 52px;
+}
+.content_left{
+	width: 308px;
+}
+.content_mid{
+	width:308px;
+}
+.content_rigth{
+	width: 308px;
+}
+
+.createDate_input{
+
+}
+
+
+.marginTop10{
+	margin-top: 10px;
+}
+.marginTop12{
+	margin-top: 12px;
+}
+
+
+#role_container{
+	height: auto;
+}
+
+.title{
+	width: 100%;
+	height: 30px;
+	padding-left: 15px;
+
+}
+.title_add{
+	height: 30px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.title_add:hover{
+	color: #2777E2;
+}
+.title_add:active{
+	padding-top: 1px;
+}
+.title_add_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 10px;
+	background-image: url(../../../../resource/images/index/add.png);
+	background-position: -12px;
+}
+.title_add_text{
+	margin-left: 5px;
+	line-height: 30px;
+
+}
+.table{
+	width: calc(100%);
+}
+.table_title{
+	width: calc(100%);
+	height: 30px;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	line-height: 28px;
+
+}
+.table_title_item{
+	width:25%;
+	text-align: center;
+	border-right: 1px solid #d9d9d9;
+}
+.table_title_item_last{
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+.table_content{
+	width: 100%;
+}
+.row{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #d9d9d9;
+	line-height: 30px;
+}
+.row_noChecked{
+	background-image: url("../../../../resource/images/index/noChecked.png");
+}
+.row_isChecked{
+	background-image: url("../../../../resource/images/index/isChecked.png");
+}
+.table_item_4{
+	width: 25%;
+	height:30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#role_content{
+	width: 100%;
+	padding-top: 0px;
+}
+
+
+.multiLineInput{
+	margin-left: 48px;
+	height: 102px;
+	width: 262px;
+	margin-top: 6px;
+	border: 1px solid #d9d9d9;
+}
+.bottom_buttons{
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+	padding-left: calc((100% - 216px)/2);
+}
+.confirmButton{
+	width: 103px;
+	height: 25px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #2577e5;
+	color: #FFF;
+	line-height: 25px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.confirmButton:hover{
+	background-color: #1b5fde;
+}
+.confirmButton:active{
+	padding-top: 1px;
+
+}
+.cancelButton{
+	width: 103px;
+	height: 25px;
+	margin-left: 10px;
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #2577e5;
+	color: #2577e5;
+	line-height: 23px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.cancelButton:hover{
+	border: 1px solid #1b5fde;
+	color: #323232;
+}
+.cancelButton:active{
+	padding-top: 1px;
+	color: #323232;
+
+}
+
+.notes_input{
+	resize : none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.time_input{
+	background-image: url("../../../../resource/images/index/calendar.png");
+	background-position: 198px;
+	background-repeat: no-repeat;
+
+}
+
+select {
+	/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+	border: solid 1px #d9d9d9;
+
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url("../../../../resource/images/index/more.png") no-repeat scroll 205px center transparent;
+
+
+	/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+	padding-right: 14px;
+}
+/*select:focus{
+
+}*/
+
+.text_select{
+	width: 222px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 0px;
+	padding-right: 16px;
+	outline: none;
+}
+.text_select:focus{
+	outline: none;
+}
+
+.text_select_7{
+	width: 222px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #d9d9d9;
+	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.marginLeft40{
+	margin-left: 40px;
+}
+.marginLeft3000{
+	margin-left: 30px;
+}
+.marginLeft30{
+	margin-left: 33px;
+}
+.marginLeft0{
+	margin-left: 3px;
+}
+.marginLeft9{
+	margin-left: 9px;
+}
+.marginLeft13{
+	margin-left: 13px;
+}
+input,select{
+	color: #898989;
+}

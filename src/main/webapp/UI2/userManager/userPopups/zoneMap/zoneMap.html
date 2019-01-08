@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>zoneMap</title>
+	<link rel="stylesheet" type="text/css" href="zoneMap.css"/>
+	<link rel="stylesheet" href="src/jquery-ui.min.css">
+	<link rel="stylesheet" href="src/style.css">
+	<script src="src/jquery.min.js"></script>
+	<script src="src/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="src/Image-View-1.0.js"></script>
+	<script src="js/uploadPreview.js"></script>
+    <script src="../../../resource/js/plupload.full.min.js"></script>
+
+	<script type="text/javascript" src="../../../resource/js/jquery-ajax-expand.js"></script>
+	<script type="text/javascript" src="zoneMap.js"></script>
+</head>
+<body>
+	<select id="selectMapPic" class="selectMapPic">
+		<option id='selectOption1' value="1" data-mapId="">防区图1</option>
+		<option id='selectOption2' value="2" data-mapId="">防区图2</option>
+		<option id='selectOption3' value="3" data-mapId="">防区图3</option>
+		<option id='selectOption4' value="4" data-mapId="">防区图4</option>
+		<option id='selectOption5' value="5" data-mapId="">防区图5</option>
+	</select>
+	<div class="title_upload_container">
+		<div class="title_upload_input">
+			<div id="upload_input_text" class="upload_input_text">请从电脑上传图片</div>
+
+			<div id="upload_input_button" class="upload_input_button">浏览</div>-
+			<input type="file" value="上传" class=""  id="Upload" style="display: none;"/>
+		</div>
+		<div id="uploadButton" class="uploadButton buttom_save">上传</div>
+		<div class="title_bottom_text">*文件大小不超过5M，支持jpg、png、bmp格式</div>
+	</div>
+	<!-- <div class="title_tips"></div>
+	
+	<div class="zoneMapContainer">
+		<div class="zoneMapBorder">
+			<div class="wrapper"></div>
+		</div>
+	</div> -->
+	
+
+	<iframe id="subIframe_1" name="subIframe_1" class="subIframe show" src=""></iframe>
+	<iframe id="subIframe_2" name="subIframe_2" class="subIframe" src=""></iframe>
+	<iframe id="subIframe_3" name="subIframe_3" class="subIframe" src=""></iframe>
+	<iframe id="subIframe_4" name="subIframe_4" class="subIframe" src=""></iframe>
+	<iframe id="subIframe_5" name="subIframe_5" class="subIframe" src=""></iframe>
+	<div class="bottomContainer">
+		<div id="buttom_save" class="buttom_save">保存</div>
+		<div id="buttom_cancel" class="buttom_cancel">取消</div>
+	</div>
+</body> 
+</html>

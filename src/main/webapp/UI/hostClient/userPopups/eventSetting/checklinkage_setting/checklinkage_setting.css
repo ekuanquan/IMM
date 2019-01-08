@@ -1,0 +1,336 @@
+* {
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei';
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.main {
+    width: 771px;
+    height: 532px;
+}
+
+.title {
+    background-color: #2577e5;
+    width: 100%;
+    height: 30px;
+}
+
+.table {
+    line-height: 30px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.close {
+    float: right;
+    color: white;
+    background-image: url("../img/close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: #f75352;;
+}
+
+.centen {
+    width: calc(100% - 20px);
+    height: calc(100% - 50px);
+    margin: 10px;
+    border: 1px solid #d9d9d9;
+    color: #323232;
+}
+
+.row_title {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    padding-left: 5px;
+}
+
+.dev_main {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 749px;
+    height: 390px;
+}
+
+.row_dev_title {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d9d9d9;
+    width: 1387px;
+}
+
+.choose_title {
+    width: 42px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.ownerMonitorId_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.devMonitorId_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.devId_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.cameraName_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.cameraAddr_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.channelNum_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.policeType_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.instTime_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.wantDo_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.cameraType_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.cameraModel_title {
+    width: 112px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    height: 30px;
+}
+
+.fMemo_title {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.row_main {
+    border-bottom: 1px solid #D9D9D9;
+    width: 1387px;
+    height: 360px;
+}
+
+.row_row {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.row_row:hover {
+    background-color: #e4f1f9;
+}
+
+.choose {
+    width: 42px;
+    text-align: center;
+    height: 30px;
+}
+
+.noChecked{
+    width: 13px;
+    height: 13px;
+    background: url(../img/noChecked.png);
+    margin: 8px;
+    float:left;
+}
+.isChecked{
+    width: 13px;
+    height: 13px;
+    background: url(../img/isChecked.png);
+    margin: 8px;
+    float:left;
+}
+
+.ownerMonitorId {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.devMonitorId {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.devId {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.cameraName {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.cameraAddr {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.channelNum {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.policeType {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.instTime {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.wantDo {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.cameraType {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.cameraModel {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+}
+
+.fMemo {
+    width: 112px;
+    text-align: center;
+    height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.centen_buttom {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+}
+
+.save {
+    height: 25px;
+    text-align: center;
+    line-height: 23px;
+    width: 80px;
+    background-color: rgb(37, 119, 229);
+    color: white;
+    border-radius: 3px;
+    margin: 20px 10px 20px 280px;
+    cursor: pointer;
+}
+
+.save:hover {
+    background-color: rgb(27, 95, 222);
+}
+
+.save:active {
+    padding-top: 1px;
+}
+
+.cancel {
+    height: 25px;
+    text-align: center;
+    line-height: 23px;
+    width: 80px;
+    border: 1px solid rgb(37, 119, 229);
+    color: rgb(37, 119, 229);
+    border-radius: 3px;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    border: 1px solid rgb(7, 69, 191);
+    color: rgb(7, 69, 191);
+}
+
+.cancel:active {
+    padding-top: 1px;
+}
+
+.row_checked {
+    background-color: #e4f1f9;
+}

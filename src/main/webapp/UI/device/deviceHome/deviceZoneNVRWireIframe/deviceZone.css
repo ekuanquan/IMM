@@ -1,0 +1,241 @@
+*{
+	/*float: left;*/
+	box-sizing: border-box;
+	font-family: 'Microsoft YaHei';
+}
+body{
+	width: 100%;
+	margin: 0px;
+	font-size: 14px;
+	height: 518px;
+}
+.title{
+	width: 100%;
+	height: 30px;
+	padding-left: 24px;
+	float: left;
+}
+.title *{
+	float: left;
+}
+.title_add{
+	height: 30px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+
+}
+.title_add:hover{
+	color: #2777E2;
+}
+.title_add:active{
+	padding-top: 1px;
+}
+.title_add_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 10px;
+	background-image: url(../../../resource/images/index/add.png);
+	background-position: -12px;
+}
+.title_add_text{
+	margin-left: 5px;
+	line-height: 30px;
+
+}
+.title_del{
+	
+	margin-left: 20px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+}
+.title_del:hover{
+	color: #F65351;
+
+}
+.title_del:active{
+	padding-top: 1px;
+}
+.title_del_img{
+	width: 12px;
+	height: 12px;
+	margin-top: 10px;
+	background-image: url(../../../resource/images/index/del_close.png);
+	background-position: -12px;
+}
+.title_del_text{
+	margin-left: 5px;
+	line-height: 30px;
+}
+/*.table{
+	width: calc(100%);
+	overflow-x: scroll;
+	!*height: 564px;*!
+	overflow-y: auto;
+	height: 486px;
+}*/
+.table_title{
+	height: 30px;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	line-height: 28px;
+	width: 1000px;
+
+}
+.table_title_item{
+	padding-left: 11px;
+	padding-right: 11px;
+	border-right: 1px solid #d9d9d9;
+}
+.table_title_item_last{
+	/*padding-left: 17px;
+	padding-right: 17px;*/
+	width: 0px;
+}
+.table_content{
+	width: 1000px;
+	/*height:456px;*/
+}
+.row{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #d9d9d9;
+	line-height: 30px;
+}
+.table_item_4{
+	width: 79px;
+	height:30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table_item_2{
+	width: 58px;
+	height:30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table_item_3{
+	width: 65px;
+	height:30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table_item_5{
+	width: 93px;
+	height:30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.selected{
+	background-color:#E4F1F9;
+}
+#right_div{
+	height: calc(100%);
+	width: 100%;
+	float: left;
+}
+#right_div1{
+	/*background: #edeeee;*/
+	width: 100%;
+	overflow: hidden;
+	height :34px;
+}
+#right_divx{
+	width: 2000px;
+}
+#right_div2{
+	margin-top:0px;
+	width:100%;
+	height:calc(100% - 30px);
+	overflow: auto;
+}
+#listBox1{
+	width: 991px;
+	white-space:nowrap;
+}
+#listBox2{
+	/**width和max-width一起写，手机浏览器打开也能固定长度**/
+	width: 100px;
+	max-width: 2800px;
+	white-space:nowrap;
+	min-width: 180px;
+	table-layout: fixed;
+}
+#listBox1 tr{
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	height: 28px;
+}
+#listBox1 td{
+	text-align:left;
+	text-indent: 10px;
+}
+#listBox2 tr{
+	border-bottom: 1px solid #cccccc;
+	height: 30px;
+}
+#listBox2 td{
+	width:20px;
+	text-align:left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-indent: 10px;
+	font-weight: normal;
+}
+.contentRight_bottom{
+	width: 100%;
+	height: calc(100% - 30px);
+	border: 1px solid #d9d9d9;
+}
+.content{
+	width: 100%;
+	height: calc(100% - 34px);
+	/*overflow:auto;*/
+	font-size: 14px;
+	color: #323232;
+	/*overflow-x: auto;*/
+	background-color: #fff;
+}
+.table{
+	border-collapse: collapse;
+	border-spacing: 1px;
+	width: 100%;
+	font-size: 14px;
+	color: #323232;
+	background-color: #fff;
+}
+.noChecked{
+	width: 13px;
+	height: 13px;
+	background: url(../../../resource/images/index/noChecked.png);
+	background-repeat: no-repeat;
+	margin: 8px;
+	float: left;
+}
+.isChecked{
+	width: 13px;
+	height: 13px;
+	background: url(../../../resource/images/index/isChecked.png);
+	background-repeat: no-repeat;
+	margin: 8px;
+	float: left;
+}

@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*border: 1px solid #f00;*/
+    width: 100%;
+    height:100%;
+    
+}
+.left-side{
+    border: 1px solid #eaeaea;
+    float: left;
+    width: 210px;
+    height:100%;
+}
+
+#area{
+    border-bottom: 1px solid #d5d5d5;
+    float: left;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+}
+
+#refrelany{
+    float: left;
+    width: 100%;
+    height:40px;
+    overflow: hidden;
+}
+
+#tree{
+  /*  border: 1px solid #f00;*/
+    float: left;
+    width: 100%;
+    height:100%;
+    overflow: scroll;
+}
+
+.areatex{
+    float: left;
+    width: auto;
+    height: 35px;
+    padding: 0 38px 0 10px;
+    line-height: 35px;
+    color:#323232;
+    text-align: center;
+}
+
+
+#add{
+    background-image: url("hmdrectoryimg/add.png");
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+}
+#add:hover{
+    cursor: pointer;
+    background-position:-12px 12px;
+}
+
+#update{
+    background-image: url("hmdrectoryimg/update.png");
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+}
+#update:hover{
+    cursor: pointer;
+    background-position:-12px 12px;
+}
+
+#close{
+    background-image: url("hmdrectoryimg/close.png");
+    background-position: 0 12px;
+    background-repeat: no-repeat;
+}
+
+#close:hover{
+    cursor: pointer;
+    background-position:-12px 12px;
+}
+
+
+.search-div{
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    float: left;
+    width: 170px;
+    height: 27px;
+    margin: 5px 0 0 5px;
+    line-height: 27px;
+}
+.search-div input{
+    border:none;
+    float: left;
+    width: 140px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 5px;
+}
+
+.search-div i{
+    float: right;
+    width: 20px;
+    height: 27px;;
+    margin-right: 5px;
+    background: url("hmdrectoryimg/search.png")  no-repeat center ;
+    cursor: pointer;
+}
+
+.flash-btn{
+    float: right;
+    width: 20px;
+    height: 35px;
+    margin:0 7px 0 0;
+    background: url("hmdrectoryimg/flash.png") no-repeat 0px 12px;
+    cursor: pointer;
+}
+.flash-btn:active{
+    background-position: 0px 9px;
+}
+
+.ateabutt {
+    float: left;
+    width: 12px;
+    height: 35px;
+    margin: 0 10px 0 0;
+}
+
+#title{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    background-image: url("hmdrectoryimg/mulu.png");
+    background-position: 7% 50%;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    background-color: #eaeaea;
+}
+
+#left{
+	float:left;
+    height: 100%;
+}
+
+.streediv{
+    float: left;
+    width: 208px;
+    height: calc(100% - 35px);
+}
+
+#treeDemo{
+	margin: 0;
+	padding: 0;
+}
+
+#treeDemo li ul {
+	margin: 0;
+	padding: 0;
+}
+
+#treeDemo li ul.line{
+	background: none;
+}
+
+#treeDemo li a {
+	width: 198px;
+	height: 25px
+}
+#treeDemo li a:hover {
+	padding: 0;
+}
+#treeDemo li span.button.switch{
+	height: 26px
+}
+#treeDemo li a span{
+	line-height: 25px
+}
+#treeDemo li span.root_open{
+	background-position: -92px -51px
+}
+#treeDemo li span.root_close{
+	background-position: -74px -51px
+}
+#treeDemo li span.center_open{
+	background-position: -92px -15px
+}
+#treeDemo li span.center_close{
+	background-position: -74px -15px
+}
+#treeDemo li span.bottom_open{
+	background-position: -92px -33px
+}
+#treeDemo li span.bottom_close{
+	background-position: -74px -33px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

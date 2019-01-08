@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addsystemCode</title>
+    <link rel="stylesheet" href="taskplan.css">
+    <script type="text/javascript" src="../../resource/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="../../resource/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../resource/js/popus.js"></script>
+    <script type="text/javascript" src="../../resource/js/jquery-ajax-expand.js"></script>
+    <script type="text/javascript" src="taskplan.js"></script>
+</head>
+<body>
+<div class="add_code">
+    <div class="add_top">
+        <!--头-->
+        <div id="addcode_title">
+            <div class="title_top">任务计划</div>
+            <div id="close" class="close"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="plan_top">
+            <div>
+                <div class="start_time">任务开始时间</div>
+                <input id="start_input" type="text" class="start_input"/>
+            </div>
+            <div>
+                <div class="end_time">任务结束时间</div>
+                <input id="end_input" type="text" class="end_input"/>
+            </div>
+        </div>
+        <div class="line_back">
+            <div id="dispose" class="main_title">布防任务</div>
+            <div id="disarm" class="main_title">撤防任务</div>
+            <div id="other" class="main_title">其他任务</div>
+        </div>
+        <div id="work" class="work">
+            <iframe id="disposeIframe" name="disposeIframe" class="hide" scrolling="no" src="./dispose/dispose.html"></iframe>
+            <iframe id="disarmIframe" name="disarmIframe" class="hide" scrolling="no" src="./disarm/disarm.html"></iframe>
+            <iframe id="otherIframe" name="otherIframe" class="hide" scrolling="no" src="./other/other.html"></iframe>
+        </div>
+
+            <div class="food_choose">
+                <div id="sure" class="sure">保存</div>
+                <div id="remove" class="remove">取消</div>
+            </div>
+
+    </div>
+</div>
+</body>
+</html>

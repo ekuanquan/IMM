@@ -1,0 +1,130 @@
+* {
+	float: left;
+	box-sizing: border-box;
+	font-family: 'Microsoft YaHei';
+}
+
+body {
+	width: 100%;
+	margin: 0px;
+	font-size: 14px;
+}
+
+.main {
+	width: 349px;
+	height: 177px;
+}
+
+.title {
+	background-color: #2577e5;
+	width: 100%;
+	height: 30px;
+}
+
+.table {
+	line-height: 30px;
+	color: white;
+	margin-left: 10px;
+	font-size: 14px;
+	float: left;
+}
+
+.close {
+	float: right;
+	color: white;
+	background-image: url("../../img/close.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.close:hover {
+	background-color: #f75352;
+}
+.row{
+	margin: 20px 0  0 20px;
+}
+.row_text{
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 10px;
+}
+.row_select{
+	width: 230px;
+    height: 26px;
+    margin: 2px 0 0px 0px;
+    line-height: 26px;
+    padding-left: 5px;
+    padding-right: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(217, 217, 217);
+    border-image: initial;
+    outline: none;
+    border-radius:3px;
+    background: url(../../../../../resource/images/index/more.png) 210px center no-repeat scroll transparent;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.isMain{
+    height: 30px;
+    line-height: 30px;
+    margin-right: 25px;	
+}
+.noChecked{
+	width: 13px;
+	height: 13px;
+	background: url(../../img/noChecked.png);
+	margin: 8px 10px 0 0;
+}
+.isChecked{
+	width: 13px;
+	height: 13px;
+	background: url(../../img/isChecked.png);
+    margin: 8px 10px 0 0;
+}
+.centen_buttom{
+	width: 100%;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+}
+.save{
+	height: 25px;
+    text-align: center;
+    line-height: 23px;
+    width: 80px;
+	background-color: rgb(37, 119, 229);
+    color: white;
+    border-radius: 3px;
+    margin: 10px 10px 0 100px;
+    cursor: pointer;
+}
+.save:hover{
+	background-color: rgb(27, 95, 222);
+}
+.save:active{
+	padding-top: 1px;
+}
+.cancel{
+	height: 25px;
+    text-align: center;
+    line-height: 23px;
+    width: 80px;
+	border: 1px solid rgb(37, 119, 229);
+    color: rgb(37, 119, 229);
+    border-radius: 3px;
+    margin: 10px 0  0 0;
+    cursor: pointer;
+}
+.cancel:hover{
+	border: 1px solid rgb(7, 69, 191);
+	color: rgb(7, 69, 191);
+}
+.cancel:active{
+	padding-top: 1px;
+}

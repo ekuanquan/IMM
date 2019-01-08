@@ -1,0 +1,261 @@
+*{
+	box-sizing: border-box;
+	/*display: inline-block;*/
+	font-family: 'Microsoft YaHei';
+	font-size: 14px;
+    float: left;
+}
+body{
+	width: 1310px;
+	height: 440px;
+	margin: 0;
+}
+.title{
+	width: 100%;
+	height: 30px;
+	background-color: #335281;
+	color: #FFF;
+
+
+}
+.title_left{
+	line-height: 30px;
+	margin-left: 10px;
+
+}
+.title_close{
+	float: right;
+	width: 30px;
+	height: 30px;
+
+	background-image: url(../resource/images/rdPolice/close.png);
+	background-repeat: no-repeat;
+	background-position: 8px 8px;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+.title_close:hover{
+	background-color: #f75352;
+}
+.content{
+	width: 100%;
+	height: calc(100% - 30px);
+	
+	padding: 10px;
+}
+.left_content{
+    width: 640px;
+    height: 100%;
+    
+}
+.right_content{
+	width: 640px;
+    height: 100%;
+    margin-left: 10px;
+}
+.content_title{
+	width: 100%;
+	height: calc(100% - 359px);
+	color: #345281;
+	line-height: 27px;
+}
+.content_video_container{
+	width: 100%;
+	height: 359px;
+	border: 1px solid #d9d9d9;
+}
+.left_content_video{
+	width: 100%;
+	height: calc(100% - 35px);
+
+}
+.right_content_video{
+    width: 100%;
+    height: calc(100% - 35px);
+
+}
+.left_content_ctrlContainer{
+	width: 100%;
+	height: 35px;
+
+}
+.right_content_ctrlContainer{
+    width: 100%;
+    height: 35px;
+
+}
+
+.screenshot{
+	width: 23px;
+	height: 18px;
+	background-image: url(./images/screenshot.png);
+	background-position: -23px;
+    margin-top: 9px;
+    margin-left: 15px;
+    cursor: default;
+}
+.screenshot:hover{
+	background-position: 0px;
+}
+.screenshot:active{
+	background-position: -23px;
+}
+.makeVideo{
+    width: 23px;
+    height: 18px;
+    background-image: url(./images/video.png);
+    background-position: -23px;
+    margin-top: 9px;
+    margin-left: 20px;
+    cursor: default;
+}
+.makeVideo:hover{
+	background-position: 0px;
+}
+.makeVideo:active{
+	background-position: -23px;
+}
+.fullScreen{
+    width: 23px;
+    height: 18px;
+    background-image: url(./images/fullScreen.png);
+    background-position: -23px;
+    margin-top: 9px;
+    /*margin-left: 20px;*/
+    margin-left: 15px;
+    cursor: default;
+}
+.fullScreen:hover{
+	background-position: 0px;
+}
+.fullScreen:active{
+	background-position: -23px;
+}
+.stop{
+    margin-top: 9px;
+    margin-left: 158px;  /*//2017-08-21 屏蔽录像按钮  原本是115px; 改为 158px;*/
+    text-indent: 3px;
+    color: #335281;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+
+}
+.stop:hover{
+    color: #4b6c9d;
+}
+.stop:active{
+    color: #335281;
+}
+.stop_full{
+   
+    margin-left: 435px;
+    
+
+}
+
+.stop_img{
+	width: 10px;
+	height: 11px;
+    background-image: url(./images/stop.png);
+    background-repeat: no-repeat;
+    background-position: -10px;
+    margin-top: 5px;
+    cursor: default;
+   
+}
+.stop_img:hover{
+	background-position: 0px;
+}
+.stop_img:active{
+	background-position: -10px;
+}
+.start{
+    width: 72px;
+    height: 35px;
+    background-image: url(./images/start.png);
+    background-repeat: no-repeat;
+    background-color: #335281;
+    background-position: 12px center;
+    padding-left: 30px;
+    margin-left: 10px;
+    color: #fff;
+    line-height: 35px;
+    cursor: default;
+}
+
+.pause{
+    width: 72px;
+    height: 35px;
+    background-image: url(./images/pause.png);
+    background-repeat: no-repeat;
+    background-color: #335281;
+    background-position: 12px center;
+    padding-left: 30px;
+    margin-left: 10px;
+    color: #fff;
+    line-height: 35px;
+    cursor: default;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.pause:hover{
+    background-color: #4b6c9d;
+}
+
+
+.showObject
+{
+    visibility: visible;
+    width: 100%  !important;
+    height: 100%  !important;
+}
+
+
+.body{
+    width: 1300px;
+    height: 800px;
+    margin: 0;
+    
+}
+
+.left_content_full{
+    width: 1280px;
+    height: 100%;
+    
+}
+.right_content_full{
+    width: 1280px;
+    height: 100%;
+   
+}
+
+.content_video_container_full{
+    width: 100%;
+    height: 720px;
+    border: 1px solid #d9d9d9;
+}
+
+.content_title_full{
+    width: 100%;
+    height: calc(100% - 720px);
+    color: #345281;
+    line-height: 27px;
+}
+
+.hide_content{
+    position: absolute;
+    top: -1000px;
+}
+
+#right_stop{
+    visibility: hidden;
+}
